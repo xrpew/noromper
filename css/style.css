@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #E88F2A;
+    --primary: #212121;
     --secondary: #FAF3EB;
-    --light: #FFFFFF;
+    --light: #EEEDE3;
     --dark: #2B2825;
 }
 
@@ -35,7 +35,7 @@ h6,
 }
 
 .btn-primary {
-    color: #FFFFFF;
+    color: #EEEDE3;
 }
 
 .border-inner {
@@ -117,9 +117,13 @@ h6,
     }
 }
 
-.hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
-    background-size: cover;
+.hero-header img {
+    max-width: 500px;
+}
+.hero-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn-play {
@@ -132,7 +136,7 @@ h6,
     border: none;
     outline: none !important;
     padding: 18px 20px 20px 28px;
-    background: #FFFFFF;
+    background: #EEEDE3;
 }
 
 .btn-play:before {
@@ -145,7 +149,7 @@ h6,
     display: block;
     width: 60px;
     height: 60px;
-    background: #FFFFFF;
+    background: #EEEDE3;
     border-radius: 100%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -160,7 +164,7 @@ h6,
     display: block;
     width: 60px;
     height: 60px;
-    background: #FFFFFF;
+    background: #EEEDE3;
     border-radius: 100%;
     transition: all 200ms;
 }
@@ -209,7 +213,7 @@ h6,
     z-index: 999;
     font-size: 30px;
     font-weight: normal;
-    color: #FFFFFF;
+    color: #EEEDE3;
     background: #000000;
     opacity: 1;
 }
@@ -280,7 +284,7 @@ h6,
 .testimonial-carousel .owl-dots {
     height: 45px;
     margin-top: 30px;
-    display: flex;
+    display: none;
     align-items: flex-end;
     justify-content: center;
 }
@@ -312,4 +316,34 @@ h6,
 .bg-img {
     background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
+}
+
+.tarjera{
+    border: 1px solid #212121;
+    display: flex;
+    flex-direction: row;
+    max-width: 485px;
+    max-height: 100px;
+    gap: 12px;
+    border-radius: 5px;
+}
+.tarjera p{
+    margin: 12px;
+}
+.tarjera img{
+    width: 150px;
+    height: 100px;
+
+}
+/* .cardBox{
+    display: flex;
+    flex-direction: row;
+    word-wrap: wrap;
+} */
+
+.cardBox {
+    overflow-y: hidden;
+    display: flex;
+    border: 1px solid red;
+    transition: transform 0.5s ease-in-out;
 }

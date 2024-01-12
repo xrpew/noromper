@@ -1,4 +1,4 @@
-  =>  Template Name    : CakeZone - Cake Shop Website Template
+  =>  Template Name    : El Pasaje
 
   =>  Template Link    : https://htmlcodex.com/cake-shop-website-template
 
