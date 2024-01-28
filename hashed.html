@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        
+        <div style="background-color: rgb(227, 227, 237); display: flex; flex-direction: column; width:100vw; height: 100vh; align-items: center; justify-content: center;">
+            <h4>menu admin</h4>
+            <form id='form' style="display: flex; gap: 4px; flex-direction: column;">
+                <input name="user" type="text" placeholder="user">
+                <input name="password" type="password" placeholder="password">
+                <button id="submitButton">submit</button>
+            </form>
+            <br>
+            <button>volver</button>
+    
+        </div>
+    
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+    }
+    html{
+        background-color: #FAF3EB;
+    }
+    #root{
+        display: flex;
+    }
+    .container{
+        width: fit-content;
+        padding: 12px
+    }
+    .cards{
+    display: flex;
+    background-color: #212121;
+    color: #FAF3EB;
+    border-radius: 5px;
+    padding: 8px;
+    margin:8px
+}
+.title{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.item{
+    width: 100%;
+}
+.description{
+    text-align: start;
+}
+.topname{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    margin-bottom: 0px;
+
+}
+</style>
+
+<script>
+    const root = document.getElementById('root')
+
+    function handleEdit(id){
+        console.log(id);
+    }
+
+
+</script>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, getDocs, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+    // import { getAuth } from 'firebase/auth';
+
+    const firebaseConfig = {
+        apiKey: 'AIzaSyBCWgqUpTTpO9Hmz2Ap2k6Z1E_lVPxcE00',
+        authDomain: 'res-pas.firebaseapp.com',
+        projectId: 'res-pas',
+        storageBucket: 'res-pas.appspot.com',
+        messagingSenderId: '252527428185',
+        appId: '1:252527428185:web:f70147042d334babb5e748',
+        measurementId: 'G-E732L2KLBH'
+    };
+
+    export const app = initializeApp(firebaseConfig);
+    export const db = getFirestore(app);
+
+    const submitter = document.getElementById('submitButton')
+    const allData = ["coffe","platos","drinks","special","otros"]
+    const mapeo = {
+        coffe:[ 
+            { name: "CAFÉ", desc: "", price: "" },
+
+        ],
+        platos:[ 
+            { name: "PLATOS", desc: "", price: "" },
+
+        ],
+        drinks:[ 
+            { name: "BEBIDAS", desc: "", price: "" },
+
+        ],
+        special:[ 
+            { name: "ESPECIALIDADES", desc: "", price: "" },
+        ],
+        otros:[ 
+            { name: "OTRO", desc: "", price: "" },
+        ]
+    }
+    const fetchingAllDatAndPrint = () => {
+        allData.map(a=>{
+        const ss = mapeo[a]
+        const label = document.getElementById(`${a}HTML`)
+        const aa = []
+        ss.map(xx=>{
+                    label.innerHTML += `
+                    <div class="cards">
+                        <div class="item">
+                            <div class="topname">
+                                <strong class="title">${xx.name}</strong>
+                                <p class="price">${xx.price}</p>
+                            </div>
+                            <p class="description">${xx.desc}</p>
+                            </div>
+                            </div>
+                    `
+                })
+        getDocs(collection(db, a))
+            .then(res=>{
+                res.forEach(item=>{
+                    let value = item.data()
+                    value['id'] = item.id
+                    aa.push(value)
+                })
+                console.log(aa)
+                if(aa.length === 0){
+                    label.innerHTML = ``
+                    ss.map(xx=>{
+                        label.innerHTML += `
+                    <div class="cards">
+                        <div class="item">
+                            <div class="topname">
+                                <strong class="title">${xx.name}</strong>
+                                <p class="price">${xx.price}</p>
+                            </div>
+                            <p class="description">${xx.desc}</p>
+                        </div>
+                    </div>
+                    `
+                })
+                }else{
+                    label.innerHTML = `<h4>${a}</h4>`
+                    aa.map(xx=>{
+                    label.innerHTML += `
+                    <div class="cards" onclick="handleEdit('${xx.id}')">
+                        <div class="item">
+                            <div class="topname">
+                                <strong class="title">${xx.name}</strong>
+                                <p class="price">${xx.price}</p>
+                                </div>
+                            <p class="description">${xx.desc}</p>
+                            <span style="display:none">${xx.id}</span>
+                        </div>
+                    </div>
+                    `
+                })
+            }
+            })
+    })
+    const cartas = document.getElementsByClassName('cards')
+    console.log(cartas)
+    cartas[0].addEventListener('click',()=>{console.log('asdasd')})
+
+}
+
+    const printAll = () => {
+        root.innerHTML = `
+            <div class="container" id="coffeHTML">
+                <h4>CAFETERÍA</h4>
+            </div>
+
+            <div class="container" id="platosHTML">
+                <h4>ALMUERZOS</h4>
+            </div>
+
+            <div class="container" id="drinksHTML">
+                <h4>BEBIDAS</h4>                        
+            </div>
+
+            <div class="container" id="specialHTML">
+                <h4>ESPECIALIDAD</h4>
+            </div>
+
+            <div class="container" id="otrosHTML">
+                <h4>OTROS</h4>
+            </div>
+        
+        `
+            fetchingAllDatAndPrint()
+        }
+
+    const handleLogin = (event) => {
+    event.preventDefault();
+    console.log('Login')
+    const form = document.getElementById('form')
+    const formData = new FormData(form)
+    const user = formData.get('user')
+    const password = formData.get('password')
+    const root = document.getElementById('root')
+    console.log(user, password)
+    if(user == 'user' && password == 'password'){
+        printAll()
+        history.pushState({}, "", "/hashed.html");
+    }
+}
+    printAll()
+
+    submitter.addEventListener('click', handleLogin)
+
+</script>

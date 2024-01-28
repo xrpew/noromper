@@ -6,12 +6,12 @@
     <title>El Pasaje</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
-        content="cafetería, café, barista, desayuno, brunch, pastelería, especialidad en café, café de especialidad, bebidas de café, música, libros, lectura agradable, ambiente acogedor">
+        content="cafetería, café, barista, desayuno, brunch, pastelería, etoastidad en café, café de etoastidad, bebidas de café, música, libros, lectura agradable, ambiente acogedor">
     <meta name="description"
-        content="Disfruta de una experiencia única en nuestra cafetería. Ofrecemos café de especialidad, deliciosos desayunos y brunch, así como una variada selección de pastelería fresca. Nuestro ambiente acogedor es perfecto para disfrutar de momentos relajados con amigos. ¡Ven y descubre el placer de un buen café con nosotros!">
+        content="Disfruta de una experiencia única en nuestra cafetería. Ofrecemos café de etoastidad, deliciosos desayunos y brunch, así como una variada selección de pastelería fresca. Nuestro ambiente acogedor es perfecto para disfrutar de momentos relajados con amigos. ¡Ven y descubre el placer de un buen café con nossandwiches!">
 
     <!-- Favicon -->
-    <link href="" rel="icon">
+    <link href="https://elpasaje.cl/wp-content/themes/themeElPasaje/assets/images/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -65,56 +65,16 @@
 
     <div class="container-fluid about py-5">
         <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Menú | cafetería</h2>
-                <h1 class="display-4 text-uppercase">conoce nuestra carta</h1>
+            <div class="text-center mx-auto pb-3" style="max-width: 600px;">
+                <h1 id='knowYour' class="display-4 text-uppercase">conoce nuestra carta</h1>
+                <span>Explora todas las secciones que hemos preparado detalladamente para ti</span>
             </div>
             <div class="tab-class text-center">
-                <ul
-                    class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">cafetería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">platos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">bebidas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-4">especialidad</a>
-                    </li>
+                <ul id="tabsMenu"
+                    class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">                 
                 </ul>
-                <div class="tab-content">
-
-                    <div id="tab-1" class="tab-pane fade show p-0 active ">
-                        <h4>CAFETERÍA</h4>
-                        <hr>
-                        <div class="container" id="coffeHTML"></div>
-                    </div>
-
-
-                    <div id="tab-2" class="tab-pane fade show p-0">
-                        <h4>ALMUERZOS</h4>
-                        <hr>
-                        <div class="container" id="platosHTML"></div>
-
-                    </div>
+                <div class="tab-content" id="tabContentHTML">
                     
-                    <div id="tab-3" class="tab-pane fade show p-0">
-                        <h4>BEBIDAS</h4>                        
-                        <hr>
-                        <div class="container" id="drinksHTML"></div>
-
-                    </div>
-
-                    <div id="tab-4" class="tab-pane fade show p-0">
-                        <h4>ESPECIALIDAD</h4>
-                        <hr>
-                        <div class="container" id="specialHTML"></div>
-
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -139,7 +99,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#knowYour" class="btn btn-secondary back-to-top">🚲</a>
 
 
     <!-- JavaScript Libraries -->
@@ -149,94 +109,307 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     
-    <!-- Template Javascript -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, getDocs, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-        // import { getAuth } from 'firebase/auth';
 
-        const firebaseConfig = {
-            apiKey: 'AIzaSyBCWgqUpTTpO9Hmz2Ap2k6Z1E_lVPxcE00',
-            authDomain: 'res-pas.firebaseapp.com',
-            projectId: 'res-pas',
-            storageBucket: 'res-pas.appspot.com',
-            messagingSenderId: '252527428185',
-            appId: '1:252527428185:web:f70147042d334babb5e748',
-            measurementId: 'G-E732L2KLBH'
-        };
-
-        export const app = initializeApp(firebaseConfig);
-        export const db = getFirestore(app);
-
-        const allData = ["coffe","platos","drinks","special"]
-
-        // const insertData = [
-    // { category: "coffe", name: "Café cargadu", price: "$51.000", desc: "Descripción del café cargadu" },
-    // { category: "platos", name: "Plato cargadu", price: "$11.000", desc: "Descripción del plato cargadu" },
-    // { category: "drinks", name: "Bebida cargadu", price: "$31.000", desc: "Descripción de la bebida cargadu" },
-    // { category: "special", name: "Especial cargadu", price: "$11.000", desc: "Descripción del especial cargadu" },
-// ];
-
-// // Función para agregar datos a la colección específica
-// const agregarDatosAColeccion = async (coleccion, datos) => {
-    // try {
-        // for (const item of datos) {
-            // // Utiliza la referencia a la colección específica
-            // const coleccionRef = collection(db, coleccion);
-
-            // // Añade el documento a la colección
-            // await addDoc(coleccionRef, item);
-        // }
-
-        // console.log(`Datos agregados a la colección "${coleccion}"`);
-    // } catch (error) {
-        // console.error("Error al agregar datos:", error);
-    // }
-// };
-
-// Itera sobre todas las colecciones y agrega datos
-// for (const coleccionNombre of insertData) {
-//     await agregarDatosAColeccion(coleccionNombre.category, [coleccionNombre]);
-// }
+    <script>
+            let favs = localStorage.getItem('elpasaje')
+            favs ? '' : localStorage.setItem('elpasaje','[]') 
+            console.log(favs)
+            let now = new Date()
+            let hour = now.getHours()
 
 
+            
+            function updateFavs(favs){
+                const label = document.getElementById(`favsHTML`)
+                label.innerHTML = ``
+                favs.map(s=>{
+                        console.log(s)
+                        label.innerHTML += `
+                            <strong class="description">${s}</strong>
+                            <br>
+                            `
+                    })
+            }
+            function handleEdit(event){
+            favs = JSON.parse(favs)
+            let name = event.target.innerText
+            if(name.split(' ')[0][0] == '*' | name.split(' ')[0][0] == '❄'){
+                favs = JSON.stringify(favs)
+                return
+            }
+            else{
+                console.log(name.split(' ')[0][0])
+                if(name.split(' ')[0] !== '⭐'){
+                console.log('favs add')
+                event.target.innerText = `⭐ ${name}`
+                favs.push(name)
+                updateFavs(favs)
 
-
-
-
-        const mapeo = {
-            coffe:[ 
-                { name: "Plato 1", desc: "Descripción del plato 1 que ocupa más de una línea.", price: "$10.000" },
-                { name: "Plato 2", desc: "Descripción del plato 2.", price: "$15.000" },
-                { name: "Plato 3", desc: "Descripción del plato 3.", price: "$12.000" }
-            ],
-            platos:[ 
-                { name: "Plato 1", desc: "Descripción del plato 1 que ocupa más de una línea.", price: "$10.000" },
-                { name: "Plato 2", desc: "Descripción del plato 2.", price: "$15.000" },
-                { name: "Plato 3", desc: "Descripción del plato 3.", price: "$12.000" }
-            ],
-            drinks:[ 
-                { name: "Plato 1", desc: "Descripción del plato 1 que ocupa más de una línea.", price: "$10.000" },
-                { name: "Plato 2", desc: "Descripción del plato 2.", price: "$15.000" },
-                { name: "Plato 3", desc: "Descripción del plato 3.", price: "$12.000" }
-            ],
-            special:[ 
-                { name: "Plato 1", desc: "Descripción del plato 1 que ocupa más de una línea.", price: "$10.000" },
-                { name: "Plato 2", desc: "Descripción del plato 2.", price: "$15.000" },
-                { name: "Plato 3", desc: "Descripción del plato 3.", price: "$12.000" }
-            ]
+                } else {
+                    let newname = name.split('⭐ ')[1]
+                    event.target.innerText = newname
+                    console.log(favs)
+                    console.log(newname)
+                    favs = favs.filter(a=> a!==newname)
+                    updateFavs(favs)
+                    
+            }
+        }  
+            favs = JSON.stringify(favs)
+            localStorage.setItem('elpasaje', favs)
         }
 
+    </script>
+
+    <!-- Template Javascript -->
+    <script type="module">
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        // import { getFirestore, getDocs, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        // const firebaseConfig = {
+        //     apiKey: 'AIzaSyBCWgqUpTTpO9Hmz2Ap2k6Z1E_lVPxcE00',
+        //     authDomain: 'res-pas.firebaseapp.com',
+        //     projectId: 'res-pas',
+        //     storageBucket: 'res-pas.appspot.com',
+        //     messagingSenderId: '252527428185',
+        //     appId: '1:252527428185:web:f70147042d334babb5e748',
+        //     measurementId: 'G-E732L2KLBH'
+        // };
+
+        // export const app = initializeApp(firebaseConfig);
+        // export const db = getFirestore(app);
+        let localFavs = localStorage.getItem('elpasaje')
+        localFavs = JSON.parse(localFavs)
+        const allData = ["coffe","pasteleria","juice","toast","sandwiches","omelette","lunch","croissant","breakfast","tapita","favs"]
+        const nameOfData = {
+            coffe:"CAFETERÍA",pasteleria:"PASTELERÍA Y BOWLS",juice:"JUGOS, LICUADOS Y BEBIDAS",toast:"TOSTADAS",sandwiches:"SÁNDWICHES",omelette:"PAILAS Y OMELLETTE",lunch:"ALMUERZOS",
+            croissant:"CROISSANT Y WAFLES",breakfast:"DESAYUNOS Y MERIENDAS",tapita:"TAPITA  SUGERIDA",favs:"FAVORITOS"}
+        const mapeo = {
+            coffe:[ 
+                {"name": "Americano","desc": "Espresso, agua","price": "$2.500"},
+                {"name": "Espresso","desc": "25-30 ml de extracción de café","price": "$2.300"},
+                {"name": "Macchiatto","desc": "Espresso, espuma de leche","price": "$2.700"},
+                {"name": "After eight","desc": "Espresso, leche texturizada, menta y chocolate","price": "$4.900"},
+                {"name": "Café filtrado 300ml","desc": "Café realizado en chemex o cafetera francesa","price": "$4.200"},
+                {"name": "Capuccino","desc": "Espresso, leche","price": "$2.900"},
+                {"name": "Mocaccino","desc": "Doble espresso, leche, chocolate","price": "$4.100"},
+                {"name": "Flat white","desc": "Doble espresso, leche","price": "$3.500"},
+                {"name": "Latte","desc": "Espresso, doble carga de leche","price": "$3.400"},
+                {"name": "Latte Saborizado.","desc": "Espresso, leche, vainilla o chocolate o caramelo","price": "$4.000"},
+                {"name": "Matcha latte","desc": "Té verde pulverizado alto en antioxidantes, L-teanina y leche","price": "$4.400"},
+                {"name": "Matcha chai latte","desc": "Matcha especiada con jengibre, canela, cardamomo, pimienta, aromatizado con vainilla y leche","price": "$4.400"},
+                {"name": "Chai Latte","desc": "Té especiada con canela, cardamomo, pimienta y leche texturizada","price": "$4.400"},
+                {"name": "Chocolate caliente espeso","desc": "60ml de chocolate liberté, 200ml de leche y marshmallow","price": "$4.900"},
+                {"name": "Chocolate caliente","desc": "30ml de chocolate liberté y 200ml de leche","price": "$4.400"},
+                {"name": "Té orgánico variedades","desc":"","price": "$3.000"},
+                {"name": "", "desc":"<br>", "price": ""},
+                {"name": " ❄ CAFÉ HELADO", "desc":"<hr>", "price": ""},
+                {"name": "Ice latte","desc": "Espresso, leche, hielo","price": "$3.600"},
+                {"name": "Ice americano","desc": "Espresso, agua y hielo","price": "$3.000"},
+                {"name": "Ice flat white","desc": "Doble espresso, leche y hielo","price": "$3.700"},
+                {"name": "Ice matcha latte","desc": "Té especiada con canela, cardamomo, pimienta y leche texturizada y hielo","price": "$4.500"},
+                {"name": "Espresso tonic","desc": "Doble extracción de café, tónica, hielo","price": "$3.900"},
+                {"name": "Espresso naranja","desc": "25-30 ml de extracción de café, naranja, hielo","price": "$4.200"},
+                {"name": "Café helado","desc": "25-30 ml de extracción de café, helado de vainilla, leche, crema batida y syrup de chocholate","price": "$5.200"},
+                {"name": "Frappuccino","desc": "Café, leche, hielo y crema","price": "$4.700"},
+                {"name": "Affogato","desc": "Doble espresso y helado de vainilla","price": "$4.200"},
+                {"name": "Cold brew","desc": "Extracción en frio de café que se realiza durante un periodo de tiempo entre 12 y 24 horas","price": "$3.600"},
+                {"name": "Cold brew maracuya","desc": "Extracción en frío de café que se realiza durante un periodo de tiempo entre 12 y 24 horas con maracuya","price": "$4.100"}
+                ,{"name": "", "desc":"<hr>", "price": ""},
+                {"name": "Extras","desc": "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema","price": "$700"},
+                {"name": "Agregado extracción de café","desc": "","price": "$600"}
+            ],
+            pasteleria:[ 
+            {"name": "Medialuna argentina","desc": "","price": "$2.000"},
+            {"name": "Medialuna rellena","desc": "Con pastelera o dulce de leche","price": "$2.400"},
+            {"name": "Medialuna de jamón y queso","desc": "","price": "$3.200"},
+            {"name": "Porción budín/queque","desc": "","price": "$2.900"},
+            {"name": "Cookir variedades o sin azúcar.","desc": "","price": "$2.300"},
+            {"name": "2 Scones de queso","desc": "","price": "$3.200"},
+            {"name": "Porción de trufas","desc": "","price": "$2.500"},
+            {"name": "Rollo de canela","desc": "","price": "$3.200"},
+            {"name": "Alfajor de maicena","desc": "","price": "$2.600"},
+            {"name": "Alfajor de coco","desc": "","price": "2.600"},
+            {"name": "Brownie","desc": "","price": "$3.200"},
+            {"name": "Brownie con helado","desc": "","price": "$4.900"},
+            {"name": "Banoffee","desc": "","price": "$4.900"},
+            {"name": "Chocotorta","desc": "","price": "$4.200"},
+            {"name": "Cheescake","desc": "","price": "$4.900"},
+            {"name": "Carrot cake","desc": "","price": "$4.900"},
+            {"name": "Lemon pie","desc": "","price": "$4.900"},
+            {"name": "Porción de torta","desc": "","price": "$4.900"},
+            {"name": "Porción de frutas de estación","desc": " con dip de miel","price": "$4.000"},
+            {"name": "vengancito","desc": "","price": "$3.600"},
+            {"name": "Bowl Ipanema","desc": "Acai, arándanos, fruta de la estación, plátano, granola, coco y mantequilla de mani","price": "$6.900"},
+            {"name": "Bowl natural","desc": "Yogurt natural, granola, frutas de estación y miel","price": "$6.600"},
+            {"name": "Bowl porridge invernales","desc": "Avena integral cocida en leche vegetal con manzana.canela y nueces, con topping de frutas,  agave y coco","price": "$6.600"},
+            {"name": "Rawnie clásico o naranja","desc": "Caramelo de naranja crunchy a base de mantequilla de maní sobre bizcocho de dátiles y cacao cubierto de chocolate bitter","price": "$2.900"},
+            {"name": "Caluga","desc": "Suave nougat de nuez y dátiles con toques de vainilla, café y coco, cubierto con chocolate bitter y topping de nuez crocante","price": "$2.900"}
+            ],
+            juice:[ 
+            {"name": "Vitamina naranja","desc": "","price": "$4.500"},
+            {"name": "Limonada menta y jengibre","desc": "","price": "$4.500"},
+            {"name": "Jugo natural de frutas","desc": "","price": "$4.500"},
+            {"name": "Licuado de frutas con leche","desc": "","price": "$4.900"},
+            {"name": "","desc": "<br>","price": ""},
+            {"name": "BEBIDAS","desc": "<hr>","price": ""},
+            {"name": "Agua con o sin gas","desc": "","price": "$2.300"},
+            {"name": "Agua tónica","desc": "","price": "$2.300"},
+            {"name": "Bebida","desc": "","price": "$2.300"},
+            {"name": "Kombucha","desc": "","price": "$4.000"},
+
+            ],
+            toast:[ 
+                { name: "Tostadas clásica", desc: "Tostadas masa madre, con mermelada o dulce de leche y mantequilla o queso crema", price: "$3.800" },
+                { name: "Tostadas con palta", desc: "Tostadas masa madre, con semillas y palta", price: "$4.900" },
+                { name: "Tostadas francesas Nutella", desc: "Tostadas masa madre, Nutella, frutos rojos, plátano o ambos", price: "$6.900" },
+                { name: "Tostadas francesas frutales", desc: "Tostadas masa madre, frutas de estación, azúcar flor, dip de miel", price: "$6.500"},
+                { name: "Tostón avocado", desc: "Pan hogaza de masa madre, palta y huevos pochados/revueltos (opcional con salsa holandesal)", price: "$6.900" },
+                { name: "Tostón hummus", desc: "Pan hogaza de masa madre, hummus, palta, tomates frescos y pesto", price: "$6.300" },
+                { name: "Tostón salmón", desc: "Pan hogaza de masa madre, palta, huevos revueltos y salmon", price: "$7,300" },
+                {"name":"Porción de torta cabsha","desc":"","price":"$4.900"},
+                {"name":"Tostada proteíca","desc":"Tostada de masa madre, mantequilla de maní, frutos rojos, plátanos o ambos y mix de semillas.","price":"$6.500"},
+                {"name":"Tostada babaganoush","desc":" Pasta a base de puré de berenjenas y tomates cherry acompañado de tostadas de masa madre para untar.","price":"$6.000"},
+                { name: "", desc: "** Opción pan sin gluten $2.000", price: "" }
+            ],
+            sandwiches:[ 
+                {name:"Prensado",desc:"Pan ciabatta de masa madre con mantequilla especiada, jamon y queso.",price:"$5.900"},
+                {name:"Ave palta",desc:"Pan ciabatta de masa madre, pechuga de pollo, mayonesa, palta.",price:"$7.900"},
+                {name:"Ave pimentón",desc:"Pan ciabatta de masa madre, pechuga de pollo y pimenton asado.",price:"$7.900"},
+                {name:"Pastrami",desc:"Tostada masa madre, pastrami, dressing de mostaza miel, encurtidos y rúcula.",price:"$9.000"},
+                {name:"Croque madame",desc:"tostada masa madre, jamón, queso, queso parmesano gratinado y huevo frito.",price:"$9.900"},
+                {name:"Veggie sandwich",desc:"Pan ciabatta de masa madre,queso fundido, tomate asado y pesto.",price:"$6.900"},
+                {name:"Vegan sandwich",desc:"Pan ciabatta de masa madre,hummus, tomate asado, champiñones y mix verde.",price:"$7.200"},
+                {name:"*Opción pan ciabatta masa madre",desc:"",price:"$1.000"},
+                {name:"**Opción pan sin gluten",desc:"",price:"$2.000"}
+            ],
+            omelette:[
+                {name:"Paila de huevos revueltos.",desc:"",price:"$4.900"},
+                {name:"Paila de huevos revueltos más agregado a elección.",desc:"Con tomate / Jamón / Tocino / Queso / Champiñones",price:"$6.300"},
+                {name:"Omelette de jamón y queso con ensalada.",desc:"",price:"$6.600"},
+                {name:"*Todas las pailas vienen con tostadas masa madre",desc:"",price:""},
+                {name:"**Opción pan sin gluten",desc:"",price:"$2.000"},
+                {name:"<hr>",desc:"extras",price:"<br>"},
+                {name:"Tostadas masa madre",desc:"",price:"$1.600"},
+                {name:"Palta",desc:"",price:"$2.500"},
+                {name:"Jamón",desc:"",price:"$1.700"},
+                {name:"Queso",desc:"",price:"$1.700"},
+                {name:"Hummus",desc:"",price:"$1.700"},
+                {name:"Dulce de leche o mermelada",desc:"",price:"$1.500"},
+                {name:"Tocino",desc:"",price:"$2.000"},
+                {name:"Queso crema",desc:"",price:"$1.800"},
+                {name:"Dos huevos revueltos",desc:"",price:"$2.200"},
+                {name:"Salmón ahumado",desc:"",price:"$4.500"}
+            ],
+            lunch:[
+                {name:"Bowl de mar",desc:"Mix de hojas verdes, láminas de samón ahumado, pepino fresco, cubos de palta, semillas de zapallo tostadas, dressing ácida de Eneldo.",price:"$9.500"},
+                {name:"Bowl tabule",desc:"Mix de quinoa, tomate en cubos, perejil, pepino en cubo, dressing.",price:"$8.900"},
+                {name:"Bowl prosciutto",desc:"Rúcula y mix de hojas verdes, jámon serrano, gajos de naranja a vivo, nueces garrapiñadas, dressing de aceto bálsamico y miel.",price:"$8.500"},
+                {name:"Panzottis espinaca o zapallo",desc:"Pasta rellena acompañada de salsa pomodoro o rose.",price:"$8.900"},
+                {name:"Panzottis salmón",desc:"Pasta rellena acompañada de salsa pomodoro o rose.",price:"$9.800"},
+                {name:"Fettuccine al huevo o espinaca",desc:"Pasta acompañada de salsa pomodoro o rose.",price:"$8.900"},
+                {name:"Ñoquis",desc:"Acompañados de salsa pomodoro o rose.",price:"$8.900"},
+                {name:"Pollo y verduras asadas",desc:"Pechuga de pollo grillada con limón, acompañado de mix de verduras asadas.",price:"$8.500"},
+                {name:"Wok de pollo",desc:"Pollo salteado con verduras, soya y arroz.",price:"$8.500"},
+                {name:"Wrap de pollo",desc:"Pollo braseado con queso, verduras asadas, mix de hojas verdes y salsa BBQ.",price:"$8.500"},
+                {name:"Milanesa de berenjena",desc:"Berenjena apanada acompañada con mix de verdes o puré de papas.",price:"$8.900"},
+                {name:"Milanesa de carne o pollo",desc:"Carne o pollo apanada acompañada con mix de verdes o puré de papas.",price:"$10.900"},
+                {name:"Milanesa de carne o pollo a la napolitana",desc:"Carne o pollo apanada cubierta con salsa de tomate, queso, jamón, acompañada con mix de verdes o puré de papas.",price:"$12.900"},
+                {name:"Hojas de Parra",desc:"Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre colchón de hummus y babaganoush, tomates cherries marinados en menta.",price:"$12.900"},
+                {name:"Mila club sandwich",desc:"Pan ciabatta de masa madre, milanesa de carne o pollo, tomate, lechuga, jamón, queso, huevo frito, lactonesa.",price:"$12.500"},
+                {name:"Promo almuerzo",desc:"Plato fondo a elección (almuerzos, excluye mila napolitana, hojas de parra, panzotti salmón, bowl de mar y mila club sandwich), trufa del día y espreso o té orgánico a elección.",price:"$9.900"}
+            ],
+            croissant:[
+                {name:"Croissant pastelera",desc:"Relleno con crema pastelera plátano o frutilla.",price:"$5.900"},
+                {name:"Croissant split",desc:"Relleno con dulce de leche, plátano o frutilla.",price:"$5.900"},
+                {name:"Croissant nutella",desc:"Relleno con nutella, plátano o frutilla.",price:"$6.900"},
+                {name:"Croissant de campo",desc:"Relleno con huevos revueltos, palta, jamón y queso.",price:"$7.200"},
+                {name:"Croissant jamón y queso",desc:"Relleno con jámon y queso.",price:"$4.900"},
+                {name:"Croissant prosciutto",desc:"Relleno con jamón serrano, rúcula, tomate, queso crema y ciboulette.",price:"$7.900"},
+                {name:"Croissant de mar",desc:"Relleno con salmón ahumado, rúcula, palta, queso crema y alcaparras.",price:"$10.500"},
+                {name:"*Opción en pan ciabatta masa madre",desc:"",price:"$1.000"},
+                {name:"Waffle split",desc:"Con dulce de leche, plátano o frutilla y crema batida.",price:"$5.900"},
+                {name:"Waffle nutella",desc:"Con nutella, plátano o frutilla y crema batida.",price:"$6.900"},
+                {name:"Waffle frutal",desc:"Con frutas de estación y crema batida.",price:"$5.900"},
+                {name:"Waffle con helado",desc:"con helado de vainilla, pláatano o frutilla.",price:"$6.900"},
+                {name:"*Opción pan sin gluten",desc:"",price:"$2.000"},
+            ],
+            breakfast:[
+                {name:"Promo clásica",desc:"Café simple o té orgánico, jugo del día y tostadas clásicas.",price:"$7.900"},
+                {name:"Promo avocado",desc:"Café simple o té orgánico, jugo del día y avocado a elección (pochados o revueltos).",price:"$10.900"},
+                {name:"Promo argento 1",desc:"Café simple o té orgánico, jugo del día y dos medialunas.",price:"$7.700"}, 
+                {name:"Promo argento 2",desc:"Café simple o té orgánico, jugo del día y un croissant de jamón y queso.",price:"$8.800"}, 
+                {name:"Promo bowl",desc:"Café simple o té orgánico, jugo del día y bowl dulce a elección.",price:"$11.200"}, 
+                {name:"Promo prensado",desc:"Café simple o té orgánico, jugo del día y prensado jamón y queso.",price:"$10.400"},
+                {name:"Promo paila",desc:"Café simple o té orgánico, jugo del día y paila de huevos a elección.",price:"$9.500"},
+                {name:"Promo dulce",desc:"Café simple o té orgánico, jugo del día y porción de torta.",price:"$8.900"},
+                {name:"Promo tentación",desc:"Café simple o té orgánico, jugo del día, croissant o waffle dulce a elección.",price:"$10.900"},
+                {name:"Brunch individual",desc:"Café simple o té orgánico, jugo del día, mini bowl natural, huevos revueltos, jamón, queso, palta y tostadas pan masa madre.",price:"$15.500"}, 
+                {name:"Brunch para dos",desc:"Dos café simple o té orgánico, dos jugos del día, huevos revueltos, jamón, queso y palta, tostadas pan masa madre, una porción de torta, dos medialunas, dip de dulce de leche y frutas de estación",price:"$28.000"},
+                {name:"Brunch vegano para dos",desc:"Dos café simple o té orgánico con leche vegetal, dos jugos del día, dos rawnie veganos, palta, hummus, babaganoush, dip de tomate cherry, tostadas de pan masa madre y frutas de estación.",price:"$25.500"},
+                {name:"*Opción pan sin gluten",desc:"",price:"$2.000"}
+            ],
+            tapita:[
+                {name:"Árabe",desc:"Hojitas de parra o veggie, tostones con aceite de oliva y zatar, dip de hummus y dip de babaganoush.",price:"$7.500"},
+                {name:"Queso",desc:"Trilogia de queso y pan de masa madre.",price:"$7.500"}
+            ]
+
+        }
+        mapeo["favs"] = localFavs
+        console.log(mapeo)
+        allData.map((a,i)=>{
+            let nameClase = 'nav-link text-white'
+            a=='lunch' && hour >= 12 ? nameClase = 'nav-link text-white active' : ''
+            a=='lunch' && hour >= 16 ? nameClase = 'nav-link text-black disabled' : ''
+
+            a=='breakfast' && hour < 12 ? nameClase = 'nav-link text-white active' : ''
+            a=='tapita' && hour >= 16 ? nameClase = 'nav-link text-white active' : ''
+
+            document.getElementById('tabsMenu').innerHTML += `
+            <li class="nav-item">
+                        <a class="${nameClase}" data-bs-toggle="pill" href="#tab-${i+1}">${nameOfData[a]}</a>
+                    </li>
+            `
+        })
+        
+        allData.map((a,i)=>{
+            let nameClase = 'tab-pane fade show p-0'
+
+            a=='lunch' && hour >= 12 ? nameClase = 'tab-pane fade show p-0 active' : ''
+            a=='lunch' && hour >= 16 ? nameClase = 'tab-pane fade show p-0' : ''
+
+            a=='breakfast' && hour < 12 ? nameClase = 'tab-pane fade show p-0 active ' : ''
+            a=='tapita' && hour >= 16 ? nameClase = 'tab-pane fade show p-0 active' : ''
+            
+            document.getElementById('tabContentHTML').innerHTML += `
+            <div id="tab-${i+1}" class="${nameClase}">
+                        <h4>${nameOfData[a]}</h4>
+                        <hr>
+                        <div class="container" id="${a}HTML"></div>
+                    </div>
+            `
+
+        })
+        
         allData.map(a=>{
             const ss = mapeo[a]
             const label = document.getElementById(`${a}HTML`)
             const aa = []
+            console.log(a)
+            if(a=='favs'){
+                ss.map(s=>{
+                    console.log(s)
+                    label.innerHTML += `
+                        <strong class="title">${s}</strong>
+                        <br>
+                        `
+                })
+            }else{
             ss.map(xx=>{
                         label.innerHTML += `
                         <div class="cards">
                             <div class="item">
                                 <div class="topname">
-                                    <strong class="title">${xx.name}</strong>
+                                    <strong onclick="handleEdit(event)" class="title">${localFavs.includes(xx.name) ? '⭐' : ''} ${xx.name}</strong>
                                     <p class="price">${xx.price}</p>
                                 </div>
                                 <p class="description">${xx.desc}</p>
@@ -244,52 +417,50 @@
                         </div>
                         `
                     })
-            getDocs(collection(db, a))
-                .then(res=>{
-                    res.forEach(item=>{
-                        let value = item.data()
-                        aa.push(value)
-                    })
-                    console.log(aa)
-                    if(aa.length === 0){
-                        label.innerHTML = ``
-                        ss.map(xx=>{
-                        label.innerHTML += `
-                        <div class="cards">
-                            <div class="item">
-                                <div class="topname">
-                                    <strong class="title">${xx.name}</strong>
-                                    <p class="price">${xx.price}</p>
-                                </div>
-                                <p class="description">${xx.desc}</p>
-                            </div>
-                        </div>
-                        `
-                    })
-                    }else{
-                        label.innerHTML = ``
-                        aa.map(xx=>{
-                        label.innerHTML += `
-                        <div class="cards">
-                            <div class="item">
-                                <div class="topname">
-                                    <strong class="title">${xx.name}</strong>
-                                    <p class="price">${xx.price}</p>
-                                    </div>
-                                <p class="description">${xx.desc}</p>
-                            </div>
-                        </div>
-                        `
-                    })
-                }
-                })
-            console.log(label)
+            // getDocs(collection(db, a))
+            //     .then(res=>{
+            //         res.forEach(item=>{
+            //             let value = item.data()
+            //             aa.push(value)
+            //         })
+            //         console.log(aa)
+            //         if(aa.length === 0){
+            //             label.innerHTML = ``
+            //             ss.map(xx=>{
+            //             label.innerHTML += `
+            //             <div class="cards">
+            //                 <div class="item">
+            //                     <div class="topname">
+            //                         <strong class="title">${xx.name}</strong>
+            //                         <p class="price">${xx.price}</p>
+            //                     </div>
+            //                     <p class="description">${xx.desc}</p>
+            //                 </div>
+            //             </div>
+            //             `
+            //         })
+            //         }else{
+            //             label.innerHTML = ``
+            //             aa.map(xx=>{
+            //             label.innerHTML += `
+            //             <div class="cards">
+            //                 <div class="item">
+            //                     <div class="topname">
+            //                         <strong class="title">${xx.name}</strong>
+            //                         <p class="price">${xx.price}</p>
+            //                         </div>
+            //                     <p class="description">${xx.desc}</p>
+            //                 </div>
+            //             </div>
+            //             `
+            //         })
+            //     }
+            //     })
+            // console.log(label)
+        }
         })
-    
-    
-    </script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+
+        </script>
 </body>
 
 </html>
@@ -300,18 +471,22 @@
 .title{
     font-weight: bold;
     font-size: 16px;
+    text-align: start;
     margin-bottom: 0px;
     color: black;
 }
 .item{
     width: 100%;
+    gap: 4px;
 }
 .description{
     text-align: start;
+    width: 80%;
 }
 .topname{
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 .price{
     margin-bottom: 0px;

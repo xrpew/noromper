@@ -1,13 +1,16 @@
 /********** Template CSS **********/
 :root {
-    --primary: #212121;
-    --secondary: #FAF3EB;
-    --light: #EEEDE3;
-    --dark: #2B2825;
+    --primary: #515151;
+    --secondary: #efeee4;
+    --light: #efeee4;
+    --dark: #1b1b1b;
+}
+html, body{
+    background-color: rgb(237, 237, 227);
 }
 
 .font-secondary {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1,
@@ -121,7 +124,9 @@ h6,
     max-width: 500px;
 }
 .hero-header{
+    height: 90vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -319,7 +324,7 @@ h6,
 }
 
 .tarjera{
-    border: 1px solid #212121;
+    border: 1px solid #515151;
     display: flex;
     flex-direction: row;
     max-width: 485px;
