@@ -35,7 +35,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-bicycle fs-1 text-white me-3"></i>El pasaje</h1>
+            <h1 class="m-0 text-uppercase text-white">El pasaje</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -87,11 +87,11 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <form name="pasajeNarrativas" method="POST" data-netlify="true">
+                    <form name="pasajeNarrativas" method="POST" data-netlify="true" netlify-honeypot="bot-field"> 
                         <div class="row g-3">
-                            <p class="hidden">
+                            <p style="display: none;">
                                 <label>
-                                  Don’t fill this out if you’re human: <input name="bot-field" netlify-honeypot="bot-field" />
+                                  Don’t fill this out if you’re human: <input name="bot-field"/>
                                 </label>
                               </p>
                             <div class="col-sm-6">
@@ -116,31 +116,6 @@
             
             <br><br>
 
-            <div class="container">
-                <div class="row g-5 mb-5">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="bg-primary border-inner text-center text-white p-5">
-                            <i class="bi bi-geo-alt fs-1 text-white"></i>
-                            <h6 class="text-uppercase my-2">Estamos en:</h6>
-                            <span>9 Norte, 907. Viña del Mar </span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="bg-primary border-inner text-center text-white p-5">
-                            <i class="bi bi-envelope-open fs-1 text-white"></i>
-                            <h6 class="text-uppercase my-2">Nuestro email</h6>
-                            <span>contacto@elpasaje.cl</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="bg-primary border-inner text-center text-white p-5">
-                            <i class="bi bi-phone-vibrate fs-1 text-white"></i>
-                            <h6 class="text-uppercase my-2">Whatsapp</h6>
-                            <span>+012 345 6789</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Contact End -->
     <div class="container-fluid text-secondary py-4" style="background: #111111;">
@@ -152,10 +127,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
