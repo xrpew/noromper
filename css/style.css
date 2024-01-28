@@ -264,7 +264,7 @@ h6,
 }
 
 .bg-offer {
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/offer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1706461252/elpasaje/_DSC5015_htz7ds.jpg) center center no-repeat;
     background-size: cover;
 }
 
