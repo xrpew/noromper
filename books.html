@@ -5,23 +5,26 @@
     <meta charset="utf-8">
     <title>El Pasaje</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta name="keywords"
+        content="cafetería, café, barista, desayuno, brunch, pastelería, etoastidad en café, café de etoastidad, bebidas de café, música, libros, lectura agradable, ambiente acogedor">
+    <meta name="description"
+        content="Disfruta de una experiencia única en nuestra cafetería. Ofrecemos café de etoastidad, deliciosos desayunos y brunch, así como una variada selección de pastelería fresca. Nuestro ambiente acogedor es perfecto para disfrutar de momentos relajados con amigos. ¡Ven y descubre el placer de un buen café con nossandwiches!">
+
+    <link href="https://fonts.googleapis.com/css2?family=Senkron:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="https://elpasaje.cl/wp-content/themes/themeElPasaje/assets/images/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,10 +34,11 @@
 </head>
 
 <body>
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white  d-flex justify-content-center align-items-center">Libros</h1>
+            <h1 class="m-0 text-uppercase text-white">El Pasaje</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -44,25 +48,51 @@
                 <a href="index.html" class="nav-item nav-link">principal</a>
                 <a href="menu.html" class="nav-item nav-link">carta</a>
                 <a href="books.html" class="nav-item nav-link active">libros</a>
-                <!-- <a href="books.html" class="nav-item nav-link disabled">tienda</a> -->
+                <a href="sessions.html" class="nav-item nav-link">sesiones</a>
                 <a href="contact.html" class="nav-item nav-link">escribamos juntos</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <div style="display: flex;
-    flex-wrap: wrap;
-    justify-content: center;">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-01.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-02.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-03.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-04.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-05.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-06.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-07.jpg" alt="">
-        <img style="width: 375px;" src="https://elpasaje.cl/wp-content/uploads/2023/11/Catalogo-Libros-08.jpg" alt="">
+    <div class="container-fluid about py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-3" style="max-width: 600px;">
+                <h1 id='knowYour' class="display-4 text-uppercase">Todos nuestros libros</h1>
+                <span>Explora todas las secciones que hemos preparado detalladamente para ti</span>
+            </div>
+            <div class="tab-class text-center">
+                <ul id="tabsMenu"
+                    class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                </ul>
+                <div class="tab-content" id="tabContentHTML">
+
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-img text-secondary" style="margin-top: 135px">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-12 col-md-6">
+                    <div class="row gx-5">
+                        <div style="display: flex; justify-content: center; padding: 8px;">
+                            <p>¿Ya dejaste tu <a href="contact.html">relato?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#knowYour" class="btn btn-secondary back-to-top">🚲</a>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -70,10 +100,164 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script type="module">
+        let now = new Date();
+        let hour = now.getHours()
+        const allData = ["ensayos", "filosofía", "ilustraciones", "narrativa", "novela", "poesia"]
+        const nameOfData = { ensayos: "Ensayos", filosofía: "Filosofía", ilustraciones: "Ilustraciones", narrativa: "Narrativa", novela: "Novela", poesia: "Poesía" }
+        const mapeo = {
+            ensayos: [
+                {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""},
+                {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
+                {name: "Orgullo y prejuicio",description: "Jane Austen",price: ""},
+                {name: "El código Da Vinci",description: "Dan Brown",price: ""},
+                {name: "El amor en los tiempos del cólera",description: "Gabriel García Márquez",price: ""},
+                {name: "1984",description: "George Orwell",price: ""},
+                {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
+                {name: "Cien años de soledad",description: "Gabriel García Márquez",price: ""},
+
+            ],
+            filosofía: [
+                {name: "Cien años de soledad",description: "Gabriel García Márquez",price: ""},
+                {name: "1984",description: "George Orwell",price: ""},
+                {name: "El amor en los tiempos del cólera",description: "Gabriel García Márquez",price: ""},
+                {name: "El código Da Vinci",description: "Dan Brown",price: ""},
+                {name: "Orgullo y prejuicio",description: "Jane Austen",price: ""},
+                {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
+                {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
+                {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""}
+            ],
+            ilustraciones: [
+                {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""},
+                {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
+                {name: "Orgullo y prejuicio",description: "Jane Austen",price: ""},
+                {name: "El código Da Vinci",description: "Dan Brown",price: ""},
+                {name: "El amor en los tiempos del cólera",description: "Gabriel García Márquez",price: ""},
+                {name: "1984",description: "George Orwell",price: ""},
+                {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
+                {name: "Cien años de soledad",description: "Gabriel García Márquez",price: ""},
+
+            ],
+            narrativa: [
+                {name: "Cien años de soledad",description: "Gabriel García Márquez",price: ""},
+                {name: "1984",description: "George Orwell",price: ""},
+                {name: "El amor en los tiempos del cólera",description: "Gabriel García Márquez",price: ""},
+                {name: "El código Da Vinci",description: "Dan Brown",price: ""},
+                {name: "Orgullo y prejuicio",description: "Jane Austen",price: ""},
+                {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
+                {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
+                {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""}
+            ],
+            novela: [
+                {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""},
+                {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
+                {name: "Orgullo y prejuicio",description: "Jane Austen",price: ""},
+                {name: "El código Da Vinci",description: "Dan Brown",price: ""},
+                {name: "El amor en los tiempos del cólera",description: "Gabriel García Márquez",price: ""},
+                {name: "1984",description: "George Orwell",price: ""},
+                {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
+                {name: "Cien años de soledad",description: "Gabriel García Márquez",price: ""},
+            ],
+            poesia: [
+                {name: "Cien años de soledad",description: "Gabriel García Márquez",price: ""},
+                {name: "1984",description: "George Orwell",price: ""},
+                {name: "El amor en los tiempos del cólera",description: "Gabriel García Márquez",price: ""},
+                {name: "El código Da Vinci",description: "Dan Brown",price: ""},
+                {name: "Orgullo y prejuicio",description: "Jane Austen",price: ""},
+                {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
+                {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
+                {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""}
+            ]
+        }
+        allData.map((a, i) => {
+            let nameClase = 'nav-link text-white'
+            a == 'poesia' && hour >= 12 && hour < 16 ? nameClase = 'nav-link text-white active' : ''
+
+            a == 'filosofia' && hour < 12 ? nameClase = 'nav-link text-white active' : ''
+            a == 'novela' && hour >= 16 ? nameClase = 'nav-link text-white active' : ''
+
+            document.getElementById('tabsMenu').innerHTML += `
+            <li class="nav-item">
+                        <a class="${nameClase}" data-bs-toggle="pill" href="#tab-${i + 1}">${nameOfData[a]}</a>
+                    </li>
+            `
+        })
+
+        allData.map((a, i) => {
+            let nameClase = 'tab-pane fade show p-0'
+
+            a == 'poesia' && hour >= 12 ? nameClase = 'tab-pane fade show p-0 active' : ''
+            a == 'poesia' && hour >= 16 ? nameClase = 'tab-pane fade show p-0' : ''
+
+            a == 'filosofia' && hour < 12 ? nameClase = 'tab-pane fade show p-0 active ' : ''
+            a == 'novela' && hour >= 16 ? nameClase = 'tab-pane fade show p-0 active' : ''
+
+            document.getElementById('tabContentHTML').innerHTML += `
+            <div id="tab-${i + 1}" class="${nameClase}">
+                        <h4>${nameOfData[a]}</h4>
+                        <hr>
+                        <div class="container" id="${a}HTML"></div>
+                    </div>
+            `
+
+        })
+
+        allData.map(a => {
+            const ss = mapeo[a]
+            const label = document.getElementById(`${a}HTML`)
+            const aa = []
+            console.log(a)
+            ss.map(xx => {
+                label.innerHTML += `
+                        <div class="cards">
+                            <div class="item">
+                                <div class="topname">
+                                    <strong class="title">${xx.name}</strong>
+                                    <p class="price">${xx.price}</p>
+                                </div>
+                                <p class="description">${xx.description}</p>
+                            </div>
+                        </div>
+                        `
+            })
+        })
+    </script>
 </body>
 
 </html>
+<style>
+    .cards {
+        display: flex;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 16px;
+        text-align: start;
+        margin-bottom: 0px;
+        color: black;
+    }
+
+    .item {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .description {
+        text-align: start;
+        width: 80%;
+    }
+
+    .topname {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .price {
+        margin-bottom: 0px;
+
+    }
+</style>

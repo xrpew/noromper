@@ -1,16 +1,26 @@
 /********** Template CSS **********/
+@font-face {
+    font-family: 'Senkron';
+    src: url('./gurup-studyo-senkron-blokbold.otf') format('opentype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real de tu fuente */
+    /* Puedes agregar otras fuentes aquí, como bold, italic, etc. */
+    font-family: 'Senkron Bold';
+    src: url('./gurup-studyo-senkron-bold.otf') format('opentype');
+}
 :root {
     --primary: #515151;
     --secondary: #efeee4;
     --light: #efeee4;
     --dark: #1b1b1b;
 }
+*{
+    letter-spacing: 1.5px;
+}
 html, body{
     background-color: rgb(237, 237, 227);
 }
 
 .font-secondary {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Varta', sans-serif;
 }
 
 h1,
@@ -32,7 +42,7 @@ h6,
 }
 
 .btn {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Senkron Bold', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -95,7 +105,7 @@ h6,
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Senkron Bold', sans-serif;
     padding: 30px 15px;
     font-size: 18px;
     font-weight: 500;
@@ -263,8 +273,19 @@ h6,
     background-size: cover;
 }
 
-.bg-offer {
+.bg-index {
     background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1706461252/elpasaje/_DSC5015_htz7ds.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+.bg-offer {
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1707599731/elpasaje/_DSC3998_xxioj9.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-sessions {
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1707599882/elpasaje/36_ahckxn.jpg) center center no-repeat;
     background-size: cover;
 }
 

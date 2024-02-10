@@ -45,37 +45,26 @@
                 <a href="index.html" class="nav-item nav-link">principal</a>
                 <a href="menu.html" class="nav-item nav-link">carta</a>
                 <a href="books.html" class="nav-item nav-link">libros</a>
-                <a href="sessions.html" class="nav-item nav-link">sesiones</a>
-                <a href="contact.html" class="nav-item nav-link active">escribamos juntos</a>
+                <a href="sessions.html" class="nav-item nav-link active">sesiones</a>
+                <a href="contact.html" class="nav-item nav-link">escribamos juntos</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
-    <div class="container-fluid bg-offer my-5 py-5">
+    <div class="container-fluid bg-sessions my-5 py-5">
         <div class="container py-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-7 ">
                     <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
-                        <h2 class="font-secondary" style="color: rgb(255, 197, 122);">Inspírate y...</h2>
-                        <h1 class="display-4 text-uppercase text-white">Escribamos juntos este pasaje
+                        <h2 class="font-secondary" style="color: rgb(255, 197, 122);">Entérate de todas...</h2>
+                        <h1 class="display-4 text-uppercase text-white">Nuestras sesiones pasajeras
                         </h1>
                     </div>
-                    <p class="text-white mb-4">El pasaje no es un lugar, es un estado, una zona, un tránsito. Imagina escribir todo lo que sueñas o piensas sin ningún detenimiento o razonamiento lógico, de eso se trata la escritura automática, de eso se trata esta invitación.
-                         <br> <br> Sé parte del primer volumen de “Colección pasajera, nuestros registros, nuestras voces” enviando un relato a través del formulario que se encuentra más abajo.
+                    <p class="text-white mb-4">
+                        Aquí es donde nos juntamos todos los meses a descubrir artistas y canciones que nos permitan escapar del ruido de la ciudad, en un encuentro que denominamos sesiones pasajeras. 
+                        Todas nuestras actividades quedan registradas y grabadas, para que todos y todas puedan disfrutarlas en nuestro canal de <b><a target="_blank" style="color: red;" href="https://www.youtube.com/@sesionespasajeras">Youtube</a></b>
                     </p>
-                    <p class="text-white mb-4">Instrucciones:
-                        <br>
-                        1.- Escribe
-                        <br>
-                        2.- El dictado de un pensamiento.
-                        <br>
-                        3.- En ausencia de todo control ejercido por la razón.
-                        <br>
-                        4.- Fuera de toda preocupación estética y moral.
-                        <br>
-                        5.- Envia.
-                        <br>
-                        6.- Sé parte de este libro colectivo.</p>
+
                 </div>
             </div>
         </div>
@@ -86,29 +75,24 @@
         <div class="container-fluid contact position-relative px-5" style="margin-top: 90px;">
 
             <div class="row justify-content-center">
+                <h2 class="text-primary font-secondary">Aparta tu lugar...</h2>
+
                 <div class="col-lg-6">
                     <form name="pasajeNarrativas" method="POST" data-netlify="true" netlify-honeypot="bot-field"> 
                         <div class="row g-3">
                             <p style="display: none;">
                                 <label>
-                                  Don’t fill this out if you’re human: <input name="bot-field"/>
+                                  Fill this out if you’re human: <input name="bot-field"/>
                                 </label>
                               </p>
                             <div class="col-sm-6">
                                 <input type="text" name="nombre" required class="form-control bg-light border-0 px-4" placeholder="Tu nombe" style="height: 55px;">
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" name="correo" class="form-control bg-light border-0 px-4" placeholder="Email (opcional)" style="height: 55px;">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="checkbox" name="tos" required >
-                                <label for="tos">Autorizo a publicar el relato</label>
+                                <input maxlength="13" type="number" name="correo" required class="form-control bg-light border-0 px-4" placeholder="+56 9 1234 5678" style="height: 55px;">
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" name="titulo" required class="form-control bg-light border-0 px-4" placeholder="Título del tu relato" style="height: 55px;">
-                            </div>
-                            <div class="col-sm-12">
-                                <textarea name="relado" required class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="Tu relato comienza acá..."></textarea>
+                                <input type="text" name="titulo" class="form-control bg-light border-0 px-4" placeholder="Artista" style="height: 55px;">
                             </div>
                             <div class="col-sm-12">
                                 <button class="btn btn-primary border-inner w-100 py-3" type="submit">Enviar</button>
