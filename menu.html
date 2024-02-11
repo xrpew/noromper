@@ -64,6 +64,7 @@
             <div class="tab-class text-center">
                 <ul id="tabsMenu"
                     class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">                 
+                    <li>Cargando..</li>
                 </ul>
                 <div class="tab-content" id="tabContentHTML">
                     
@@ -348,6 +349,8 @@
         }
         mapeo["favs"] = localFavs
         console.log(mapeo)
+        document.getElementById('tabsMenu').innerHTML =''
+
         allData.map((a,i)=>{
             let nameClase = 'nav-link tabsMenucss text-white'
             a=='lunch' && hour >= 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
@@ -355,7 +358,6 @@
 
             a=='breakfast' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             a=='tapita' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
-
             document.getElementById('tabsMenu').innerHTML += `
             <li class="nav-item">
                         <a class="${nameClase}" data-bs-toggle="pill" href="#tab-${i+1}">${nameOfData[a]}</a>
