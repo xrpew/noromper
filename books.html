@@ -182,7 +182,19 @@
                 })
             }
             document.getElementById("findHTML").innerHTML = ``
-            e.target.value == '' ? '' :
+            e.target.value == '' ? 
+            document.getElementById("findHTML").innerHTML += `
+            <div class="cards">
+                            <div class="item">
+                                <div class="topname">
+                                    <strong class="title">Realiza una busqueda</strong>
+                                    <p class="price">📖</p>
+                                </div>
+                                <p class="description"></p>
+                            </div>
+                        </div>
+            `
+            :
             busqueda.map(a=>{
             document.getElementById("findHTML").innerHTML += `
             <div class="cards">
