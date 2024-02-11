@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>El Pasaje</title>
+    <title>El Pasaje | Libros</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
         content="cafetería, café, barista, desayuno, brunch, pastelería, etoastidad en café, café de etoastidad, bebidas de café, música, libros, lectura agradable, ambiente acogedor">
@@ -14,7 +14,6 @@
 
     <!-- Favicon -->
     <link href="https://elpasaje.cl/wp-content/themes/themeElPasaje/assets/images/favicon.ico" rel="icon">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,6 +63,7 @@
             <div class="tab-class text-center">
                 <ul id="tabsMenu"
                     class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                    <li>Cargando..</li>
                 </ul>
                 <div class="tab-content" id="tabContentHTML">
 
@@ -173,16 +173,14 @@
             for (values in mapeoUP){
                 mapeoUP[values].map(a=>{
                     if(((a.name).toLowerCase()).includes(e.target.value)){
-                        console.log((a.name), values, a.description)
-                        busqueda.push(a)
+                        busqueda.push({...a, estilo:values})
                     }else if(((a.description).toLowerCase()).includes(e.target.value)){
-                        console.log((a.name), values, a.description)
-                        busqueda.push(a)
+                        busqueda.push({...a, estilo:values})
                     }
                 })
             }
             document.getElementById("findHTML").innerHTML = ``
-            e.target.value == '' ? 
+            if(e.target.value == ''){ 
             document.getElementById("findHTML").innerHTML += `
             <div class="cards">
                             <div class="item">
@@ -194,20 +192,31 @@
                             </div>
                         </div>
             `
-            :
+                    }else if(busqueda.length > 0){
             busqueda.map(a=>{
             document.getElementById("findHTML").innerHTML += `
             <div class="cards">
                             <div class="item">
                                 <div class="topname">
                                     <strong class="title">${a.name}</strong>
-                                    <p class="price">${a.price}</p>
+                                    <p class="price">${a.estilo}</p>
                                 </div>
                                 <p class="description">${a.description}</p>
                             </div>
                         </div>
             `
-            })
+            })}else{
+                document.getElementById("findHTML").innerHTML += `
+            <div class="cards">
+                            <div class="item">
+                                <div class="topname">
+                                    <strong class="title">No pudimos encontrar tu libro</strong>
+                                    <p class="price">📖</p>
+                                </div>
+                                <p class="description">Si te gustaría hacer una donación, habla con el personal :)</p>
+                            </div>
+                        </div>
+            `}
         }
     </script>
 
@@ -279,8 +288,13 @@
                 {name: "La sombra del viento",description: "Carlos Ruiz Zafón",price: ""},
                 {name: "Harry Potter y la piedra filosofal",description: "J.K. Rowling",price: ""},
                 {name: "Crónica de una muerte anunciada",description: "Gabriel García Márquez",price: ""}
+            ],
+            find: [
+                {name: "Realiza una busqueda", description:"", price:"📖"}
             ]
         }
+        document.getElementById('tabsMenu').innerHTML =''
+
         allData.map((a, i) => {
             let nameClase = 'nav-link tabsMenucss text-white'
             a == 'poesia' && hour >= 12 && hour < 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
