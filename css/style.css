@@ -344,6 +344,11 @@ h6,
     background-size: cover;
 }
 
+.tabsMenucss{
+    border: 1px solid white !important;
+    margin: 4px;
+}
+
 .tarjera{
     border: 1px solid #515151;
     display: flex;

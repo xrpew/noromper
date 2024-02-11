@@ -349,12 +349,12 @@
         mapeo["favs"] = localFavs
         console.log(mapeo)
         allData.map((a,i)=>{
-            let nameClase = 'nav-link text-white'
-            a=='lunch' && hour >= 12 ? nameClase = 'nav-link text-white active' : ''
-            a=='lunch' && hour >= 16 ? nameClase = 'nav-link text-black disabled' : ''
+            let nameClase = 'nav-link tabsMenucss text-white'
+            a=='lunch' && hour >= 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
+            a=='lunch' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
 
-            a=='breakfast' && hour < 12 ? nameClase = 'nav-link text-white active' : ''
-            a=='tapita' && hour >= 16 ? nameClase = 'nav-link text-white active' : ''
+            a=='breakfast' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
+            a=='tapita' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
 
             document.getElementById('tabsMenu').innerHTML += `
             <li class="nav-item">

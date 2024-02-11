@@ -172,11 +172,11 @@
             ]
         }
         allData.map((a, i) => {
-            let nameClase = 'nav-link text-white'
-            a == 'poesia' && hour >= 12 && hour < 16 ? nameClase = 'nav-link text-white active' : ''
+            let nameClase = 'nav-link tabsMenucss text-white'
+            a == 'poesia' && hour >= 12 && hour < 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
 
-            a == 'filosofia' && hour < 12 ? nameClase = 'nav-link text-white active' : ''
-            a == 'novela' && hour >= 16 ? nameClase = 'nav-link text-white active' : ''
+            a == 'filosofia' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
+            a == 'novela' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
 
             document.getElementById('tabsMenu').innerHTML += `
             <li class="nav-item">
