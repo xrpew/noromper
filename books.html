@@ -169,18 +169,19 @@
         }
         function handleChange (e) {
             let busqueda = []
-            console.log(e.target.value);
+            let palabraEscrita = (e.target.value.toLowerCase())
+            console.log(palabraEscrita);
             for (values in mapeoUP){
                 mapeoUP[values].map(a=>{
-                    if(((a.name).toLowerCase()).includes(e.target.value)){
+                    if(((a.name).toLowerCase()).includes(palabraEscrita)){
                         busqueda.push({...a, estilo:values})
-                    }else if(((a.description).toLowerCase()).includes(e.target.value)){
+                    }else if(((a.description).toLowerCase()).includes(palabraEscrita)){
                         busqueda.push({...a, estilo:values})
                     }
                 })
             }
             document.getElementById("findHTML").innerHTML = ``
-            if(e.target.value == ''){ 
+            if(palabraEscrita == ''){ 
             document.getElementById("findHTML").innerHTML += `
             <div class="cards">
                             <div class="item">
@@ -199,7 +200,7 @@
                             <div class="item">
                                 <div class="topname">
                                     <strong class="title">${a.name}</strong>
-                                    <p class="price">${a.estilo}</p>
+                                    <p class="price">${a.es}</p>
                                 </div>
                                 <p class="description">${a.description}</p>
                             </div>
