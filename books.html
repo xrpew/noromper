@@ -662,17 +662,19 @@
             let busqueda = []
             let palabraEscrita = (e.target.value.toLowerCase())
             console.log(palabraEscrita);
-            for (values in mapeoUP){
-                mapeoUP[values].map(a=>{
-                    if(((a.name).toLowerCase()).includes(palabraEscrita)){
-                        busqueda.push({...a, estilo:values})
-                    }else if(((a.author).toLowerCase()).includes(palabraEscrita)){
-                        busqueda.push({...a, estilo:values})
-                    }
-                })
+            if(palabraEscrita.length >= 3){
+                for (values in mapeoUP){
+                    mapeoUP[values].map(a=>{
+                        if(((a.name).toLowerCase()).includes(palabraEscrita)){
+                            busqueda.push({...a, estilo:values})
+                        }else if(((a.author).toLowerCase()).includes(palabraEscrita)){
+                            busqueda.push({...a, estilo:values})
+                        }
+                    })
+                }
             }
             document.getElementById("findHTML").innerHTML = ``
-            if(palabraEscrita == ''){ 
+            if(palabraEscrita.length < 3){ 
             document.getElementById("findHTML").innerHTML += `
             <div class="cards">
                             <div class="item">
