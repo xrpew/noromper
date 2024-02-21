@@ -172,8 +172,9 @@
         // export const db = getFirestore(app);
         let localFavs = localStorage.getItem('elpasaje')
         localFavs = JSON.parse(localFavs)
-        const allData = ["coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
+        const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
         const nameOfData = {
+            allMenu:"CARTA COMPLETA",
             coffe: "CAFETERÍA", pasteleria: "PASTELERÍA Y BOWLS", juice: "JUGOS, LICUADOS Y BEBIDAS", toast: "TOSTADAS", sandwiches: "SÁNDWICHES", omelette: "PAILAS Y OMELLETTE", lunch: "ALMUERZOS",
             croissant: "CROISSANT Y WAFLES", breakfast: "DESAYUNOS Y MERIENDAS", tragos: "TRAGOS", tapita: "TAPITA  SUGERIDA", favs: "FAVORITOS"
         }
@@ -258,7 +259,7 @@
                 { name: "Tostadas con palta", description: "Tostadas masa madre, con semillas y palta", price: "$5.900" },
                 { name: "Tostadas francesas nutella", description: "Tostadas masa madre, Nutella, frutos rojos, plátano o ambos", price: "$6.900" },
                 { name: "Tostadas francesas frutales", description: "Tostadas masa madre, frutas de estación, azúcar flor, dip de miel", price: "$6.500" },
-                { name: "Tostón avocado", description: "Pan hogaza de masa madre, palta y huevos pochados/revueltos (opcional con salsa holandesa)", price: "$6.900" },
+                { name: "Tostón avocado", description: "Pan hogaza de masa madre, palta y huevos revueltos (opcional con salsa holandesa)", price: "$6.900" },
                 { name: "Tostón hummus", description: "Pan hogaza de masa madre, hummus, palta, tomates frescos y pesto", price: "$6.300" },
                 { name: "Tostón salmón", description: "Pan hogaza de masa madre, palta, huevos revueltos y salmón", price: "$7,900" },
                 { name: "Tostada proteica", description: "Tostada de masa madre, mantequilla de maní, frutos rojos, plátanos o ambos y mix de semillas", price: "$6.500" },
@@ -314,8 +315,7 @@
                 { name: "Mila club sandwich", description: "Pan ciabatta de masa madre, milanesa de carne o pollo, tomate, lechuga, jamón, queso, huevo frito, lactonesa", price: "$12.500" },
                 { name: "Promo almuerzo", description: "Plato fondo a elección (almuerzos, excluye mila napolitana, hojas de parra, panzotti salmón, bowl de mar y mila club sandwich), trufa del día y espreso o té orgánico a elección", price: "$9.900" },
                 { name: "", description: "* Promo almuerzo (de lunes a viernes de 12:30 a 16:00 hrs)", price: "" }
-            ]
-            ,
+            ],
             croissant: [
                 { name: "Croissant pastelera", description: "Relleno con crema pastelera plátano o frutilla.", price: "$5.900" },
                 { name: "Croissant split", description: "Relleno con dulce de leche, plátano o frutilla.", price: "$5.900" },
@@ -334,16 +334,16 @@
             ],
             breakfast: [
                 { name:"",description:"PROMOS HASTA LAS 11:30 Y BRUNCH TODO EL DÍA",price:""},
-                { name: "Promo clásica", description: "Café simple o té orgánico, jugo del día y tostadas clásicas.", price: "$7.900" },
-                { name: "Promo avocado", description: "Café simple o té orgánico, jugo del día y avocado a elección (pochados o revueltos).", price: "$10.900" },
-                { name: "Promo argento 1", description: "Café simple o té orgánico, jugo del día y dos medialunas.", price: "$7.700" },
-                { name: "Promo argento 2", description: "Café simple o té orgánico, jugo del día y un croissant de jamón y queso.", price: "$8.800" },
-                { name: "Promo bowl", description: "Café simple o té orgánico, jugo del día y bowl dulce a elección.", price: "$11.200" },
-                { name: "Promo prensado", description: "Café simple o té orgánico, jugo del día y prensado jamón y queso.", price: "$10.400" },
-                { name: "Promo paila", description: "Café simple o té orgánico, jugo del día y paila de huevos a elección.", price: "$9.500" },
-                { name: "Promo dulce", description: "Café simple o té orgánico, jugo del día y porción de torta.", price: "$8.900" },
-                { name: "Promo tentación", description: "Café simple o té orgánico, jugo del día, croissant o waffle dulce a elección.", price: "$10.900" },
-                { name: "Brunch individual", description: "Café simple o té orgánico, jugo del día, mini bowl natural, huevos revueltos, jamón, queso, palta y tostadas pan masa madre.", price: "$15.500" },
+                { name: "Promo clásica", description: "Café simple o té orgánico, jugo del día y tostadas clásicas", price: "$7.900" },
+                { name: "Promo avocado", description: "Café simple o té orgánico, jugo del día y tostón avocado", price: "$10.900" },
+                { name: "Promo argento 1", description: "Café simple o té orgánico, jugo del día y dos medialunas", price: "$7.700" },
+                { name: "Promo argento 2", description: "Café simple o té orgánico, jugo del día y un croissant de jamón y queso", price: "$8.800" },
+                { name: "Promo bowl", description: "Café simple o té orgánico, jugo del día y bowl dulce a elección", price: "$11.200" },
+                { name: "Promo prensado", description: "Café simple o té orgánico, jugo del día y prensado jamón y queso", price: "$10.400" },
+                { name: "Promo paila", description: "Café simple o té orgánico, jugo del día y paila de huevos a elección", price: "$9.500" },
+                { name: "Promo dulce", description: "Café simple o té orgánico, jugo del día y porción de torta", price: "$8.900" },
+                { name: "Promo tentación", description: "Café simple o té orgánico, jugo del día, croissant o waffle dulce a elección", price: "$10.900" },
+                { name: "Brunch individual", description: "Café simple o té orgánico, jugo del día, mini bowl natural, huevos revueltos, jamón, queso, palta y tostadas pan masa madre", price: "$15.500" },
                 { name: "Brunch para dos", description: "Dos café simple o té orgánico, dos jugos del día, huevos revueltos, jamón, queso y palta, tostadas pan masa madre, una porción de torta, dos medialunas, dip de dulce de leche y frutas de estación", price: "$28.000" },
                 { name: "Brunch vegano para dos", description: "Dos café simple o té orgánico con leche vegetal, dos jugos del día, dos rawnie veganos, palta, hummus, babaganoush, dip de tomate cherry, tostadas de pan masa madre, dip de mantequilla de maní y frutas de estación", price: "$25.500" },
                 { name: "*Opción pan sin gluten", description: "", price: "$2.000" }
@@ -370,6 +370,8 @@
             a == 'lunch' && hour >= 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             a == 'lunch' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
 
+            a == 'tragos' && hour < 18 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
+
             a == 'breakfast' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             a == 'tapita' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             document.getElementById('tabsMenu').innerHTML += `
@@ -390,8 +392,9 @@
 
             document.getElementById('tabContentHTML').innerHTML += `
             <div id="tab-${i + 1}" class="${nameClase}">
-                        <h4>${nameOfData[a]}</h4>
+                        ${a !== 'allMenu' ? `<h4>${nameOfData[a]}</h4>
                         <hr>
+                        ` : '' }
                         <div class="container" id="${a}HTML"></div>
                     </div>
             `
@@ -411,7 +414,37 @@
                         <br>
                         `
                 })
-            } else {
+            }else if(a=='allMenu'){
+                for (let x in mapeo) {
+                    console.log(hour)
+                    let isBlocked
+                    let isDrikBloked
+                    hour > 16 ? isBlocked = 'lunch' : ''
+                    hour < 18 ? isDrikBloked = 'tragos' : ''
+
+                    if(x!='favs' && x!=isBlocked && x!=isDrikBloked){
+                        label.innerHTML +=`
+                        <br>
+                        <h4>${nameOfData[x]}</h4>
+                        <hr>
+                        `
+                console.log(x)
+                mapeo[x].map(xx => {
+                    label.innerHTML+=`
+                    <div class="cards">
+                        <div class="item">
+                            <div class="topname">
+                                    <strong onclick="handleEdit(event)" class="title">${localFavs.includes(xx.name) ? '⭐' : ''} ${xx.name}</strong>
+                                    <p class="price">${xx.price}</p>
+                                    </div>
+                                <p class=description>${xx.description}</p>
+                            </div>
+                        </div>
+                        
+                        `
+                    })
+                }
+            }} else {
                 ss.map(xx => {
                     label.innerHTML += `
                         <div class="cards">
