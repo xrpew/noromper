@@ -228,7 +228,7 @@
                 { name: "Brownie con helado", description: "", price: "$4.900" },
                 { name: "Banoffee", description: "", price: "$4.900" },
                 { name: "Chocotorta", description: "", price: "$4.200" },
-                { name: "Cheescake", description: "", price: "$4.900" },
+                { name: "Cheesecake", description: "", price: "$4.900" },
                 { name: "Carrot cake", description: "", price: "$4.900" },
                 { name: "Lemon pie", description: "", price: "$4.900" },
                 { name: "Porción de torta", description: "", price: "$5.300" },
@@ -437,7 +437,7 @@
                                     <strong onclick="handleEdit(event)" class="title">${localFavs.includes(xx.name) ? '⭐' : ''} ${xx.name}</strong>
                                     <p class="price">${xx.price}</p>
                                     </div>
-                                <p class=description>${xx.description}</p>
+                                <p class=description>${(xx.description).toLocaleLowerCase()}</p>
                             </div>
                         </div>
                         
@@ -453,7 +453,7 @@
                                     <strong onclick="handleEdit(event)" class="title">${localFavs.includes(xx.name) ? '⭐' : ''} ${xx.name}</strong>
                                     <p class="price">${xx.price}</p>
                                 </div>
-                                <p class=description>${xx.description}</p>
+                                <p class=description>${(xx.description).toLocaleLowerCase()}</p>
                             </div>
                         </div>
                         `
