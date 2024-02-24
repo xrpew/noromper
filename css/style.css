@@ -274,18 +274,18 @@ h6,
 }
 
 .bg-index {
-    background: linear-gradient(rgba(43, 40, 37, .7), rgba(0, 0, 0, 1)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1708474089/elpasaje/bg-pasaje_vjkwum.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .7), rgba(0, 0, 0, 1)), url(../img/bg-pasaje.jpg) center center no-repeat;
     background-size: cover;
 }
 
 
 .bg-offer {
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1707599731/elpasaje/_DSC3998_xxioj9.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/_DSC3891.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .bg-sessions {
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(https://res.cloudinary.com/dk9rpe8la/image/upload/v1707599882/elpasaje/36_ahckxn.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/36.jpg) center center no-repeat;
     background-size: cover;
 }
 
