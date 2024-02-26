@@ -157,20 +157,6 @@
 
     <!-- Template Javascript -->
     <script type="module">
-        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        // import { getFirestore, getDocs, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-        // const firebaseConfig = {
-        //     apiKey: 'AIzaSyBCWgqUpTTpO9Hmz2Ap2k6Z1E_lVPxcE00',
-        //     authDomain: 'res-pas.firebaseapp.com',
-        //     projectId: 'res-pas',
-        //     storageBucket: 'res-pas.appspot.com',
-        //     messagingSenderId: '252527428185',
-        //     appId: '1:252527428185:web:f70147042d334babb5e748',
-        //     measurementId: 'G-E732L2KLBH'
-        // };
-
-        // export const app = initializeApp(firebaseConfig);
-        // export const db = getFirestore(app);
         let localFavs = localStorage.getItem('elpasaje')
         localFavs = JSON.parse(localFavs)
         const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
@@ -222,7 +208,7 @@
                 { name: "Medialuna argentina", description: "", price: "$2.000" },
                 { name: "Medialuna rellena", description: "Con pastelera o dulce de leche", price: "$2.400" },
                 { name: "Medialuna de jamón y queso", description: "", price: "$3.200" },
-                { name: "Porción budín/queque", description: "", price: "$2.900" },
+                { name: "Porción queque", description: "", price: "$2.900" },
                 { name: "Cookie variedades o sin azúcar.", description: "", price: "$2.300" },
                 { name: "Porción de trufas", description: "", price: "$2.500" },
                 { name: "Rollo de canela", description: "", price: "$3.200" },
@@ -237,7 +223,7 @@
                 { name: "Lemon pie", description: "", price: "$4.900" },
                 { name: "Porción de torta", description: "", price: "$5.500" },
                 { name: "Porción de frutas de estación", description: " con dip de miel", price: "$4.300" },
-                { name: "Vengancito", description: "", price: "$3.600" },
+                { name: "Vegancito", description: "", price: "$3.600" },
                 { name: "Bowl Ipanema", description: "Acai, arándanos, fruta de la estación, plátano, granola, coco y mantequilla de mani", price: "$6.900" },
                 { name: "Bowl natural", description: "Yogurt natural, granola, frutas de estación y miel", price: "$6.600" },
                 { name: "Bowl porridge invernal", description: "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas y coco", price: "$6.600" },
