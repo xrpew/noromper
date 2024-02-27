@@ -1,9 +1,15 @@
 const mapeo = {
     teatro:[
-        {name:"La tragedia del lenguaje",author:"Marco Antonio de la Parra"},
-        {name:"El mercader de Venecia",author:"William Shakespeare"},
-        {name:"Parche curita, teatro para la convivencia",author:"Rene Rojas Escalona"},
-        {name:"Romancero gitano",author:"Federico García Lorca"}
+        {name: "Romancero gitano", author: "García Lorca, Federico"},
+        {name: "Parche curita. Teatro para la convivencia", author: "Rojas Escalona, René"},
+        {name: "La tragedia del lenguaje", author: "Parra, Marco Antonio de la"},
+        {name: "El mercader de Venecia y la tragedia de Macbeth", author: "Shakespeare, William"},
+        {name: "Edipo rey y Antígona", author: "Sófocles"},
+        {name: "Todo Ubú", author: "Jarry, Alfred"},
+        {name: "Romeo y Julieta=Romeo and Juliet", author: "Shakespeare, William"},
+        {name: "Arauco domado", author: "Vega, Lope de"},
+        {name: "El alcalde de Zalamea; La vida es sueño", author: "Calderón de la Barca, Pedro"},
+        {name: "Fuenteovejuna", author: "Vega, Lope de"},
     ],
     ensayos: [
 

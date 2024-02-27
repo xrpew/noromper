@@ -157,20 +157,6 @@
 
     <!-- Template Javascript -->
     <script type="module">
-        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        // import { getFirestore, getDocs, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-        // const firebaseConfig = {
-        //     apiKey: 'AIzaSyBCWgqUpTTpO9Hmz2Ap2k6Z1E_lVPxcE00',
-        //     authDomain: 'res-pas.firebaseapp.com',
-        //     projectId: 'res-pas',
-        //     storageBucket: 'res-pas.appspot.com',
-        //     messagingSenderId: '252527428185',
-        //     appId: '1:252527428185:web:f70147042d334babb5e748',
-        //     measurementId: 'G-E732L2KLBH'
-        // };
-
-        // export const app = initializeApp(firebaseConfig);
-        // export const db = getFirestore(app);
         let localFavs = localStorage.getItem('elpasaje')
         localFavs = JSON.parse(localFavs)
         const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
@@ -202,7 +188,10 @@
                 { name: "Ice latte", description: "Espresso, leche, hielo", price: "$3.600" },
                 { name: "Ice americano", description: "Espresso, agua y hielo", price: "$3.200" },
                 { name: "Ice flat white", description: "Doble espresso, leche y hielo", price: "$3.700" },
+                { name: "Ice chai latte", description: "Té especiada con canela, cardamomo, pimienta, leche texturizada y hielo", price: "$4.500" },
+                { name: "Ice chai frambuesa", description: "Té especiada con canela, cardamomo, pimienta, leche texturizada, frambuesa y hielo", price: "$4.700" },
                 { name: "Ice matcha latte", description: "Té verde pulverizado alto en antioxidantes, L-teanina, leche y hielo", price: "$4.600" },
+                { name: "Ice mocha", description: "Doble espresso, leche, chocolate y hielo", price: "$4.500" },
                 { name: "Espresso tonic", description: "Doble extracción de café, tónica, hielo", price: "$4.000" },
                 { name: "Espresso naranja", description: "25-30 ml de extracción de café, naranja, hielo", price: "$4.300" },
                 { name: "Café helado", description: "25-30 ml de extracción de café, helado de vainilla, leche, crema batida y syrup de chocholate", price: "$5.200" },
@@ -219,7 +208,7 @@
                 { name: "Medialuna argentina", description: "", price: "$2.000" },
                 { name: "Medialuna rellena", description: "Con pastelera o dulce de leche", price: "$2.400" },
                 { name: "Medialuna de jamón y queso", description: "", price: "$3.200" },
-                { name: "Porción budín/queque", description: "", price: "$2.900" },
+                { name: "Porción queque", description: "", price: "$2.900" },
                 { name: "Cookie variedades o sin azúcar.", description: "", price: "$2.300" },
                 { name: "Porción de trufas", description: "", price: "$2.500" },
                 { name: "Rollo de canela", description: "", price: "$3.200" },
@@ -232,13 +221,12 @@
                 { name: "Cheesecake", description: "", price: "$4.900" },
                 { name: "Carrot cake", description: "", price: "$4.900" },
                 { name: "Lemon pie", description: "", price: "$4.900" },
-                { name: "Porción de torta", description: "", price: "$5.300" },
-                { name: "Porción de torta cabsha", description: "", price: "$4.900" },
+                { name: "Porción de torta", description: "", price: "$5.500" },
                 { name: "Porción de frutas de estación", description: " con dip de miel", price: "$4.300" },
-                { name: "Vengancito", description: "", price: "$3.600" },
+                { name: "Vegancito", description: "", price: "$3.600" },
                 { name: "Bowl Ipanema", description: "Acai, arándanos, fruta de la estación, plátano, granola, coco y mantequilla de mani", price: "$6.900" },
                 { name: "Bowl natural", description: "Yogurt natural, granola, frutas de estación y miel", price: "$6.600" },
-                { name: "Bowl porridge invernales", description: "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas, agave y coco", price: "$6.600" },
+                { name: "Bowl porridge invernal", description: "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas y coco", price: "$6.600" },
                 { name: "Rawnie clásico o naranja", description: "Caramelo de naranja crunchy a base de mantequilla de maní sobre bizcocho de dátiles y cacao cubierto de chocolate bitter", price: "$2.900" },
                 { name: "Caluga", description: "Suave nougat de nuez y dátiles con toques de vainilla, café y coco, cubierto con chocolate bitter y topping de nuez crocante", price: "$2.900" }
             ],
@@ -262,8 +250,8 @@
                 { name: "Tostadas francesas frutales", description: "Tostadas masa madre, frutas de estación, azúcar flor, dip de miel", price: "$6.500" },
                 { name: "Tostón avocado", description: "Pan hogaza de masa madre, palta y huevos revueltos (opcional con salsa holandesa)", price: "$6.900" },
                 { name: "Tostón hummus", description: "Pan hogaza de masa madre, hummus, palta, tomates frescos y pesto", price: "$6.300" },
-                { name: "Tostón salmón", description: "Pan hogaza de masa madre, palta, huevos revueltos y salmón", price: "$7,900" },
-                { name: "Tostada proteica", description: "Tostada de masa madre, mantequilla de maní, frutos rojos, plátanos o ambos y mix de semillas", price: "$6.500" },
+                { name: "Tostón salmón", description: "Pan hogaza de masa madre, palta, huevos revueltos y salmón ahumado", price: "$7,900" },
+                { name: "Tostada proteica", description: "Tostada de masa madre, mantequilla de maní, frutos rojos, plátano o ambos y mix de semillas", price: "$6.500" },
                 { name: "Tostada babaganoush", description: "Pasta a base de puré de berenjenas y tomates cherry acompañado de tostadas de masa madre para untar", price: "$6.000" },
                 { name: "", description: "** Opción pan sin gluten $2.000", price: "" }
             ],
@@ -274,7 +262,7 @@
                 { name: "Ave palta", description: "Pan ciabatta de masa madre, pechuga de pollo, mayonesa, palta", price: "$7.900" },
                 { name: "Ave pimentón", description: "Pan ciabatta de masa madre, pechuga de pollo y pimenton asado", price: "$7.900" },
                 { name: "Pastrami", description: "Tostada masa madre, pastrami, dressing de mostaza miel, encurtidos y rúcula", price: "$9.000" },
-                { name: "Croque madame", description: "tostada masa madre, jamón, queso, queso parmesano gratinado y huevo frito", price: "$9.900" },
+                { name: "Croque madame", description: "tostada masa madre, jamón, queso, muzzarella gratinado y huevo frito", price: "$9.900" },
                 { name: "Veggie sandwich", description: "Pan ciabatta de masa madre, queso fundido, tomate asado y pesto", price: "$6.900" },
                 { name: "Vegan sandwich", description: "Pan ciabatta de masa madre, hummus, tomate asado, champiñones y mix verde", price: "$7.200" },
                 { name: "*Opción pan ciabatta masa madre", description: "", price: "$1.000" },
@@ -300,7 +288,7 @@
                 { name: "Salmón ahumado", description: "", price: "$4.500" }
             ],
             lunch: [
-                { name: "Bowl de mar", description: "Mix de hojas verdes, láminas de samón ahumado, pepino fresco, cubos de palta, semillas de zapallo tostadas, dressing ácida de eneldo", price: "$9.500" },
+                { name: "Bowl de mar", description: "Mix de hojas verdes, láminas de salmón ahumado, pepino fresco, cubos de palta, semillas de zapallo tostadas, dressing ácida de eneldo", price: "$9.500" },
                 // { name: "Bowl tabule", description: "Mix de quinoa, tomate en cubos, perejil, pepino en cubo, dressing", price: "$8.900" },
                 { name: "Bowl prosciutto", description: "Rúcula y mix de hojas verdes, jámon serrano, gajos de naranja a vivo, nueces garrapiñadas, dressing de aceto balsámico y miel", price: "$8.500" },
                 { name: "Panzottis espinaca o zapallo", description: "Pasta rellena acompañada de salsa pomodoro o rose", price: "$8.900" },
@@ -309,9 +297,9 @@
                 { name: "Ñoquis", description: "Acompañados de salsa pomodoro o rose", price: "$8.900" },
                 { name: "Wok de pollo", description: "Pollo salteado con verduras, soya y arroz", price: "$8.500" },
                 { name: "Wrap de pollo", description: "Pollo braseado con queso, verduras asadas, mix de hojas verdes y salsa BBQ", price: "$8.500" },
-                { name: "Milanesa de berenjena", description: "Berenjena apanada acompañada con mix de verdes o puré de papas", price: "$8.900" },
-                { name: "Milanesa de carne o pollo", description: "Carne o pollo apanada acompañada con mix de verdes o puré de papas", price: "$10.900" },
-                { name: "Milanesa de carne o pollo a la napolitana", description: "Carne o pollo apanada cubierta con salsa de tomate, queso, jamón, acompañada con mix de verdes o puré de papas", price: "$12.900" },
+                { name: "Milanesa de berenjena", description: "Berenjena apanada en avena acompañada con mix de verdes o puré de papas", price: "$8.900" },
+                { name: "Milanesa de carne o pollo", description: "Carne o pollo apanada acompañada con mix de verdes o puré de papas", price: "$12.500" },
+                { name: "Milanesa de carne o pollo a la napolitana", description: "Carne o pollo apanada cubierta con salsa de tomate, queso, jamón, acompañada con mix de verdes o puré de papas", price: "$13.500" },
                 { name: "Hojas de Parra", description: "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre colchón de hummus y babaganoush, tomates cherries marinados en menta", price: "$12.900" },
                 { name: "Mila club sandwich", description: "Pan ciabatta de masa madre, milanesa de carne o pollo, tomate, lechuga, jamón, queso, huevo frito, lactonesa", price: "$12.500" },
                 { name: "Promo almuerzo", description: "Plato fondo a elección (almuerzos, excluye mila napolitana, hojas de parra, panzotti salmón, bowl de mar y mila club sandwich), trufa del día y espreso o té orgánico a elección", price: "$9.900" },
@@ -350,11 +338,11 @@
                 { name: "*Opción pan sin gluten", description: "", price: "$2.000" }
             ],
             tragos:[
-                {name:"Vermú Rosso o Blanco", description: "", price:"$5.500"},
+                {name:"Vermú Rosso o Bianco", description: "", price:"$5.500"},
                 {name:"Campari tonic", description: "", price:"$6.000"},
                 {name:"Negroni", description: "", price:"$6.000"},
-                {name:"Gin Malicioso", description: "", price:"$6.000"},
-                {name:"Penicillin", description: "", price:"$10.000"},
+                {name:"Gin tonic", description: "", price:"$6.000"},
+                // {name:"Penicillin", description: "", price:"$10.000"},
                 {name:"Cerveza Granizo", description: "", price:"$5.200"},
             ],
             tapita: [
