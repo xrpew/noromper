@@ -41,15 +41,16 @@
         <a href="#" class="navbar-brand d-block d-lg-none">
             <h1 class="m-0 text-uppercase text-white">El pasaje</h1>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button onclick="desaparecer()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
+            <span class="notification-dos" id="dot"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto mx-lg-auto py-0">
                 <a href="index.html" class="nav-item nav-link active" data-umami-event="ver-home">principal</a>
                 <a href="menu.html" class="nav-item nav-link" data-umami-event="ver-carta">carta</a>
                 <a href="books.html" class="nav-item nav-link" data-umami-event="ver-libros">libros</a>
-                <a href="sessions.html" class="nav-item nav-link"data-umami-event="ver-sesiones">sesiones</a>
+                <a href="sessions.html" class="nav-item nav-link"data-umami-event="ver-sesiones" style="position: relative;"> <span class="notification-dot"></span>sesiones</a>
                 <a href="contact.html" class="nav-item nav-link" data-umami-event="ver-escribamos-juntos">escribamos juntos</a>
                 <!-- <a href="https://open.spotify.com/user/31xirmw7fuh2fma277kkxpa7pkuy?si=V-E2xtS1ReWbsR-PMeFRtA&nd=1&dlsi=14a69e36e7e349ed" target="_blank" class="nav-item nav-link" data-umami-event="ver-playlist">disfruta nuestra playlist</a> -->
             </div>
@@ -245,7 +246,65 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        function desaparecer(){
+            document.getElementById('dot').style.display = 'none'
+        }
+    </script>
 
 </body>
 
 </html>
+
+<style>
+.notification-dot {
+    position: absolute;
+    top: 34%;
+    right: 8%;
+    width: 8px;
+    height: 8px;
+    background-color: #fd7e14;
+    border-radius: 50%;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 0; /* Invisible en los primeros y últimos momentos */
+    }
+    50%, 99% {
+        opacity: 1; /* Visible en el punto medio de la animación */
+    }
+}
+.notification-dot {
+    opacity: 1; /* Hacemos visible el punto flotante al activar el enlace */
+    animation: blink 1s 3; /* Repetimos la animación 5 veces */
+}
+
+
+
+
+.notification-dos {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 8px;
+    height: 8px;
+    background-color: #fd7e14;
+    border-radius: 50%;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 0; /* Invisible en los primeros y últimos momentos */
+    }
+    50%, 99% {
+        opacity: 1; /* Visible en el punto medio de la animación */
+    }
+}
+.notification-dos {
+    opacity: 1; /* Hacemos visible el punto flotante al activar el enlace */
+    animation: blink 1s 3; /* Repetimos la animación 5 veces */
+}
+</style>
