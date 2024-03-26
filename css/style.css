@@ -278,6 +278,10 @@ h6,
     background-size: cover;
 }
 
+.bg-success {
+    background: linear-gradient(rgba(43, 40, 37, .7), rgba(0, 0, 0, 1)), url(../img/gentesesion.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .bg-offer {
     background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/_DSC3891.jpg) center center no-repeat;

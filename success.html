@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>El Pasaje | Sesiones </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- UMAMI -->
+    <script defer src="https://eu.umami.is/script.js" data-website-id="c46acf79-2d97-4b4b-b1b3-c8fedf409d8c"></script>
+
+    <!-- Favicon -->
+    <link href="./img/favcon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="root">
+
+    <div class="container-fluid bg-success pt-5">
+        <div class="container py-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-7 ">
+                    <div class="position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
+                        <h1 class="display-4 text-uppercase text-white">¡Tu lugar está confirmado!
+                        </h1>
+                        <p class="text-white mb-4 font-bold" style="text-align: justify";>
+                        
+                            <br>
+                            SE SUGIERE LLEGAR A LAS 18.30 HRS
+                            <br>
+                            <br>
+                            LA SESIÓN ES A LAS 19.30 HRS EN EL SEGUNDO PISO
+                            <br>
+                            <br>
+                            PEDIMOS PUNTUALIDAD YA QUE UNA VEZ QUE EMPIECE LA MÚSICA, NO SE PODRÁ SUBIR
+                        </p>
+                        
+                        <br>
+                        <button onclick="backToHome()" class="btn btn-primary border-inner py-3 px-5" style="width: fit-content;">volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header End -->
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 4px;">
+        <a target="_blank" href="https://www.youtube.com/@sesionespasajeras">
+            <img style="width: 100%; max-width: 550px;" src="./img/IRALCANALA.png" alt="">
+        </a>    
+    </div>
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        var backToHome = ()=>{
+            document.getElementById('root').innerText = 'cargando..'
+            window.location.href = '/'
+        }
+    </script>
+</body>
+
+</html>
