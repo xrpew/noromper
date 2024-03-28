@@ -159,11 +159,13 @@
     <script type="module">
         let localFavs = localStorage.getItem('elpasaje')
         localFavs = JSON.parse(localFavs)
-        const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
+        const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tapita", "favs"]
+        // const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
         const nameOfData = {
             allMenu:"CARTA COMPLETA",
             coffe: "CAFETERÍA", pasteleria: "PASTELERÍA Y BOWLS", juice: "JUGOS, LICUADOS Y BEBIDAS", toast: "TOSTADAS", sandwiches: "SÁNDWICHES", omelette: "PAILAS Y OMELLETTE", lunch: "ALMUERZOS",
-            croissant: "CROISSANT Y WAFLES", breakfast: "DESAYUNOS Y MERIENDAS", tragos: "TRAGOS", tapita: "TAPITA  SUGERIDA", favs: "FAVORITOS"
+            croissant: "CROISSANT Y WAFLES", breakfast: "DESAYUNOS Y MERIENDAS", tapita: "TAPITA  SUGERIDA", favs: "FAVORITOS"
+            // croissant: "CROISSANT Y WAFLES", breakfast: "DESAYUNOS Y MERIENDAS", tragos: "TRAGOS", tapita: "TAPITA  SUGERIDA", favs: "FAVORITOS"
         }
         const mapeo = {
             coffe: [
@@ -338,14 +340,14 @@
                 { name: "Brunch vegano para dos", description: "Dos café simple o té orgánico con leche vegetal, dos jugos del día, dos rawnie veganos, palta, hummus, babaganoush, dip de tomate cherry, tostadas de pan masa madre, dip de mantequilla de maní y frutas de estación", price: "$25.500" },
                 { name: "*Opción pan sin gluten", description: "", price: "$2.000" }
             ],
-            tragos:[
-                {name:"Vermú Rosso o Bianco", description: "", price:"$5.500"},
-                {name:"Campari tonic", description: "", price:"$6.000"},
-                {name:"Negroni", description: "", price:"$6.000"},
-                {name:"Gin tonic", description: "", price:"$6.000"},
-                // {name:"Penicillin", description: "", price:"$10.000"},
-                {name:"Cerveza Granizo", description: "", price:"$5.200"},
-            ],
+            // tragos:[
+            //     {name:"Vermú Rosso o Bianco", description: "", price:"$5.500"},
+            //     {name:"Campari tonic", description: "", price:"$6.000"},
+            //     {name:"Negroni", description: "", price:"$6.000"},
+            //     {name:"Gin tonic", description: "", price:"$6.000"},
+            //     // {name:"Penicillin", description: "", price:"$10.000"},
+            //     {name:"Cerveza Granizo", description: "", price:"$5.200"},
+            // ],
             tapita: [
                 { name: "Árabe", description: "Hojitas de parra carne o veggie, tostones con aceite de oliva y zatar, dip de hummus y dip de babaganoush", price: "$7.500" },
                 { name: "Trilogía de quesos", description: "azul, cabra, parmesano y pan de masa madre", price: "$7.500" }
