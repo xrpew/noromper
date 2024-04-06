@@ -83,11 +83,12 @@
             </div>
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img loading="lazy" class="w-100 h-100"
-                            src="img/pasajeAbril.jpeg"
-                            style="object-fit: cover;">
-                    </div>
+                    <div class="carrousell position-relative w-100 h-100">
+                        <div class="grande">
+                            <img style="width: 45%;" src="img/sess2.jpeg" alt="imagen1" class="img" />
+                            <img style="width: 45%;" src="img/sess1.jpeg" alt="imagen1" class="img" />
+                        </div>
+                      </div>
                 </div>
                 <div class="col-lg-6">
                     <h4 class="mb-4">Reserva tu lugar</h4>
@@ -105,7 +106,9 @@
                                 <input maxlength="13" type="number" name="numero" required class="form-control bg-light border-0 px-4" placeholder="+56 9 1234 5678" style="height: 55px;">
                             </div>
                             <div class="col-sm-12">
-                                <select class="form-control bg-light border-0 px-4" name="artista" id="artista">
+                                <select required class="form-control bg-light border-0 px-4" name="artista" id="artista">
+                                    <option value="" disabled selected>Selecciona tu preferida</option>
+                                    <option value="La Triple Nelson">La Triple Nelson</option>
                                     <option value="Seba y Julio">Seba Alfaro & Julio Piña</option>
                                 </select>
                                 <!-- <input type="text" name="artista" disabled class="form-control bg-light border-0 px-4" placeholder="Artista" style="height: 55px;" value="Santi Wirth"> -->
@@ -143,3 +146,37 @@
 </body>
 
 </html>
+<style>
+    .carrousell{
+        width: 100%;
+        /* padding: 1em; */
+        background-color: rgba(177, 189, 193, 0.456);
+        overflow: hidden;
+    }
+    .carrousell .grande{
+        width: 200%;
+        height: 100%;
+        /* background-color: orange; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        transition: all .5s ease;
+        transform: translateX(0%);
+        animation: animacion 8s infinite;
+        align-items: center;
+    }
+    @keyframes animacion {
+        0%{transform: translateX(0%);}
+        20%{transform: translateX(0%);}
+        25%{transform: translateX(-50%)}
+        70%{transform: translateX(-50%)}
+        75%{transform: translateX(0%)}
+        100%{transform: translateX(0%);}
+  
+    }
+    .carrousell .img{
+        width: calc(100%/2);
+        /* padding: 1em; */
+        margin: .4em;
+    }
+  </style>
