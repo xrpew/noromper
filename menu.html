@@ -130,7 +130,7 @@
         function handleEdit(event) {
             favs = JSON.parse(favs)
             let name = event.target.innerText
-            if (name.split(' ')[0][0] == '*' | name.split(' ')[0][0] == '❄') {
+            if (name.split(' ')[0][0] == '*' | name.split(' ')[0][0] == '❄' | name.split(' ')[0][0] == '☕') {
                 favs = JSON.stringify(favs)
                 return
             }
@@ -162,12 +162,11 @@
     <script type="module">
         let localFavs = localStorage.getItem('elpasaje')
         localFavs = JSON.parse(localFavs)
-        const allData = ["allMenu", "coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tapita", "brunch", "favs"]
-        // const allData = ["allMenu","coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "tragos", "tapita", "favs"]
+        const allData = ["allMenu", "coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "brunch", "favs"]
         const nameOfData = {
             allMenu: "CARTA COMPLETA",
             coffe: "CAFETERÍA", pasteleria: "PASTELERÍA Y BOWLS", juice: "JUGOS, LICUADOS Y BEBIDAS", toast: "TOSTADAS", sandwiches: "SÁNDWICHES", omelette: "PAILAS Y OMELLETTE", lunch: "ALMUERZOS",
-            croissant: "CROISSANT Y WAFLES", breakfast: "DESAYUNOS Y MERIENDAS", tapita: "TAPITA  SUGERIDA", brunch: "BRUNCH", favs:"FAVORITOS"
+            croissant: "CROISSANT Y WAFLES", breakfast: "DESAYUNOS", brunch: "BRUNCH", favs:"FAVORITOS"
         }
         const mapeo = {
             coffe: [
@@ -203,11 +202,11 @@
                 { name: "", description: "<br>", price: "" },
                 { name: "☕ FILTRADOS", description: "<hr>", price: "chemex / v60" },
                 { name: "Papayo", description: "Es un Colombia Huila Palestina de proceso HONEY, secado a 120 hrs la sol. Sus notas de chocolate, berries, anís y canela. Ptje SCA. 87.5 Ptos.", price: "" },
-                { name: "La colombia", description: "s un Colombia Antioquia de proceso NATURAL ANAERÓBICO secado la sol. Sus notas son Maracuyá, Durazno, Chocolate y licoroso. Ptje SCA. 87 PTS", price: "" },
-                { name: "Pink bourbon", description: "Es un Colombia Huila Palestina, proceso FULLY WASHED. Sus notas son frutas amarillas, caramelo, cítrico y floral. Ptje SCA. 86.5 PTS", price: "" },
-
+                { name: "La Colombia", description: "s un Colombia Antioquia de proceso NATURAL ANAERÓBICO secado la sol. Sus notas son Maracuyá, Durazno, Chocolate y licoroso. Ptje SCA. 87 PTS", price: "" },
+                { name: "Pink Bourbon", description: "Es un Colombia Huila Palestina, proceso FULLY WASHED. Sus notas son frutas amarillas, caramelo, cítrico y floral. Ptje SCA. 86.5 PTS", price: "" },
+                { name: "Honduras", description: "de Las Capucas, Copan, de proceso lavado. Sus notas son avellana, miel y clementina. Ptje SCA 84 pts", price: "" },
                 { name: "<br>", description: "<hr>", price: "" },
-                { name: "Vaso de cookie", description: "solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", price: "$2000" },
+                { name: "Vaso de cookie", description: "solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", price: "$2.000" },
                 { name: "Extras", description: "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema", price: "$700" },
                 { name: "Agregado extracción de café", description: "", price: "$600" },
             ],
@@ -321,7 +320,6 @@
                 { name: "Waffle con helado", description: "con helado de vainilla, plátano o frutilla.", price: "$6.900" },
             ],
             breakfast: [
-                { name: "", description: "PROMOS HASTA LAS 11:30 Y BRUNCH TODO EL DÍA", price: "" },
                 { name: "Promo clásica", description: "Café simple o té orgánico, jugo del día y tostadas clásicas", price: "$7.900" },
                 { name: "Promo avocado", description: "Café simple o té orgánico, jugo del día y tostón avocado", price: "$10.900" },
                 { name: "Promo argento 1", description: "Café simple o té orgánico, jugo del día y dos medialunas", price: "$7.700" },
@@ -346,11 +344,6 @@
             //     // {name:"Penicillin", description: "", price:"$10.000"},
             //     {name:"Cerveza Granizo", description: "", price:"$5.200"},
             // ],
-            tapita: [
-                { name: "Árabe", description: "Hojitas de parra carne o veggie, tostones con aceite de oliva y zatar, dip de hummus y dip de babaganoush", price: "$7.500" },
-                { name: "Trilogía de quesos", description: "azul, cabra, parmesano y pan de masa madre", price: "$7.500" }
-            ]
-
         }
         mapeo["favs"] = localFavs
         document.getElementById('tabsMenu').innerHTML = ''
@@ -363,11 +356,11 @@
             a == 'tragos' && hour < 18 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
 
             a == 'breakfast' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
-            a == 'tapita' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
+            a == 'coffe' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             document.getElementById('tabsMenu').innerHTML += `
             <li class="nav-item">
-                        <a class="${nameClase}" data-bs-toggle="pill" href="#tab-${i + 1}">${nameOfData[a]}</a>
-                    </li>
+                <a class="${nameClase}" data-bs-toggle="pill" href="#tab-${i + 1}">${nameOfData[a]}</a>
+            </li>
             `
         })
 
@@ -378,12 +371,15 @@
             a == 'lunch' && hour >= 16 ? nameClase = 'tab-pane fade show p-0' : ''
 
             a == 'breakfast' && hour < 12 ? nameClase = 'tab-pane fade show p-0 active ' : ''
-            a == 'tapita' && hour >= 16 ? nameClase = 'tab-pane fade show p-0 active' : ''
+            a == 'coffe' && hour >= 16 ? nameClase = 'tab-pane fade show p-0 active' : ''
 
             document.getElementById('tabContentHTML').innerHTML += `
             <div id="tab-${i + 1}" class="${nameClase}">
                         ${a !== 'allMenu' ? `<h4>${nameOfData[a]}</h4>
                         ${a == 'lunch' ? '<span>de 13 a 16 hrs</span>' : ''}
+                        ${a == 'breakfast' ? '<span>hasta las 11.30</span>' : ''}
+                        ${a == 'omelette' ? '<span>de 9 a 13 / de 16 a 21.30</span>' : ''}
+                        ${a == 'toast' ? '<span>de 9 a 13 / de 16 a 21.30</span>' : ''}
                         <hr>
                         ` : ''}
                         <div class="container" id="${a}HTML"></div>
@@ -450,46 +446,6 @@
                         </div>
                         `
                 })
-                // getDocs(collection(db, a))
-                //     .then(res=>{
-                //         res.forEach(item=>{
-                //             let value = item.data()
-                //             aa.push(value)
-                //         })
-                //         console.log(aa)
-                //         if(aa.length === 0){
-                //             label.innerHTML = ``
-                //             ss.map(xx=>{
-                //             label.innerHTML += `
-                //             <div class="cards">
-                //                 <div class="item">
-                //                     <div class="topname">
-                //                         <strong class="title">${xx.name}</strong>
-                //                         <p class=price>${xx.price}</p>
-                //                     </div>
-                //                     <p class=description>${xx.description}</p>
-                //                 </div>
-                //             </div>
-                //             `
-                //         })
-                //         }else{
-                //             label.innerHTML = ``
-                //             aa.map(xx=>{
-                //             label.innerHTML += `
-                //             <div class="cards">
-                //                 <div class="item">
-                //                     <div class="topname">
-                //                         <strong class="title">${xx.name}</strong>
-                //                         <p class=price>${xx.price}</p>
-                //                         </div>
-                //                     <p class=description>${xx.description}</p>
-                //                 </div>
-                //             </div>
-                //             `
-                //         })
-                //     }
-                //     })
-                // console.log(label)
             }
         })
 
