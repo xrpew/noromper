@@ -116,57 +116,26 @@
 
 
 
-        function updateFavs(favs) {
-            const label = document.getElementById(`favsHTML`)
-            label.innerHTML = ``
-            favs.map(s => {
-                console.log(s)
-                label.innerHTML += `
-                            <strong class=description>${s}</strong>
-                            <br>
-                            `
-            })
-        }
-        function handleEdit(event) {
-            favs = JSON.parse(favs)
-            let name = event.target.innerText
-            if (name.split(' ')[0][0] == '*' | name.split(' ')[0][0] == '❄' | name.split(' ')[0][0] == '☕') {
-                favs = JSON.stringify(favs)
-                return
-            }
-            else {
-                console.log(name.split(' ')[0][0])
-                if (name.split(' ')[0] !== '⭐') {
-                    console.log('favs add')
-                    event.target.innerText = `⭐ ${name}`
-                    favs.push(name)
-                    updateFavs(favs)
-
-                } else {
-                    let newname = name.split('⭐ ')[1]
-                    event.target.innerText = newname
-                    console.log(favs)
-                    console.log(newname)
-                    favs = favs.filter(a => a !== newname)
-                    updateFavs(favs)
-
-                }
-            }
-            favs = JSON.stringify(favs)
-            localStorage.setItem('elpasaje', favs)
-        }
-
     </script>
 
     <!-- Template Javascript -->
     <script type="module">
         let localFavs = localStorage.getItem('elpasaje')
         localFavs = JSON.parse(localFavs)
-        const allData = ["allMenu", "coffe", "pasteleria", "juice", "toast", "sandwiches", "omelette", "lunch", "croissant", "breakfast", "brunch", "favs"]
+        const allData = ["allMenu", "coffe", "croissant", "toast", "sandwiches", "omelette", "pasteleria", "juice", "breakfast", "brunch", "lunch", "store"]
         const nameOfData = {
             allMenu: "CARTA COMPLETA",
-            coffe: "CAFETERÍA", pasteleria: "PASTELERÍA Y BOWLS", juice: "JUGOS, LICUADOS Y BEBIDAS", toast: "TOSTADAS", sandwiches: "SÁNDWICHES", omelette: "PAILAS Y OMELLETTE", lunch: "ALMUERZOS",
-            croissant: "CROISSANT Y WAFFLES", breakfast: "DESAYUNOS", brunch: "BRUNCH", favs:"FAVORITOS"
+            coffe: "CAFETERÍA",
+            croissant: "CROISSANT Y WAFFLES",
+            toast: "TOSTADAS",
+            sandwiches: "SÁNDWICH",
+            omelette: "PAILAS Y OMELLETTE",
+            pasteleria: "PASTELERÍA Y BOWLS",
+            juice: "JUGOS Y BEBIDAS",
+            breakfast: "DESAYUNOS",
+            brunch: "BRUNCH",
+            lunch: "ALMUERZOS",
+            store:"TIENDITA"
         }
         const mapeo = {
             coffe: [
@@ -184,23 +153,15 @@
                 { name: "Chai latte", description: "té especiada con canela, cardamomo, pimienta y leche texturizada", price: "$4.400" },
                 { name: "Chocolate caliente espeso", description: "60ml de chocolate liberté, 200ml de leche y marshmallow", price: "$4.900" },
                 { name: "Chocolate caliente", description: "30ml de chocolate liberté y 200ml de leche", price: "$4.400" },
-                { name: "Té orgánico variedades", description: "", price: "$3.000" },
-                { name: "Café bombóm", description: "60ml espresso, leche condensada, espuma de leche, terminado con canela.", price: "$4.700" },
                 { name: "Chocolate cream", description: "30ml de chocolate liberté, 200ml de leche, terminado con crema chantilly.", price: "$5.200" },
+                { name: "Café bombóm", description: "60ml espresso, leche condensada, espuma de leche, terminado con canela.", price: "$4.700" },
+                { name: "Té orgánico variedades", description: "(english breakfast, earl grey, chai masala, rooibos, rooibos naranja, verde jazmín, berries)", price: "$3.000" },                
+                { name: "Vaso de cookie", description: "solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", price: "$2.000" },
+                { name: "Extras", description: "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema", price: "$700" },
+                { name: "Agregado extracción de café", description: "", price: "$600" },
                 { name: "", description: "<br>", price: "" },
-                { name: " ❄ CAFÉ FRÍOS", description: "<hr>", price: "" },
-                //{ name: "Ice latte", description: "espresso, leche, hielo", price: "$3.600" },
-                //{ name: "Ice americano", description: "espresso, agua y hielo", price: "$3.200" },
-                //{ name: "Ice flat white", description: "doble espresso, leche y hielo", price: "$3.700" },
-                //{ name: "Ice chai latte", description: "té especiada con canela, cardamomo, pimienta, leche texturizada y hielo", price: "$4.500" },
-                //{ name: "Ice matcha latte", description: "té verde pulverizado alto en antioxidantes, L-teanina, leche y hielo", price: "$4.600" },
-                { name: "Espresso tonic", description: "doble extracción de café, tónica, hielo", price: "$4.000" },
-                { name: "Espresso naranja", description: "25-30 ml de extracción de café, naranja, hielo", price: "$4.300" },
-                { name: "Café helado", description: "25-30 ml de extracción de café, helado de vainilla, leche, crema batida y syrup de chocholate", price: "$5.200" },
-                { name: "Affogato", description: "doble espresso y helado de vainilla", price: "$4.200" },
-                { name: "Cold brew", description: "extracción en frio de café que se realiza durante un periodo de tiempo entre 12 y 24 horas", price: "$3.600" },
-                { name: "", description: "<br>", price: "" },
-                { name: "☕ FILTRADOS", description: "<hr>", price: "chemex / v60" },
+                { name: "", description: "<hr>", price: "" },
+                { name: "FILTRADOS ☕", description: "granos diferenciados", price: "chemex / v60" },
                 { name: "Papayo", description: "Origen: Colombia Huila Palestina. <br> Notas: chocolate, berries, anís, canela. <br> Puntaje: 87,5", price: "" },
                 { name: "240ml", description: "", price: "$5.700" },
                 { name: "400ml", description: "", price: "$9.800" },
@@ -211,14 +172,23 @@
                 { name: "240ml", description: "", price: "$5.200" },
                 { name: "400ml", description: "", price: "$9.300" },
                 { name: "<br>", description: "<hr>", price: "" },
-                { name: "Vaso de cookie", description: "solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", price: "$2.000" },
-                { name: "Extras", description: "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema", price: "$700" },
-                { name: "Agregado extracción de café", description: "", price: "$600" },
+                { name: "CAFÉ FRÍOS ❄", description: "", price: "" },
+                //{ name: "Ice latte", description: "espresso, leche, hielo", price: "$3.600" },
+                //{ name: "Ice americano", description: "espresso, agua y hielo", price: "$3.200" },
+                //{ name: "Ice flat white", description: "doble espresso, leche y hielo", price: "$3.700" },
+                //{ name: "Ice chai latte", description: "té especiada con canela, cardamomo, pimienta, leche texturizada y hielo", price: "$4.500" },
+                //{ name: "Ice matcha latte", description: "té verde pulverizado alto en antioxidantes, L-teanina, leche y hielo", price: "$4.600" },
+                { name: "Espresso tonic", description: "doble extracción de café, tónica, hielo", price: "$4.000" },
+                { name: "Espresso naranja", description: "25-30 ml de extracción de café, naranja, hielo", price: "$4.300" },
+                { name: "Café helado", description: "25-30 ml de extracción de café, helado de vainilla, leche, crema batida y syrup de chocholate", price: "$5.200" },
+                { name: "Affogato", description: "doble espresso y helado de vainilla", price: "$4.200" },
+                { name: "Cold brew", description: "extracción en frio de café que se realiza durante un periodo de tiempo entre 12 y 24 horas", price: "$3.600" },
+
             ],
             pasteleria: [
                 { name: "Medialuna argentina", description: "", price: "$2.000" },
                 { name: "Medialuna rellena", description: "Con pastelera o dulce de leche", price: "$2.400" },
-                { name: "Porción queque", description: "", price: "$2.900" },
+                { name: "Porción queque", description: "(consultar disponibilidad)", price: "$2.900" },
                 { name: "Cookie", description: "(consultar disponibilidad)", price: "$2.300" },
                 { name: "Cookie sin azucar", description: "(consultar disponibilidad)", price: "$2.300" },
                 { name: "Porción de trufas", description: "", price: "$2.500" },
@@ -232,10 +202,10 @@
                 { name: "Cheesecake", description: "", price: "$4.900" },
                 { name: "Carrot cake", description: "", price: "$4.900" },
                 { name: "Lemon pie", description: "", price: "$4.900" },
-                { name: "Torta húmeda de chocolate", description: "", price: "$5.700" },
-                { name: "Torta brownie", description: "bizcocho a base de brownie, dulce de leche y merengue italiano", price: "$5.700" },
+                { name: "Torta húmeda de chocolate", description: "bizcocho de cacao húmedo relleno con dulce de leche, bañanado en ganache bitter", price: "$5.700" },
+                { name: "Torta brownie", description: "bizcocho a base de brownie, dulce de leche y merengue", price: "$5.700" },
                 { name: "Porción de frutas de estación", description: " con dip de miel", price: "$4.300" },
-                { name: "Vegancito", description: "", price: "$3.600" },
+                { name: "Vegancito", description: "lingote de bizcocho de vainilla cubierto de chocolate bitter, relleno de gel de frambuesa decorado con chantilly (todos los componentes de origen vegetal)", price: "$3.600" },
                 { name: "Bowl ipanema", description: "Acai, arándanos, fruta de la estación, plátano, granola, coco y mantequilla de mani", price: "$6.900" },
                 { name: "Bowl natural", description: "Yogurt natural, granola, frutas de estación y miel", price: "$6.600" },
                 { name: "Bowl porridge invernal", description: "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas y coco", price: "$6.600" },
@@ -253,33 +223,34 @@
                 { name: "Kombucha", description: "", price: "$4.000" },
             ],
             toast: [
-                { name: "Tostadas clásica", description: "Tostadas masa madre, con mermelada o dulce de leche y mantequilla o queso crema", price: "$4.000" },
-                { name: "Tostadas con palta", description: "Tostadas masa madre, con semillas y palta", price: "$5.900" },
+                { name: "Tostadas clásica", description: "Tostadas masa madre, con mermelada o dulce de leche y mantequilla o queso crema", price: "$4.200" },
+                { name: "Tostadas con palta", description: "Tostadas masa madre, con semillas y palta", price: "$6.200" },
                 { name: "Tostadas francesas", description: "Pan molde brioche y miel de palma, terminado con decoración de frutos rojos.", price: "$6.000" },
                 { name: "Tostadas francesas nutella", description: "Pan molde brioche, Nutella, frutos rojos, plátano o ambos", price: "$6.900" },
                 { name: "Tostadas francesas frutales", description: "Pan molde brioche, frutas de estación, azúcar flor, dip de miel", price: "$6.500" },
-                { name: "Tostón avocado", description: "Pan hogaza de masa madre, palta y huevos revueltos (opcional con salsa holandesa)", price: "$6.900" },
-                { name: "Tostón hummus", description: "Pan hogaza de masa madre, hummus, palta, tomates frescos y pesto", price: "$6.300" },
-                { name: "Tostón salmón", description: "Pan hogaza de masa madre, palta, huevos revueltos y salmón ahumado", price: "$7,900" },
-                { name: "Tostada proteica", description: "Tostada de masa madre, mantequilla de maní, frutos rojos, plátano o ambos y mix de semillas", price: "$6.500" },
+                { name: "Tostón avocado", description: "Pan hogaza de masa madre, palta y huevos revueltos (opcional con salsa holandesa)", price: "$7.200" },
+                { name: "Tostón hummus", description: "Pan hogaza de masa madre, hummus, palta, tomates frescos y pesto", price: "$6.700" },
+                { name: "Tostón salmón", description: "Pan hogaza de masa madre, palta, huevos revueltos y salmón ahumado", price: "$8.900" },
+                { name: "Tostada proteica", description: "Tostada de masa madre, mantequilla de maní o mantequilla de almendras, frutos rojos, plátano o ambos y mix de semillas", price: "$6.500" },
                 { name: "Tostadas babaganoush", description: "Pasta a base de puré de berenjenas y tomates cherry acompañado de tostadas de masa madre para untar", price: "$6.000" },
                 { name: "", description: "** Opción pan sin gluten $2.000", price: "" }
             ],
             sandwiches: [
-                { name: "Prensado", description: "Pan ciabatta de masa madre con mantequilla especiada, jamon y queso.", price: "$5.900" },
-                { name: "Especial jamón y queso", description: "pan brioche tostado caliente, queso fundido y jamón.", price: "$6.000" },
+                { name: "Prensado", description: "Pan ciabatta de masa madre con mantequilla especiada, jamon y queso.", price: "$6.400" },
+                { name: "Especial jamón y queso", description: "pan brioche tostado caliente, queso fundido y jamón.", price: "$6.900" },
                 { name: "Especial veggie", description: "pan brioche tostado caliente, queso fundido, cebolla caramelizada y champiñones salteados.", price: "$6.700" },
-                { name: "Ave palta", description: "Pan ciabatta de masa madre, pechuga de pollo, mayonesa, palta", price: "$7.900" },
-                { name: "Ave pimentón", description: "Pan ciabatta de masa madre, pechuga de pollo y pimenton asado", price: "$7.900" },
-                { name: "Pastrami", description: "Tostada masa madre, pastrami, dressing de mostaza miel, encurtidos y rúcula", price: "$9.000" },
+                { name: "Ave palta", description: "Pan ciabatta de masa madre, pechuga de pollo, mayonesa, palta", price: "$8.300" },
+                { name: "Ave pimentón", description: "Pan ciabatta de masa madre, pechuga de pollo y pimenton asado", price: "$8.000" },
+                { name: "Pastrami", description: "Tostada masa madre, pastrami, dressing de mostaza miel, encurtidos y rúcula", price: "$9.700" },
+                { name: "Sandwich bacon", description: "huevo revuelto, tocino ahúmado y queso fundido, en pan brioche", price:"$9.500"},
                 { name: "Croque madame", description: "tostada masa madre, jamón, queso, muzzarella gratinado y huevo frito", price: "$9.900" },
-                { name: "Veggie sandwich", description: "Pan ciabatta de masa madre, queso fundido, tomate asado y pesto", price: "$6.900" },
-                { name: "Vegan sandwich", description: "Pan ciabatta de masa madre, hummus, tomate asado, champiñones y mix verde", price: "$7.200" },
+                { name: "Veggie sandwich", description: "Pan ciabatta de masa madre, queso fundido, tomate asado y pesto", price: "$7.300" },
+                { name: "Vegan sandwich", description: "Pan ciabatta de masa madre, hummus, tomate asado, champiñones y mix verde", price: "$7.500" },
                 { name: "*Opción pan ciabatta masa madre", description: "", price: "$1.000" },
                 { name: "**Opción pan sin gluten", description: "", price: "$2.000" }
             ],
             omelette: [
-                { name: "Paila de huevos revueltos", description: "", price: "$4.900" },
+                { name: "Paila de huevos revueltos", description: "", price: "$5.500" },
                 { name: "Paila de huevos revueltos más agregado a elección", description: "Con tomate / Jamón / Tocino / Queso / Champiñones", price: "$6.300" },
                 { name: "Omelette de jamón y queso con ensalada", description: "", price: "$6.600" },
                 { name: "*Todas las pailas vienen con tostadas masa madre", description: "", price: "" },
@@ -309,31 +280,33 @@
                 { name: "CONSULTA NUESTRO MENÚ DEL DÍA", description: "de lunes a viernes hasta agotar stock", price: "$8.500" },
             ],
             croissant: [
-                { name: "Croissant pastelera", description: "Relleno con crema pastelera plátano o frutilla.", price: "$5.900" },
-                { name: "Croissant split", description: "Relleno con dulce de leche, plátano o frutilla.", price: "$5.900" },
-                { name: "Croissant nutella", description: "Relleno con nutella, plátano o frutilla.", price: "$6.900" },
-                { name: "Croissant de campo", description: "Relleno con huevos revueltos, palta, jamón y queso.", price: "$8.500" },
-                { name: "Croissant jamón y queso", description: "Relleno con jámon y queso.", price: "$6.400" },
-                { name: "Croissant serrano", description: "Relleno con jamón serrano, rúcula, tomate, queso crema.", price: "$8.500" },
-                { name: "Croissant de mar", description: "Relleno con salmón ahumado, rúcula, palta, queso crema de ciboulette y alcaparras.", price: "$10.500" },
+                { name: "Croissant pastelera", description: "Relleno con crema pastelera plátano o frutilla", price: "$5.900" },
+                { name: "Croissant split", description: "Relleno con dulce de leche, plátano o frutilla", price: "$5.900" },
+                { name: "Croissant nutella", description: "Relleno con nutella, plátano o frutilla", price: "$6.900" },
+                { name: "Croissant almendras", description: "relleno de pasta de almendras con topping de almendras laminadas y azúcar flor", price: "$6.900" },
+                { name: "Croissant de campo", description: "Relleno con huevos revueltos, palta, jamón y queso", price: "$8.500" },
+                { name: "Croissant jamón y queso", description: "Relleno con jámon y queso", price: "$6.400" },
+                { name: "Croissant serrano", description: "Relleno con jamón serrano, rúcula, tomate, queso crema", price: "$8.500" },
+                { name: "Croissant de mar", description: "Relleno con salmón ahumado, rúcula, palta, queso crema de ciboulette y alcaparras", price: "$10.500" },
+                { name: "Croissant pera queso azul", description: "peras caramelizadas, queso azul, nueces trozadas y rúcula", price: "$8.500" },
                 { name: "*Opción en pan ciabatta masa madre", description: "", price: "$1.000" },
                 { name: "*Opción pan sin gluten", description: "", price: "$2.000" },
                 { name: "<br>", description: "", price: "" },
-                { name: "Waffle split", description: "Con dulce de leche, plátano o frutilla y crema batida.", price: "$5.900" },
-                { name: "Waffle nutella", description: "Con nutella, plátano o frutilla y crema batida.", price: "$6.900" },
-                { name: "Waffle frutal", description: "Con frutas de estación y crema batida.", price: "$5.900" },
-                { name: "Waffle con helado", description: "con helado de vainilla, plátano o frutilla.", price: "$6.900" },
+                { name: "Waffle split", description: "Con dulce de leche, plátano o frutilla y crema batida", price: "$6.200" },
+                { name: "Waffle nutella", description: "Con nutella, plátano o frutilla y crema batida", price: "$6.900" },
+                { name: "Waffle frutal", description: "Con frutas de estación y crema batida", price: "$6.000" },
+                { name: "Waffle con helado", description: "con helado de vainilla, plátano o frutilla", price: "$6.900" },
             ],
             breakfast: [
-                { name: "Promo clásica", description: "Café simple o té orgánico, jugo del día y tostadas clásicas", price: "$7.900" },
-                { name: "Promo avocado", description: "Café simple o té orgánico, jugo del día y tostón avocado", price: "$10.900" },
-                { name: "Promo argento 1", description: "Café simple o té orgánico, jugo del día y dos medialunas", price: "$7.700" },
-                { name: "Promo argento 2", description: "Café simple o té orgánico, jugo del día y un croissant de jamón y queso", price: "$8.800" },
-                { name: "Promo bowl", description: "Café simple o té orgánico, jugo del día y bowl dulce a elección", price: "$11.200" },
-                { name: "Promo prensado", description: "Café simple o té orgánico, jugo del día y prensado jamón y queso", price: "$10.400" },
-                { name: "Promo paila", description: "Café simple o té orgánico, jugo del día y paila de huevos a elección", price: "$9.500" },
-                { name: "Promo dulce", description: "Café simple o té orgánico, jugo del día y porción de torta", price: "$8.900" },
-                { name: "Promo tentación", description: "Café simple o té orgánico, jugo del día, croissant o waffle dulce a elección", price: "$10.900" },
+                { name: "Clásico", description: "Café simple o té orgánico, jugo del día y tostadas clásicas", price: "$8.000" },
+                { name: "Avocado", description: "Café simple o té orgánico, jugo del día y tostón avocado", price: "$12.000" },
+                { name: "Argento", description: "Café simple o té orgánico, jugo del día y dos medialunas", price: "$8.400" },
+                { name: "Croissant", description: "Café simple o té orgánico, jugo del día y un croissant de jamón y queso", price: "$10.500" },
+                { name: "Bowl", description: "Café simple o té orgánico, jugo del día y bowl dulce a elección", price: "$12.000" },
+                { name: "Prensado", description: "Café simple o té orgánico, jugo del día y prensado jamón y queso", price: "$11.500" },
+                { name: "Paila", description: "Café simple o té orgánico, jugo del día y paila de huevos a elección", price: "$10.400" },
+                { name: "Dulce", description: "Café simple o té orgánico, jugo y torta del día", price: "$11.000" },
+                { name: "Tentación", description: "Café simple o té orgánico, jugo del día, croissant o waffle dulce a elección", price: "$11.500" },
                 { name: "*Opción pan sin gluten", description: "", price: "$2.000" }
             ],
             brunch: [
@@ -341,6 +314,11 @@
                 { name: "Brunch para dos", description: "Dos café simple o té orgánico, dos jugos del día, huevos revueltos, jamón, queso y palta, dip de hummus, tostadas pan masa madre, torta del día y frutas de estación", price: "$28.000" },
                 { name: "Brunch vegano para dos", description: "Dos café simple o té orgánico con leche vegetal, dos jugos del día, dos rawnie veganos, palta, hummus, babaganoush, dip de tomate cherry, tostadas de pan masa madre, dip de mantequilla de maní y frutas de estación", price: "$25.500" },
             ],
+            store:[
+                {name:"Poleras",description:"",price:"$15.000"},
+                {name:"Totes",description:"",price:"$12.000"},
+                {name:"Café en grano / molido",description:"250 gr",price:"$9.000"},
+            ]
             // tragos:[
             //     {name:"Vermú Rosso o Bianco", description: "", price:"$5.500"},
             //     {name:"Campari tonic", description: "", price:"$6.000"},
@@ -350,7 +328,6 @@
             //     {name:"Cerveza Granizo", description: "", price:"$5.200"},
             // ],
         }
-        mapeo["favs"] = localFavs
         document.getElementById('tabsMenu').innerHTML = ''
 
         allData.map((a, i) => {
@@ -382,7 +359,7 @@
             <div id="tab-${i + 1}" class="${nameClase}">
                         ${a !== 'allMenu' ? `<h4>${nameOfData[a]}</h4>
                         ${a == 'lunch' ? '<span>de 13 a 16 hrs</span>' : ''}
-                        ${a == 'breakfast' ? '<span>hasta las 11.30</span>' : ''}
+                        ${a == 'breakfast' ? '<span>(disponibles de lunes a viernes hasta las 11.30hs)</span>' : ''}
                         ${a == 'omelette' ? '<span>de 9 a 13 / de 16 a 21.30</span>' : ''}
                         ${a == 'toast' ? '<span>de 9 a 13 / de 16 a 21.30</span>' : ''}
                         <hr>
@@ -397,36 +374,30 @@
             const ss = mapeo[a]
             const label = document.getElementById(`${a}HTML`)
             const aa = []
-            console.log(a)
-            if (a == 'favs') {
-                ss.map(s => {
-                    console.log(s)
-                    label.innerHTML += `
-                        <strong class="title">${s}</strong>
-                        <br>
-                        `
-                })
-            } else if (a == 'allMenu') {
+            if (a == 'allMenu') {
                 for (let x in mapeo) {
-                    console.log(hour)
                     let isBlocked
                     let isDrikBloked
                     hour > 16 ? isBlocked = 'lunch' : ''
                     hour < 18 ? isDrikBloked = 'tragos' : ''
 
-                    if (x != 'favs' && x != isBlocked && x != isDrikBloked) {
+                    if (x != isBlocked && x != isDrikBloked) {
                         label.innerHTML += `
                         <br>
                         <h4>${nameOfData[x]}</h4>
+                        ${x == 'lunch' ? '<span>de 13 a 16 hrs</span>' : ''}
+                        ${x == 'breakfast' ? '<span>(disponibles de lunes a viernes hasta las 11.30hs)</span>' : ''}
+                        ${x == 'omelette' ? '<span>de 9 a 13 / de 16 a 21.30</span>' : ''}
+                        ${x == 'toast' ? '<span>de 9 a 13 / de 16 a 21.30</span>' : ''}
+
                         <hr>
                         `
-                        console.log(x)
                         mapeo[x].map(xx => {
                             label.innerHTML += `
                     <div class="cards">
                         <div class="item">
                             <div class="topname">
-                                    <strong onclick="handleEdit(event)" class="title">${localFavs.includes(xx.name) ? '⭐' : ''} ${xx.name}</strong>
+                                    <strong class="title">${xx.name}</strong>
                                     <p class="price">${xx.price}</p>
                                     </div>
                                 <p class=description>${(xx.description).toLocaleLowerCase()}</p>
@@ -443,7 +414,7 @@
                         <div class="cards">
                             <div class="item">
                                 <div class="topname">
-                                    <strong onclick="handleEdit(event)" class="title">${localFavs.includes(xx.name) ? '⭐' : ''} ${xx.name}</strong>
+                                    <strong class="title">${xx.name}</strong>
                                     <p class="price">${xx.price}</p>
                                 </div>
                                 <p class=description>${(xx.description).toLocaleLowerCase()}</p>
