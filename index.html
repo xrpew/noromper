@@ -45,7 +45,6 @@
         <!-- onclick="desaparecer()" -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
-            <!-- <span class="notification-dos" id="dot"></span> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto mx-lg-auto py-0">
@@ -67,7 +66,22 @@
         <div class="index-section">
             <div class="cardone">
                 <div class="container cardtwoinside">
-                    <img style="width: 45%; max-width: 330px;" src="./img/bike-blanco.png" alt="">
+                    <img style="width: 15%; max-width: 150px;" src="./img/vasoblanco.png" alt="">
+                    <br>
+                    <img style="width: 50%; max-width: 330px;"  src="./img/logopasajeras.png" alt="">
+                    <br>
+                    <div class="row justify-content-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+                            <a target="_blank" href="https://www.youtube.com/@sesionespasajeras" data-umami-event="ir-youtube-home" class="btn btn-primary border-inner py-3 px-5">ir al canal</a>
+                            <span class="notification-dos" id="dot"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cardone">
+                <div class="container cardtwoinside">
+                    <img style="width: 45%; max-width: 200px;" src="./img/bike-blanco.png" alt="">
                     <br>
                     <img style="width: 50%; max-width: 350px;"  src="./img/bajada-blanco.png" alt="">
                     <br>
@@ -75,20 +89,6 @@
                     <div class="row justify-content-start">
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
                             <a href="menu.html" data-umami-event="ver-carta" class="btn btn-primary border-inner py-3 px-5">ver carta</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cardone">
-                <div class="container cardtwoinside">
-                    <img style="width: 15%; max-width: 150px;" src="./img/vasoblanco.png" alt="">
-                    <br>
-                    <img style="width: 50%; max-width: 330px;" src="./img/logopasajeras.png" alt="">
-                    <br>
-
-                    <div class="row justify-content-start">
-                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
-                            <a href="menu.html" data-umami-event="ver-carta" class="btn btn-primary border-inner py-3 px-5">ir al canal</a>
                         </div>
                     </div>
                 </div>
@@ -273,12 +273,12 @@
 
 
 .notification-dos {
-    position: absolute;
-    top: 20%;
-    right: 3%;
-    width: 8px;
-    height: 8px;
-    background-color: #fd7e14;
+    width: .75em;
+    margin-top: -60px;
+    margin-left: -15px;
+    z-index: 2;
+    height: .75em;
+    background-color: white;
     border-radius: 50%;
     opacity: 0; /* Inicialmente invisible */
 }
