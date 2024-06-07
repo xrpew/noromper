@@ -240,7 +240,7 @@
         }
         window.onscroll = function(){
             console.log(window.scrollY)
-            let moveOnX = (window.scrollY*totalWidth)/(totalScrollY*1.0005)
+            let moveOnX = (window.scrollY*(totalWidth/2))/(totalScrollY*1.0005)
             console.log(moveOnX)
             // console.log(totalScrollY, totalWidth,window.scrollY)
             bikelogo.style.transform = `translateX(${moveOnX}px)`
