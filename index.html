@@ -41,7 +41,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="#" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white">El pasaje</h1>
+            <img id="bikelogo" width="50px" src="img/bike-blanco.png" alt="nikelogo">
         </a>
         <!-- onclick="desaparecer()" -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -216,7 +216,7 @@
     </div>
     <div class="container-fluid text-secondary py-4" style="background: #111111;">
         <div class="container text-center">
-            <p class="mb-0"><a class="text-white border-bottom" href="#">elpasaje.cl</a>
+            <img style="width: 1.75em;" src="img/vasoblanco.png" alt="">
         </div>
     </div>
     <!-- Footer End -->
@@ -232,8 +232,18 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
+        var totalScrollY = document.documentElement.scrollHeight;
+        var totalWidth = window.innerWidth
+        const bikelogo = document.getElementById("bikelogo")
         function desaparecer(){
             document.getElementById('dot').style.display = 'none'
+        }
+        window.onscroll = function(){
+            console.log(window.scrollY)
+            let moveOnX = (window.scrollY*totalWidth)/(totalScrollY*1.0005)
+            console.log(moveOnX)
+            // console.log(totalScrollY, totalWidth,window.scrollY)
+            bikelogo.style.transform = `translateX(${moveOnX}px)`
         }
     </script>
 
