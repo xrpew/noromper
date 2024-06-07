@@ -334,9 +334,9 @@
         allData.map((a, i) => {
             let nameClase = 'nav-link tabsMenucss text-white'
             a == 'lunch' && hour >= 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
-            a == 'lunch' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
+            a == 'lunch' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white' : ''
 
-            a == 'tragos' && hour < 18 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
+            // a == 'tragos' && hour < 18 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
 
             a == 'breakfast' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             a == 'coffe' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
@@ -379,7 +379,7 @@
                 for (let x in mapeo) {
                     let isBlocked
                     let isDrikBloked
-                    hour > 16 ? isBlocked = 'lunch' : ''
+                    // hour > 16 ? isBlocked = 'lunch' : ''
                     hour < 18 ? isDrikBloked = 'tragos' : ''
 
                     if (x != isBlocked && x != isDrikBloked) {
