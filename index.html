@@ -67,21 +67,6 @@
         <div class="index-section">
             <div class="cardone">
                 <div class="container cardtwoinside">
-                    <img style="width: 15%; max-width: 150px;" src="./img/vasoblanco.png" alt="">
-                    <br>
-                    <img style="width: 50%; max-width: 330px;"  src="./img/logopasajeras.png" alt="">
-                    <br>
-                    <div class="row justify-content-start">
-                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
-                            <a target="_blank" href="https://www.youtube.com/@sesionespasajeras" data-umami-event="ir-youtube-home" class="btn btn-primary border-inner py-3 px-5">ir al canal</a>
-                            <span class="notification-dos" id="dot"></span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="cardone">
-                <div class="container cardtwoinside">
                     <img style="width: 45%; max-width: 200px;" src="./img/bike-blanco.png" alt="">
                     <br>
                     <img style="width: 50%; max-width: 350px;"  src="./img/bajada-blanco.png" alt="">
@@ -91,6 +76,20 @@
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
                             <a href="menu.html" data-umami-event="ver-carta" class="btn btn-primary border-inner py-3 px-5">ver carta</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardone">
+                <div class="container cardtwoinside">
+                    <br>
+                    <img style="width: 50%; max-width: 330px;"  src="./img/logopasajeras.png" alt="">
+                    <br>
+                    <br>
+                    <div class="row justify-content-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+                            <a target="_blank" href="https://www.youtube.com/@sesionespasajeras" data-umami-event="ir-youtube-home" class="btn btn-primary border-inner py-3 px-5">ir al canal</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -239,10 +238,7 @@
             document.getElementById('dot').style.display = 'none'
         }
         window.onscroll = function(){
-            console.log(window.scrollY)
             let moveOnX = (window.scrollY*(totalWidth/2))/(totalScrollY*1.0005)
-            console.log(moveOnX)
-            // console.log(totalScrollY, totalWidth,window.scrollY)
             bikelogo.style.transform = `translateX(${moveOnX}px)`
         }
     </script>
