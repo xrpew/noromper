@@ -33,6 +33,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/indexstyle.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,12 +41,11 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="#" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white">El pasaje</h1>
+            <img id="bikelogo" width="50px" src="img/bike-blanco.png" alt="nikelogo">
         </a>
         <!-- onclick="desaparecer()" -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
-            <!-- <span class="notification-dos" id="dot"></span> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto mx-lg-auto py-0">
@@ -64,19 +64,33 @@
 
     <!-- Hero Start -->
     <div class="container-fluid bg-index py-5 mb-5 hero-header">
-        <div class="container py-5 hero-header">
-            <img style="width: 55%; max-width: 230px;" src="./img/bike-blanco.png" alt="">
-            <br>
-            <img style="width: 80%; max-width: 350px;"  src="./img/bajada-blanco.png" alt="">
-            <!-- <img src="img/logonew.svg" alt=""> -->
-            <!-- <div style="display: flex; flex-direction: column; max-width: 35vw;"> -->
-                <br>
-            <!-- </div> -->
-            <!-- <h4 style="margin-top: -8px; color: white; font-size: 1.5vw; font-family: Senkron Bold;">CAFÉ DE ESPECIALIDAD Y LIBROS</h4> -->
-            <p>9 Norte 907. Viña del Mar</p>
-            <div class="row justify-content-start">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
-                    <a href="menu.html" data-umami-event="ver-carta" class="btn btn-primary border-inner py-3 px-5">VER CARTA</a>
+        <div class="index-section">
+            <div class="cardone">
+                <div class="container cardtwoinside">
+                    <img style="width: 45%; max-width: 200px;" src="./img/bike-blanco.png" alt="">
+                    <br>
+                    <img style="width: 50%; max-width: 350px;"  src="./img/bajada-blanco.png" alt="">
+                    <br>
+                    <p>9 Norte 907. Viña del Mar</p>
+                    <div class="row justify-content-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+                            <a href="menu.html" data-umami-event="ver-carta" class="btn btn-primary border-inner py-3 px-5">ver carta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardone">
+                <div class="container cardtwoinside">
+                    <br>
+                    <img style="width: 50%; max-width: 330px;"  src="./img/logopasajeras.png" alt="">
+                    <br>
+                    <br>
+                    <div class="row justify-content-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+                            <a target="_blank" href="https://www.youtube.com/@sesionespasajeras" data-umami-event="ir-youtube-home" class="btn btn-primary border-inner py-3 px-5">ir al canal</a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +107,7 @@
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img loading="lazy" class="position-absolute w-100 h-100"
-                            src="img/41.jpg"
+                            src="img/1.jpg"
                             style="object-fit: cover;">
                     </div>
                 </div>
@@ -125,29 +139,24 @@
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img src="img/promo.jpg" alt="brunch-para-dos">
+                    <img src="img/102.jpg" alt="brunch-para-dos">
                     <br>
-                    <span style="margin-top: 12px;">Brunch para dos</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
                     <img src="img/home.jpg" alt="el-pasaje-home">
                     <br>
-                    <span style="margin-top: 12px;">El Pasaje</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img src="img/coisan.jpg" alt="croissant-de-mar">
+                    <img src="img/100.jpg" alt="croissant-de-mar">
                     <br>
-                    <span style="margin-top: 12px;">Croissant de mar</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img src="img/prot.jpg" alt="Tostada-proteica">
+                    <img src="img/101.jpg" alt="Tostada-proteica">
                     <br>
-                    <span style="margin-top: 12px;">Tostada proteica</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img src="img/sndw.jpg" alt="sandwiches">
+                    <img src="img/promo.jpg" alt="sandwiches">
                     <br>
-                    <span style="margin-top: 12px;">Sándwiches</span>
                 </div>
 
             </div>
@@ -164,34 +173,34 @@
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img loading="lazy" src="img/chny.jpg" alt="chinoy">
+                    <img loading="lazy" src="img/sesions/006.jpg" alt="La Triple Nelson">
                     <br>
-                    <span>Chinoy</span>
+                    <span>La Triple Nelson</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img loading="lazy" src="img/_DSC4482.jpg" alt="mocchi">
+                    <img loading="lazy" src="img/sesions/001.jpg" alt="Rafa Pons">
                     <br>
-                    <span>Mocchi</span>
+                    <span>Rafa Pons</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img loading="lazy" src="img/33.jpg" alt="nicolas-de-sanctis">
+                    <img loading="lazy" src="img/sesions/009.jpg" alt="Santi Wirth">
                     <br>
-                    <span>Nicolás de Sanctis</span>
+                    <span>Santi Wirth</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img loading="lazy" src="img/44.jpg" alt="pasajeros-disfrutando">
+                    <img loading="lazy" src="img/sesions/003.jpg" alt="Tunacola">
                     <br>
-                    <span>Pasajeros</span>
+                    <span>Tunacola</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img loading="lazy" src="img/19.jpg" alt="pasajeros-felices">
+                    <img loading="lazy" src="img/sesions/004.jpg" alt="Tuba music">
                     <br>
-                    <span>Pasajeros</span>
+                    <span>Tuba</span>
                 </div>
                 <div class="testimonial-item bg-dark text-white p-4">
-                    <img loading="lazy" src="img/jmust.jpg" alt="juani-mustard">
+                    <img loading="lazy" src="img/sesions/007.jpg" alt="fernando milagros">
                     <br>
-                    <span>Juani Mustard</span>
+                    <span>Fernando Milagros</span>
                 </div>
             </div>
         </div>
@@ -206,7 +215,7 @@
     </div>
     <div class="container-fluid text-secondary py-4" style="background: #111111;">
         <div class="container text-center">
-            <p class="mb-0"><a class="text-white border-bottom" href="#">elpasaje.cl</a>
+            <img style="width: 1.75em;" src="img/vasoblanco.png" alt="">
         </div>
     </div>
     <!-- Footer End -->
@@ -222,8 +231,15 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
+        var totalScrollY = document.documentElement.scrollHeight;
+        var totalWidth = window.innerWidth
+        const bikelogo = document.getElementById("bikelogo")
         function desaparecer(){
             document.getElementById('dot').style.display = 'none'
+        }
+        window.onscroll = function(){
+            let moveOnX = (window.scrollY*(totalWidth/2))/(totalScrollY*1.0005)
+            bikelogo.style.transform = `translateX(${moveOnX}px)`
         }
     </script>
 
@@ -231,53 +247,4 @@
 
 </html>
 
-<style>
-.notification-dot {
-    position: absolute;
-    top: 34%;
-    right: 8%;
-    width: 8px;
-    height: 8px;
-    background-color: #fd7e14;
-    border-radius: 50%;
-    opacity: 0; /* Inicialmente invisible */
-}
 
-@keyframes blink {
-    0%, 49% {
-        opacity: 0; /* Invisible en los primeros y últimos momentos */
-    }
-    50%, 99% {
-        opacity: 1; /* Visible en el punto medio de la animación */
-    }
-}
-.notification-dot {
-    opacity: 1; /* Hacemos visible el punto flotante al activar el enlace */
-}
-
-
-
-
-.notification-dos {
-    position: absolute;
-    top: 20%;
-    right: 3%;
-    width: 8px;
-    height: 8px;
-    background-color: #fd7e14;
-    border-radius: 50%;
-    opacity: 0; /* Inicialmente invisible */
-}
-
-@keyframes blink {
-    0%, 49% {
-        opacity: 0; /* Invisible en los primeros y últimos momentos */
-    }
-    50%, 99% {
-        opacity: 1; /* Visible en el punto medio de la animación */
-    }
-}
-.notification-dos {
-    opacity: 1; /* Hacemos visible el punto flotante al activar el enlace */
-}
-</style>

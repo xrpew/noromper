@@ -158,6 +158,7 @@
                 { name: "Capuccino nutella", description: "60ml espresso, leche, espuma de leche, terminado con borde de Nutella y almendras trozadas", price: "$4.900" },
                 { name: "Té orgánico variedades", description: "(english breakfast, earl grey, chai masala, rooibos, rooibos naranja, verde jazmín, berries)", price: "$3.000" },                
                 { name: "Vaso de cookie", description: "solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", price: "$2.000" },
+                { name: "Vaso de cookie dulce de leche", description: "con dulce de leche en su interior; solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", price: "$2.300" },
                 { name: "Extras", description: "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema", price: "$700" },
                 { name: "Agregado extracción de café", description: "", price: "$600" },
                 { name: "", description: "<br>", price: "" },
@@ -169,9 +170,15 @@
                 { name: "La Colombia", description: "Origen: Antioquia, Colombia. <br> Notas: Maracuyá, durazno, chocolate, licoroso. <br> Puntaje: 87", price: "" },
                 { name: "240ml", description: "", price: "$5.700" },
                 { name: "400ml", description: "", price: "$9.800" },
-                { name: "Pink Bourbon", description: "Origen: Colombia Huila Palestina. <br> Notas: grutas amarillas, caramelo. cítrico, floral. <br> Puntaje: 86,5", price: "" },
+                { name: "Pink Bourbon", description: "Origen: Colombia Huila Palestina. <br> Notas: frutas amarillas, caramelo. cítrico, floral. <br> Puntaje: 86,5", price: "" },
                 { name: "240ml", description: "", price: "$5.200" },
                 { name: "400ml", description: "", price: "$9.300" },
+                { name: "Chiroso Honey", description: "Origen: Colombia Antioquia. <br> Notas: cereza, mandarina, caramelo. <br> Puntaje: 87,5", price: "" },
+                { name: "240ml", description: "", price: "$5.700" },
+                { name: "400ml", description: "", price: "$9.800" },
+                { name: "BR-AMA", description: "Origen: Brasil. <br> Notas: Piña madura, licoroso, panela. <br> Puntaje: 87", price: "" },
+                { name: "240ml", description: "", price: "$5.700" },
+                { name: "400ml", description: "", price: "$9.800" },
                 { name: "<br>", description: "<hr>", price: "" },
                 { name: "CAFÉ FRÍOS ❄", description: "", price: "" },
                 //{ name: "Ice latte", description: "espresso, leche, hielo", price: "$3.600" },
@@ -190,10 +197,11 @@
                 { name: "Medialuna argentina", description: "", price: "$2.000" },
                 { name: "Medialuna rellena", description: "Con pastelera o dulce de leche", price: "$2.400" },
                 { name: "Porción queque", description: "(consultar disponibilidad)", price: "$2.900" },
-                { name: "Cookie", description: "(consultar disponibilidad)", price: "$2.300" },
+                { name: "Cookie", description: "(consultar disponibilidad)", price: "$2.800" },
                 { name: "Cookie sin azucar", description: "(consultar disponibilidad)", price: "$2.300" },
                 { name: "Porción de trufas", description: "", price: "$2.500" },
                 { name: "Rollo de canela", description: "", price: "$3.200" },
+                { name: "Alfajor brownie", description: "bases de brownie rellenas con dulce de leche", price: "$3.900" },
                 { name: "Alfajor de maicena", description: "", price: "$2.600" },
                 { name: "Alfajor de coco", description: "", price: "$2.600" },
                 { name: "Brownie", description: "", price: "$3.200" },
@@ -271,8 +279,10 @@
                 { name: "Salmón ahumado", description: "", price: "$4.500" }
             ],
             lunch: [
+                { name: "Sopa crema", description: "350 ml de sopa del día", price: "$4.900" },
                 { name: "Bowl de mar", description: "Mix de hojas verdes, láminas de salmón ahumado, pepino fresco, cubos de palta, semillas de zapallo tostadas, dressing ácida de eneldo", price: "$9.500" },
                 { name: "Bowl serrano", description: "Rúcula y mix de hojas verdes, jámon serrano, gajos de naranja a vivo, nueces garrapiñadas, dressing de aceto balsámico y miel", price: "$8.500" },
+                { name: "Bowl vegan", description: "Mix verde, chapiñones salteados, hummus, cherrys, babaganoush, pepino, palta", price: "$7.900" },
                 { name: "Panzottis espinaca o zapallo", description: "Pasta rellena acompañada de salsa pomodoro o rose", price: "$8.900" },
                 { name: "Ñoquis", description: "Acompañados de salsa pomodoro o rose", price: "$8.900" },
                 { name: "Wok de pollo", description: "Pollo salteado con verduras, soya y arroz", price: "$8.500" },
@@ -334,9 +344,9 @@
         allData.map((a, i) => {
             let nameClase = 'nav-link tabsMenucss text-white'
             a == 'lunch' && hour >= 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
-            a == 'lunch' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
+            a == 'lunch' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white' : ''
 
-            a == 'tragos' && hour < 18 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
+            // a == 'tragos' && hour < 18 ? nameClase = 'nav-link tabsMenucss text-black disabled' : ''
 
             a == 'breakfast' && hour < 12 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
             a == 'coffe' && hour >= 16 ? nameClase = 'nav-link tabsMenucss text-white active' : ''
@@ -379,7 +389,7 @@
                 for (let x in mapeo) {
                     let isBlocked
                     let isDrikBloked
-                    hour > 16 ? isBlocked = 'lunch' : ''
+                    // hour > 16 ? isBlocked = 'lunch' : ''
                     hour < 18 ? isDrikBloked = 'tragos' : ''
 
                     if (x != isBlocked && x != isDrikBloked) {
