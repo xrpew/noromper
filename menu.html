@@ -67,7 +67,7 @@
             </div>
             <div class="tab-class text-center">
                 <ul id="tabsMenu"
-                    class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                    class="nav nav-pills navegador-cool bg-dark">
                     <li>Cargando..</li>
                 </ul>
                 <div class="tab-content" id="tabContentHTML">
@@ -470,4 +470,30 @@
         margin-bottom: 0px;
 
     }
+    .navegador-cool{
+        display: flex;
+        padding: 8px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 24px;                
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    .navegador-cool li {
+            flex: 0 0 auto; 
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .navegador-cool{
+                scrollbar-width: none;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+        }
 </style>
