@@ -10,6 +10,13 @@
         }
     });
 
+
+    $.getJSON( "../static/text/es.json", function( data ) {
+        $.each( data, function( key, val ) {
+            $("#"+key).html(val);
+        });
+    })
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -64,30 +71,24 @@
         time: 800
     });
 
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        margin: 45,
-        dots: true,
-        loop: true,
-        center: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            }
+    let langEsp = true
+    $("#translate").click(function(){
+        langEsp = !langEsp
+        if(langEsp){
+            $.getJSON( "../static/text/es.json", function( data ) {
+                $.each( data, function( key, val ) {
+                    $("#"+key).html(val);
+                });
+            });
+        }else{
+            $.getJSON( "../static/text/en.json", function( data ) {
+                $.each( data, function( key, val ) {
+                    $("#"+key).html(val);
+                });
+            });
         }
-    });
+    })
+
 
 })(jQuery);
 
