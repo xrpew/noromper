@@ -37,6 +37,7 @@
 </head>
 
 <body>
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="#" class="navbar-brand d-block d-lg-none">
@@ -48,18 +49,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto mx-lg-auto py-0">
-                <a id="principal" href="index.html" class="nav-item nav-link active" data-umami-event="ver-home">principal</a>
-                <a id="carta" href="menu.html" class="nav-item nav-link" data-umami-event="ver-carta">carta</a>
-                <a id="libros" href="books.html" class="nav-item nav-link" data-umami-event="ver-libros">libros</a>
-                <a id="sesiones" href="sessions.html" class="nav-item nav-link" data-umami-event="ver-sesiones">sesiones</a>
-                <a id="escribamos" href="contact.html" class="nav-item nav-link" data-umami-event="ver-escribamos-juntos">escribamos                    juntos</a>
-
+                <a href="index.html" class="nav-item nav-link active" data-umami-event="ver-home">principal</a>
+                <a href="menu.html" class="nav-item nav-link" data-umami-event="ver-carta">carta</a>
+                <a href="books.html" class="nav-item nav-link" data-umami-event="ver-libros">libros</a>
+                <a href="sessions.html" class="nav-item nav-link"data-umami-event="ver-sesiones" style="position: relative;">sesiones</a>
+                <a href="contact.html" class="nav-item nav-link" data-umami-event="ver-escribamos-juntos">escribamos juntos</a>
                 <!-- <a href="https://open.spotify.com/user/31xirmw7fuh2fma277kkxpa7pkuy?si=V-E2xtS1ReWbsR-PMeFRtA&nd=1&dlsi=14a69e36e7e349ed" target="_blank" class="nav-item nav-link" data-umami-event="ver-playlist">disfruta nuestra playlist</a> -->
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
-    <button id="translate">traducir</button>
 
 
     <!-- Hero Start -->
@@ -112,9 +111,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pb-5">
-                    <h4 class="mb-4">El pasaje:</h4>
-                    <p id="description" class="mb-5"> </p> 
-                        
+                    <!-- <h4 class="mb-4">El pasaje:</h4> -->
+                    <p class="mb-5" style=" text-align: justify;">El Pasaje es un café de especialidad dedicado a los fanáticos de la música y de los libros. Nuestra misión es promover y potenciar el 
+                        universo cultural de Viña, a través de los conciertos íntimos y actividades de mediación literaria. <br> <br> En su interior pueden encontrar más 1.200 
+                        libros que elegimos rigurosamente para que ustedes puedan leer mientras disfrutan su café o esperan su comida. El consumo no es una cuestión excluyente, 
+                        quien quiera venir a leer puede hacerlo sin la necesidad de consumir. Queremos que la comunidad aproveche nuestro catálogo de libros especiales. <br> <br>
+                        Nuestra gastronomía es artesanal, de elaboración propia y de inspiración argentina. <br> <br> Además, nos juntamos todos los meses a descubrir artistas y 
+                        canciones que nos permitan escapar del ruido de la ciudad, en un encuentro que denominamos sesiones pasajeras. <br><br> Todas nuestras actividades quedan registradas y 
+                        grabadas, para que todos y todas puedan disfrutarlas en nuestro canal de <b><a target="_blank" style="color: #111111;" href="https://www.youtube.com/@sesionespasajeras">Youtube</a></b>. No olvides suscribirte
+                        </p>
                 </div>
             </div>
         </div>
@@ -122,40 +127,13 @@
     <!-- About End -->
 
     <br>
-    <!-- Facts Start -->
-    <div class="container-fluid bg-offer  mb-5">
-        <div class="container py-2">
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col-lg-6 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div class="ps-4 d-flex flex-column align-items-center justify-content-center">
-
-<br>
-                            <h6 id="rateusTitle" class="text-primary text-center text-uppercase"></h6>
-<br>
-                            <h1 class="display-5 text-white text-center mb-0" data-toggle="counter-up">4.6</h1> 
-                            <span id="rateUsDesc" class="text-center"></span>
-                            <br>
-                            <button class="btn btn-secondary">
-                                <a href="https://www.google.cl/maps/place/EL+PASAJE+VI%C3%91A+DEL+MAR/@-33.0145736,-71.547129,15z/data=!4m17!1m8!3m7!1s0x9689dd397e64f9f9:0xb213381052c6cd7!2sEL+PASAJE+VI%C3%91A+DEL+MAR!8m2!3d-33.0145736!4d-71.547129!10e1!16s%2Fg%2F11l1mt8mlm!3m7!1s0x9689dd397e64f9f9:0xb213381052c6cd7!8m2!3d-33.0145736!4d-71.547129!9m1!1b1!16s%2Fg%2F11l1mt8mlm?entry=ttu"
-                                target="_blank">Comentar</a>
-                            </button>
-                            <br>
-
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
     <!-- Facts End -->
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 id="galery" class="text-primary font-secondary"></h2>
+                <h2 class="text-primary font-secondary">Galería</h2>
                 <!-- <h1 class="display-4 text-uppercase">Our Clients Say!!!</h1> -->
             </div>
             <div class="owl-carousel testimonial-carousel">
@@ -268,27 +246,3 @@
 
 </html>
 
-
-<style>
-    #translate {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-#translate:hover {
-    background: #0056b3;
-}
-
-</style>

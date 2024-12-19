@@ -1,4 +1,7 @@
-{"allData":["coffe","filtrados", "croissant", "wafles", "toast", "sandwiches", "omelette", "pasteleria", "juice", "breakfast", "brunch", "lunch", "store"], 
+{
+  "fullTitle":"CARTA COMPLETA",
+    
+    "allData":["coffe","filtrados", "croissant", "wafles", "toast", "sandwiches", "omelette", "pasteleria", "juice", "breakfast", "brunch", "lunch", "store"], 
 "nameOfData": {
             "coffe": "CAFETERÍA",
             "filtrados":"FILTRADOS",
@@ -14,6 +17,22 @@
             "lunch": "ALMUERZOS",
             "store":"TIENDITA"
         }, 
+        "descriptionData": {
+            "coffe": "",
+            "filtrados":"CHEMEX / V60 / ORIGAMI",
+            "croissant": "",
+            "wafles":"",
+            "toast": "de 9 a 13 / de 16 a 21.30",
+            "sandwiches": "",
+            "omelette": "de 9 a 13 / de 16 a 21.30",
+            "pasteleria": "",
+            "juice": "",
+            "breakfast": "(disponibles de lunes a viernes hasta las 11.30hs)",
+            "brunch": "",
+            "lunch": "de 13 a 16 hrs",
+            "store":""
+        }, 
+
         "mapeo":{"coffe": [
             { "name": "Americano", "description": "espresso, agua", "price": "$2.700" },
             { "name": "Espresso", "description": "25-30 ml de extracción de café", "price": "$2.500" },
@@ -37,14 +56,16 @@
             { "name": "Iced matcha latte", "description": "té verde pulverizado alto en antioxidantes, l-teanina, leche y hielo", "price": "$4.600" },
             { "name": "Espresso tonic", "description": "espresso, tónica, hielo", "price": "$4.200" },
             { "name": "Espresso naranja", "description": "espresso, jugo de naranja, hielo", "price": "$4.300" },
+            { "name": "Espresso salted caramel", "description": "espresso doble, 30ml salted caramel, hielo", "price": "$4.500" },
             { "name": "Café helado", "description": "espresso, leche, helado de vainilla, terminado con crema batida y salsa de chocolate", "price": "$5.200" },
             { "name": "Affogato", "description": "espresso doble acompañado de helado de vainilla", "price": "$4.500" },
             { "name": "Cold brew", "description": "extracción en frío de café que se realiza durante un periodo de tiempo entre 12 y 24 horas", "price": "$3.600" },
+            { "name": "Cold brew sour", "description": "90ml cold brew, 30ml limón y hielo", "price": "$4.200" },
             {"name":"EXTRAS", "description":"<hr>","price":"<br>"},
             { "name": "Vaso de cookie", "description": "solo se puede agregar adicional a: affogato, chocolate caliente, espresso y macchiatto", "price": "$2.000" },
             { "name": "Agregado extracción de café", "description": "", "price": "$600" },
             { "name": "Extras", "description": "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema", "price": "$700" }
-        ],
+    ],
         "filtrados":[
             { "name": "Etiopía [tostaduría Renacuajo]", "description": "Origen: Gera, Jimma. <br> Notas: vainilla, pera madura arándanos, caramelo. <br> Puntaje SCA: 86,8 <br> proceso: lavado", "price": "" },
             { "name": "240ml", "description": "", "price": "$5.700" },
@@ -147,13 +168,14 @@
         "juice": [
             { "name": "Vitamina naranja", "description": "", "price": "$4.500" },
             { "name": "Jugo natural", "description": "consultar", "price": "$4.500" },
+            { "name": "Limonada", "description": "", "price": "$4.500" },
             { "name": "", "description": "<br>", "price": "" },
             { "name": "BEBIDAS", "description": "<hr>", "price": "" },
             { "name": "Agua con o sin gas", "description": "", "price": "$2.300" },
             { "name": "Agua tónica", "description": "", "price": "$2.300" },
             { "name": "Bebida", "description": "", "price": "$2.300" },
             { "name": "Kombucha", "description": "", "price": "$4.000" }
-        ],
+    ],
         "breakfast": [
             { "name": "Clásico", "description": "Café simple o té orgánico, jugo del día y tostadas clásicas", "price": "$8.500" },
             { "name": "Avocado", "description": "Café simple o té orgánico, jugo del día y tostón avocado", "price": "$12.900" },
