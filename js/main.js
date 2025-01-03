@@ -10,6 +10,13 @@
         }
     });
 
+
+    $.getJSON( "../static/text/es.json", function( data ) {
+        $.each( data, function( key, val ) {
+            $("#"+key).html(val);
+        });
+    })
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -64,6 +71,43 @@
         time: 800
     });
 
+    let langEsp = true
+    // $("#translate").click(function(){
+    //     langEsp = !langEsp
+    //     if(langEsp){
+    //         $.getJSON( "../static/text/es.json", function( data ) {
+    //             $.each( data, function( key, val ) {
+    //                 $("#"+key).html(val);
+    //             });
+    //         });
+    //     }else{
+    //         $.getJSON( "../static/text/en.json", function( data ) {
+    //             $.each( data, function( key, val ) {
+    //                 $("#"+key).html(val);
+    //             });
+    //         });
+    //     }
+    // })
+
+
+
+
+    $("#translate").change(function() {
+        const selectedLang = $(this).val(); // Obtiene el valor seleccionado (es o en)
+        
+        // Define la ruta al archivo JSON según el idioma
+        const jsonFile = selectedLang === "es" 
+            ? "../static/text/es.json" 
+            : "../static/text/en.json";
+    
+        // Obtiene los datos del archivo JSON y actualiza el contenido
+        $.getJSON(jsonFile, function(data) {
+            $.each(data, function(key, val) {
+                $("#" + key).html(val);
+            });
+        });
+    });
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -87,7 +131,8 @@
                 items: 3
             }
         }
-    });
+    })
 
+    
 })(jQuery);
 
