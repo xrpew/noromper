@@ -49,7 +49,7 @@
             { "name": "Chai latte flamingo", "description": "té especiado con canela, cardamomo, pimienta, aromatizado con vainilla, sin azúcar, descafeinado y leche", "price": "$4.400" },
             { "name": "Chocolate caliente", "description": "20ml de chocolate Bonhomía y 150ml de leche", "price": "$4.400" },
             { "name": "Capuccino nutella", "description": "60ml espresso, leche, espuma de leche, terminado con borde de Nutella y almendras trozadas", "price": "$4.900" },
-            { "name": "Té orgánico variedades", "description": "(english breakfast, earl grey, chai masala, rooibos, rooibos naranja, verde jazmín, berries, manzanilla)", "price": "$3.000" },                
+            { "name": "Té orgánico variedades", "description": "(english breakfast, earl grey, chai masala, rooibos, rooibos naranja, verde jazmín, berries)", "price": "$3.000" },                
             { "name": "CAFÉ FRÍOS", "description": "<hr>", "price": "<br>" },
             { "name": "Ice flat honey", "description": "Espresso doble, leche, 20ml de miel, espuma de leche y hielo", "price": "$4.200" },
             { "name": "Iced latte", "description": "espresso, leche y hielo", "price": "$3.600" },
@@ -67,18 +67,15 @@
             { "name": "Extras", "description": "Leche de almendras, leche de avena, leche de soya, syrup vainilla, syrup caramelo, syrup menta y crema", "price": "$700" }
     ],
         "filtrados":[
-            { "name": "Etiopía [tostaduría Renacuajo]", "description": "Origen: Gera, Jimma. <br> Notas: vainilla, pera madura arándanos, caramelo. <br> Puntaje SCA: 86,8 <br> proceso: lavado", "price": "" },
-            { "name": "240ml", "description": "", "price": "$5.700" },
-            { "name": "400ml", "description": "", "price": "$9.800" },
             { "name": "La Colombia [tostaduría Renacuajo]", "description": "Origen: Antioquia, Colombia. <br> Notas: Maracuyá, durazno, chocolate, licoroso. <br> Puntaje SCA: 87 <br> proceso: natural", "price": "" },
             { "name": "240ml", "description": "", "price": "$5.700" },
             { "name": "400ml", "description": "", "price": "$9.800" },
-            { "name": "Pink Bourbon [tostaduría Renacuajo]", "description": "Origen: Colombia Huila Palestina. <br> Notas: frutas amarillas, caramelo. cítrico, floral. <br> Puntaje SCA: 86,5 <br> proceso: fully washed", "price": "" },
-            { "name": "240ml", "description": "", "price": "$5.200" },
-            { "name": "400ml", "description": "", "price": "$9.300" },
             { "name": "Chiroso Honey [tostaduría Renacuajo]", "description": "Origen: Colombia Antioquia. <br> Notas: cereza, mandarina, caramelo. <br> Puntaje SCA: 87,5 <br> proceso: honey", "price": "" },
             { "name": "240ml", "description": "", "price": "$5.700" },
             { "name": "400ml", "description": "", "price": "$9.800" },
+            { "name": "Caturra", "description": "Origen: antioquia, colombia. <br> Notas: cacao, durazno, maracuyá, licoroso. <br> Puntaje SCA: 87 <br> proceso: natural", "price": "" },
+            { "name": "240ml", "description": "", "price": "$5.200" },
+            { "name": "400ml", "description": "", "price": "$9.300" },
             { "name": "BRASIL AMA [tostaduría Renacuajo]", "description": "Origen: Brasil. <br> Notas: Piña madura, licoroso, panela. <br> Puntaje SCA: 87 <br> proceso: Natural", "price": "" },
             { "name": "240ml", "description": "", "price": "$5.700" },
             { "name": "400ml", "description": "", "price": "$9.800" },
@@ -194,12 +191,12 @@
             { "name": "Ñoquis", "description": "Acompañados de salsa pomodoro, rose, pesto o bechamel", "price": "$8.900" },
             { "name": "Wok de pollo", "description": "Pollo salteado con verduras, soya y arroz", "price": "$8.900" },
             { "name": "Wrap de pollo", "description": "Pollo braseado con queso, verduras asadas, mix de hojas verdes y salsa BBQ", "price": "$8.900" },
-            { "name": "Hojas de parra", "description": "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre colchón de hummus y babaganoush, tomates cherris marinados en menta", "price": "$12.900" },
-            { "name": "CONSULTA NUESTRO MENÚ DEL DÍA", "description": "de lunes a viernes hasta agotar stock", "price": "$8.900" }
+            { "name": "Hojas de parra", "description": "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre colchón de hummus y babaganoush, tomates cherris marinados en menta", "price": "$12.900" }
         ],
         "store":[
             {"name":"Poleras","description":"","price":"$15.000"},
             {"name":"Totes","description":"","price":"$12.000"},
+            {"name":"Jockey", "description": "", "price": "$16.000" },
             {"name":"Café en grano / molido","description":"250 gr","price":"$9.000"}
         ]
     }}

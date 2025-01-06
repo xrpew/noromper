@@ -94,7 +94,7 @@
 
     $("#translate").change(function() {
         const selectedLang = $(this).val(); // Obtiene el valor seleccionado (es o en)
-        
+        umami.track(`change-to-${selectedLang}`)
         // Define la ruta al archivo JSON según el idioma
         const jsonFile = selectedLang === "es" 
             ? "../static/text/es.json" 
