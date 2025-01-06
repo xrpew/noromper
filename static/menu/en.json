@@ -191,9 +191,9 @@
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
-      { "name": "Caturra", "description": "Origen: antioquia, colombia. <br> Notas: cacao, peach, passion fruit, liqueur-like. <br> Puntaje SCA: 87 <br> proceso: natural", "price": ""},
-      { "name": "240ml", "description": "", "price": "$5.200" },
-      { "name": "400ml", "description": "", "price": "$9.300" },
+      { "name": "Caturra [tostaduría Renacuajo]", "description": "Origen: antioquia, colombia. <br> Notas: cacao, peach, passion fruit, liqueur-like. <br> Puntaje SCA: 87 <br> proceso: natural", "price": ""},
+      { "name": "240ml", "description": "", "price": "$5.700" },
+      { "name": "400ml", "description": "", "price": "$9.800" },
       {
         "name": "BRASIL AMA [tostaduría Renacuajo]",
         "description": "Origin: Brasil. <br> Notes: Ripe pineapple, liquorice, panela <br> SCA Score: 87 <br> proceso: Natural",
@@ -451,11 +451,6 @@
         "name": "Galletón jengibre vegano sin azucar // Vegan Sugar-Free Ginger Cookie",
         "description": "",
         "price": "$2,300"
-      },
-      {
-        "name": "Alfajor de coco // Coconut Alfajor",
-        "description": "",
-        "price": "$3,200"
       },
       { "name": "Brownie", "description": "", "price": "$3,200" },
       { "name": "Banoffee", "description": "", "price": "$4,900" },
