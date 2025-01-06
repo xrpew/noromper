@@ -125,7 +125,7 @@
       },
       {
         "name": "Te organico // Organic Tea Varieties",
-        "description": "English breakfast, Earl Grey, Chai Masala, Rooibos, Rooibos Orange, Jasmine Green, Berries, Chamomile.",
+        "description": "English breakfast, Earl Grey, Chai Masala, Rooibos, Rooibos Orange, Jasmine Green, Berries",
         "price": "CLP $3,000"
       },
       { "name": "ICED COFFES", "description": "<hr>", "price": "" },
@@ -178,13 +178,6 @@
     ],
     "filtrados": [
       {
-        "name": "Etiopía [tostaduría Renacuajo]",
-        "description": "Origin: Gera, Jimma. <br> Notes: Vanilla, ripe pear, blueberries, caramel. <br> SCA Score: 86,8 <br> proceso: Washed",
-        "price": ""
-      },
-      { "name": "240ml", "description": "", "price": "$5.700" },
-      { "name": "400ml", "description": "", "price": "$9.800" },
-      {
         "name": "La Colombia [tostaduría Renacuajo]",
         "description": "Origin: Antioquia, Colombia. <br> Notes: Passion fruit, peach, chocolate, liquorice <br> SCA Score: 87 <br> proceso: natural",
         "price": ""
@@ -192,19 +185,15 @@
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
-        "name": "Pink Bourbon [tostaduría Renacuajo]",
-        "description": "Origin: Colombia Huila Palestina. <br> Notes: Yellow fruits, caramel, citrus, floral <br> SCA Score: 86,5 <br> proceso: fully washed",
-        "price": ""
-      },
-      { "name": "240ml", "description": "", "price": "$5.200" },
-      { "name": "400ml", "description": "", "price": "$9.300" },
-      {
         "name": "Chiroso Honey [tostaduría Renacuajo]",
         "description": "Origin: Colombia Antioquia. <br> Notes: Cherry, tangerine, caramel <br> SCA Score: 87,5 <br> proceso: honey",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
+      { "name": "Caturra", "description": "Origen: antioquia, colombia. <br> Notas: cacao, peach, passion fruit, liqueur-like. <br> Puntaje SCA: 87 <br> proceso: natural", "price": ""},
+      { "name": "240ml", "description": "", "price": "$5.200" },
+      { "name": "400ml", "description": "", "price": "$9.300" },
       {
         "name": "BRASIL AMA [tostaduría Renacuajo]",
         "description": "Origin: Brasil. <br> Notes: Ripe pineapple, liquorice, panela <br> SCA Score: 87 <br> proceso: Natural",
@@ -642,16 +631,12 @@
         "name": "Hojas de parra // Grape Leaves",
         "description": "Filled with meat or soy, jasmine rice, Lebanese spices on a bed of hummus and babaganoush, marinated cherry tomatoes with mint",
         "price": "CLP $12,900"
-      },
-      {
-        "name": "Menú del día // Ask for our daily menu",
-        "description": "Monday to Friday, while supplies last",
-        "price": "CLP $8,900"
       }
     ],
     "store": [
       { "name": "T-shitrs", "description": "", "price": "$15.000" },
       { "name": "Totes", "description": "", "price": "$12.000" },
+      { "name": "Jockey", "description": "", "price": "$16.000" },
       {
         "name": "Ground / Whole Bean Coffee",
         "description": "250 gr",
