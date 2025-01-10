@@ -190,11 +190,11 @@
             { "name": "Ñoquis", "description": "Acompañados de salsa pomodoro, rose, pesto o bechamel", "price": "$8.900" },
             { "name": "Wok de pollo", "description": "Pollo salteado con verduras, soya y arroz", "price": "$8.900" },
             { "name": "Wrap de pollo", "description": "Pollo braseado con queso, verduras asadas, mix de hojas verdes y salsa BBQ", "price": "$8.900" },
-            { "name": "Hojas de parra", "description": "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre colchón de hummus y babaganoush, tomates cherris marinados en menta", "price": "$12.900" }
+            { "name": "Hojas de parra", "description": "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre una base de hummus y babaganoush, tomates cherris marinados en menta", "price": "$12.900" }
         ],
         "store":[
             {"name":"Poleras","description":"","price":"$15.000"},
-            {"name":"Totes","description":"","price":"$12.000"},
+            {"name":"Totes","description":"","price":"$15.000"},
             {"name":"Jockey", "description": "", "price": "$16.000" },
             {"name":"Café en grano / molido","description":"250 gr","price":"$9.000"}
         ]
