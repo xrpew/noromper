@@ -220,12 +220,12 @@
       {
         "name": "Croissant Split",
         "description": "Filled with dulce de leche, banana, or strawberry",
-        "price": "$5,900"
+        "price": "$6,500"
       },
       {
         "name": "Croissant nutella // Nutella Croissant",
         "description": "Filled with Nutella, banana, or strawberry",
-        "price": "$6,900"
+        "price": "$7,200"
       },
       {
         "name": "Croissant de campo // Country Croissant",
@@ -235,7 +235,7 @@
       {
         "name": "Croissant jamon y queso // Ham and Cheese Croissant",
         "description": "Filled with ham and cheese",
-        "price": "$6,400"
+        "price": "$6,700"
       },
       {
         "name": "Croissant serrano // Serrano Croissant",
@@ -262,12 +262,12 @@
       {
         "name": "Waffle split // Split Waffle",
         "description": "With dulce de leche, banana, or strawberry, and whipped cream",
-        "price": "$6.700"
+        "price": "$7.000"
       },
       {
         "name": "Waffle nutella // Nutella Waffle",
         "description": "With Nutella, banana, or strawberry, and whipped cream",
-        "price": "$7.000"
+        "price": "$7.600"
       },
       {
         "name": "Waffle cacao // Cacao Waffle",
@@ -289,7 +289,7 @@
       {
         "name": "Tostada setas // Mushroom Toast",
         "description": "Sourdough toast with mozzarella, mushroom pâté, dehydrated tomatoes, mustard, finished with rosemary",
-        "price": "CLP $6,900"
+        "price": "CLP $7,600"
       },
       {
         "name": "Tostada palta encurtidos // Pickled Avocado Toast",
@@ -320,6 +320,11 @@
         "name": "Tostón Salmón // Salmon Tostón",
         "description": "Sourdough loaf bread, cream cheese, avocado, and smoked salmon",
         "price": "CLP $9,900"
+      },
+      {
+        "name": "Ricotta and Peach Toast // Tostón ricota durazno",
+        "description": "Sourdough loaf bread, ricotta, honey-roasted peaches, hints of basil, and caramelized walnuts.",
+        "price": "CLP $6,900"
       },
       {
         "name": "Tostada protéica // Protein Toast",
@@ -479,9 +484,9 @@
       {
         "name": "Tarta vasca // Basque Tart",
         "description": "Burnt cheesecake with a slight caramel flavor",
-        "price": "$4,900"
+        "price": "$5,200"
       },
-      { "name": "Cheesecake", "description": "", "price": "$4,900" },
+      { "name": "New York-style baked cheesecake", "description": "", "price": "$5,200" },
       {
         "name": "Torta húmeda de chocolate // Moist Chocolate Cake",
         "description": "Cocoa sponge cake filled with dulce de leche, bathed in bitter ganache",
