@@ -220,7 +220,7 @@
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
-        "name": "Colombia maceración carbónica",
+        "name": "Colombia maceración carbónica [tostaduría Renacuajo]",
         "description": "Origin: Colombia - Bolívar. <br> Notes: Cereza, chocolate de leche, licoroso <br> SCA Score: 87.5 <br> proceso: Natural, maceración carbónica",
         "price": ""
       },
@@ -283,12 +283,12 @@
       {
         "name": "Waffle split",
         "description": "Con dulce de leche, plátano o frutilla y crema batida",
-        "price": "$6.900"
+        "price": "$7.000"
       },
       {
         "name": "Waffle nutella",
         "description": "Con nutella, plátano o frutilla y crema batida",
-        "price": "$7.400"
+        "price": "$7.600"
       },
       {
         "name": "Waffle cacao",
