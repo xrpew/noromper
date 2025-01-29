@@ -220,12 +220,12 @@
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
-        "name": "BRASIL AMA [tostaduría Renacuajo]",
-        "description": "Origen: Brasil. <br> Notas: Piña madura, licoroso, panela. <br> Puntaje SCA: 87 <br> proceso: Natural",
+        "name": "Colombia maceración carbónica",
+        "description": "Origin: Colombia - Bolívar. <br> Notes: Cereza, chocolate de leche, licoroso <br> SCA Score: 87.5 <br> proceso: Natural, maceración carbónica",
         "price": ""
       },
-      { "name": "240ml", "description": "", "price": "$5.700" },
-      { "name": "400ml", "description": "", "price": "$9.800" },
+      { "name": "240ml", "description": "", "price": "$5.900" },
+      { "name": "400ml", "description": "", "price": "$9.900" },
       {
         "name": "La Fátima [tostaduría Renacuajo]",
         "description": "Origen: Coatepec, Veracruz, México. <br> Notas: Ciruela morada, arándanos, nibs de cacao. <br> Puntaje SCA: 87 <br> proceso: Natural",
@@ -245,12 +245,12 @@
       {
         "name": "Croissant split",
         "description": "Relleno con dulce de leche, plátano o frutilla",
-        "price": "$6.500"
+        "price": "$6.900"
       },
       {
         "name": "Croissant nutella",
         "description": "Relleno con nutella, plátano o frutilla",
-        "price": "$7.200"
+        "price": "$7.800"
       },
       {
         "name": "Croissant de campo",
@@ -265,7 +265,7 @@
       {
         "name": "Croissant serrano",
         "description": "Relleno con jamón serrano, rúcula, tomate, queso crema",
-        "price": "$8.500"
+        "price": "$9.200"
       },
       {
         "name": "Croissant de mar",
@@ -283,12 +283,12 @@
       {
         "name": "Waffle split",
         "description": "Con dulce de leche, plátano o frutilla y crema batida",
-        "price": "$6.700"
+        "price": "$6.900"
       },
       {
         "name": "Waffle nutella",
         "description": "Con nutella, plátano o frutilla y crema batida",
-        "price": "$7.000"
+        "price": "$7.400"
       },
       {
         "name": "Waffle cacao",
@@ -310,12 +310,12 @@
       {
         "name": "Tostada setas",
         "description": "tostada masa madre con queso muzzarella, paté de champiñones, tomates deshidratados y mostaza antigua, terminada con romero",
-        "price": "$7.600"
+        "price": "$7.900"
       },
       {
         "name": "Tostada palta encurtidos",
         "description": "tostada de masa madre con palta pisada y topping de encurtidos",
-        "price": "$5.900"
+        "price": "$6.100"
       },
       {
         "name": "Tostadas francesas",
@@ -325,7 +325,7 @@
       {
         "name": "Tostadas francesas nutella",
         "description": "Pan molde brioche, Nutella, frutos rojos, plátano o ambos",
-        "price": "$8.400"
+        "price": "$8.900"
       },
       {
         "name": "Tostón avocado",
@@ -345,17 +345,27 @@
       {
         "name": "Tostón ricota durazno",
         "description": "Pan hogaza masa madre, ricota, duraznos asados con miel, toques de albahaca y nueces garrapiñadas",
-        "price": "$6.900"
+        "price": "$7.300"
       },
       {
         "name": "Tostada proteica",
-        "description": "Tostada de masa madre, mantequilla de maní o mantequilla de almendras, frutos rojos, plátano o ambos y mix de semillas",
-        "price": "$6.500"
+        "description": "Tostada de masa madre, mantequilla de maní, frutos rojos, plátano o ambos y mix de semillas",
+        "price": "$6.800"
       },
       {
         "name": "Tostadas babaganoush",
         "description": "Pure de berenjenas asadas acompañado de tomates cherry y tostadas masamadre",
         "price": "$6.000"
+      },
+      {
+        "name": "Roll pesto",
+        "description": "roll de masa hojaldre relleno de pasta de ajo asado, pesto, muzarella y toques de oliva",
+        "price": "$4.600"
+      },
+      {
+        "name": "Roll prosciutto ",
+        "description": "roll de masa hojaldre relleno de pomodoro, cebolla morada y prosciutto",
+        "price": "$5.200"
       },
       {
         "name": "",
@@ -372,7 +382,7 @@
       {
         "name": "Especial champi",
         "description": "pan brioche tostado caliente, queso fundido, cebolla caramelizada y champiñones salteados.",
-        "price": "$6.900"
+        "price": "$7.600"
       },
       {
         "name": "Ave palta",
@@ -513,17 +523,22 @@
       },
       {
         "name": "Bowl ipanema",
-        "description": "acai, fruta de la estación, granola y mantequilla de maní",
+        "description": "acai, fruta de la estación, coco, granola y mantequilla de maní",
         "price": "$7.900"
       },
       {
         "name": "Bowl natural",
-        "description": "Yogurt natural, granola, frutas de estación y miel",
+        "description": "Yogurt natural, granola, frutas de estación, coco y miel",
         "price": "$6.600"
       },
       {
+        "name": "Bowl prosciutto",
+        "description": "Bowl fresco de mix verde aderezado, aceitunas moradas, prosciutto, tomates deshidratados, hebras de queso de cabra y toques de albahaca.",
+        "price": "$11.300"
+      },
+      {
         "name": "Bowl porridge invernal",
-        "description": "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas, coco y miel",
+        "description": "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas  y miel",
         "price": "$6.600"
       },
       {
@@ -582,17 +597,17 @@
       {
         "name": "Bowl de mar",
         "description": "Mix de hojas verdes, láminas de salmón ahumado, pepino fresco, cubos de palta, semillas de zapallo tostadas, dressing ácida de eneldo",
-        "price": "$9.500"
+        "price": "$10.500"
       },
       {
         "name": "Bowl serrano",
         "description": "Rúcula y mix de hojas verdes, jámon serrano, gajos de naranja a vivo, nueces garrapiñadas, dressing de aceto balsámico y miel",
-        "price": "$9.500"
+        "price": "$10.000"
       },
       {
         "name": "Bowl vegan",
         "description": "Mix verde, champiñones salteados, hummus, cherrys, babaganoush, pepino, palta",
-        "price": "$8.500"
+        "price": "$9.300"
       },
       {
         "name": "Panzottis espinaca o zapallo",
@@ -607,12 +622,12 @@
       {
         "name": "Wok de pollo",
         "description": "Pollo salteado con verduras, soya y arroz",
-        "price": "$8.900"
+        "price": "$9.100"
       },
       {
         "name": "Wrap de pollo",
         "description": "Pollo braseado con queso, verduras asadas, mix de hojas verdes y salsa BBQ",
-        "price": "$8.900"
+        "price": "$9.100"
       },
       {
         "name": "Hojas de parra",

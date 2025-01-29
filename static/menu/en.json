@@ -195,12 +195,12 @@
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
-        "name": "BRASIL AMA [tostaduría Renacuajo]",
-        "description": "Origin: Brasil. <br> Notes: Ripe pineapple, liquorice, panela <br> SCA Score: 87 <br> proceso: Natural",
+        "name": "Colombia maceración carbónica",
+        "description": "Origin: Colombia - Bolívar. <br> Notes: Cereza, chocolate de leche, licoroso <br> SCA Score: 87.5 <br> proceso: Natural, maceración carbónica",
         "price": ""
       },
-      { "name": "240ml", "description": "", "price": "$5.700" },
-      { "name": "400ml", "description": "", "price": "$9.800" },
+      { "name": "240ml", "description": "", "price": "$5.900" },
+      { "name": "400ml", "description": "", "price": "$9.900" },
       {
         "name": "La Fátima [tostaduría Renacuajo]",
         "description": "Origin: Coatepec, Veracruz, México. <br> Notes: Plum, blueberries, cocoa nibs <br> SCA Score: 87 <br> proceso: Natural",
@@ -220,12 +220,12 @@
       {
         "name": "Croissant Split",
         "description": "Filled with dulce de leche, banana, or strawberry",
-        "price": "$6,500"
+        "price": "$6,900"
       },
       {
         "name": "Croissant nutella // Nutella Croissant",
         "description": "Filled with Nutella, banana, or strawberry",
-        "price": "$7,200"
+        "price": "$7,800"
       },
       {
         "name": "Croissant de campo // Country Croissant",
@@ -240,7 +240,7 @@
       {
         "name": "Croissant serrano // Serrano Croissant",
         "description": "Filled with Serrano ham, arugula, tomato, and cream cheese",
-        "price": "$8,500"
+        "price": "$9,200"
       },
       {
         "name": "Croissant de mar // Sea Croissant",
@@ -262,12 +262,12 @@
       {
         "name": "Waffle split // Split Waffle",
         "description": "With dulce de leche, banana, or strawberry, and whipped cream",
-        "price": "$7.000"
+        "price": "$6.900"
       },
       {
         "name": "Waffle nutella // Nutella Waffle",
         "description": "With Nutella, banana, or strawberry, and whipped cream",
-        "price": "$7.600"
+        "price": "$7.400"
       },
       {
         "name": "Waffle cacao // Cacao Waffle",
@@ -289,17 +289,17 @@
       {
         "name": "Tostada setas // Mushroom Toast",
         "description": "Sourdough toast with mozzarella, mushroom pâté, dehydrated tomatoes, mustard, finished with rosemary",
-        "price": "CLP $7,600"
+        "price": "CLP $7,900"
       },
       {
         "name": "Tostada palta encurtidos // Pickled Avocado Toast",
         "description": "Sourdough toast with smashed avocado and pickled toppings",
-        "price": "CLP $5,900"
+        "price": "CLP $6,100"
       },
       {
         "name": "Tostadas francesas // French Toast",
         "description": "Brioche bread soaked in house batter, sealed in butter, finished with whipped cream, red fruits, and palm honey glaze",
-        "price": "CLP $8,400"
+        "price": "CLP $8,900"
       },
       {
         "name": "Tostadas francesas nutella // Nutella French Toast",
@@ -324,17 +324,27 @@
       {
         "name": "Ricotta and Peach Toast // Tostón ricota durazno",
         "description": "Sourdough loaf bread, ricotta, honey-roasted peaches, hints of basil, and caramelized walnuts.",
-        "price": "CLP $6,900"
+        "price": "CLP $7,300"
       },
       {
         "name": "Tostada protéica // Protein Toast",
-        "description": "Sourdough toast with peanut butter or almond butter, red fruits, banana or both, and mixed seeds",
-        "price": "CLP $6,500"
+        "description": "Sourdough toast with peanut butter, red fruits, banana or both, and mixed seeds",
+        "price": "CLP $6,800"
       },
       {
         "name": "Tostadas babaganoush // Babaganoush Toast",
         "description": "Roasted eggplant puree served with cherry tomatoes and sourdough toast",
         "price": "CLP $6,000"
+      },
+      {
+        "name": "Roll pesto",
+        "description": "roll de masa hojaldre relleno de pasta de ajo asado, pesto, muzarella y toques de oliva",
+        "price": "CLP $4,600"
+      },
+      {
+        "name": "Roll prosciutto ",
+        "description": "roll de masa hojaldre relleno de pomodoro, cebolla morada y prosciutto",
+        "price": "CLP $5,200"
       },
       {
         "name": "Opción de pan sin gluten //Gluten-free bread option",
@@ -351,7 +361,7 @@
       {
         "name": "Especial champi // Special Mushroom",
         "description": "Toasted brioche bread, melted cheese, caramelized onions, and sautéed mushrooms",
-        "price": "CLP $6,900"
+        "price": "CLP $7,600"
       },
       {
         "name": "Ave palta // Chicken Avocado",
@@ -504,17 +514,17 @@
       },
       {
         "name": "Bowl ipanema // Ipanema Bowl",
-        "description": "Acai, seasonal fruits, granola, and peanut butter",
+        "description": "Acai, seasonal fruits, granola, coconut, and peanut butter",
         "price": "$7,900"
       },
       {
         "name": "Bowl natural // Natural Bowl",
-        "description": "Natural yogurt, granola, seasonal fruits, and honey",
+        "description": "Natural yogurt, granola, coconut, seasonal fruits, and honey",
         "price": "$6,600"
       },
       {
         "name": "Bowl porridge invernal Winter Porridge Bowl",
-        "description": "Whole oat cooked in plant milk with apple, cinnamon, and walnuts, topped with fruits, coconut, and honey",
+        "description": "Whole oat cooked in plant milk with apple, cinnamon, and walnuts, topped with fruits, and honey",
         "price": "$6,600"
       },
       {
@@ -595,17 +605,17 @@
       {
         "name": "Bowl de mar // Sea Bowl",
         "description": "Mixed greens, smoked salmon slices, fresh cucumber, avocado cubes, toasted pumpkin seeds, and dill dressing",
-        "price": "CLP $9,500"
+        "price": "CLP $10,500"
       },
       {
         "name": "Bowl serrano // Serrano Bowl",
         "description": "Arugula and mixed greens, Serrano ham, orange wedges, caramelized nuts, balsamic and honey dressing",
-        "price": "CLP $9,500"
+        "price": "CLP $10,000"
       },
       {
         "name": "Bowl vegan // Vegan Bowl",
         "description": "Mixed greens, sautéed mushrooms, hummus, cherry tomatoes, babaganoush, cucumber, avocado",
-        "price": "CLP $8,500"
+        "price": "CLP $9,300"
       },
       {
         "name": "Panzottis espinaca o zapallo // Spinach or Squash Panzottis",
@@ -620,12 +630,12 @@
       {
         "name": "Wok de pollo // Chicken Wok",
         "description": "Sautéed chicken with vegetables, soy sauce, and rice",
-        "price": "CLP $8,900"
+        "price": "CLP $9,100"
       },
       {
         "name": "Wrap de pollo // Chicken Wrap",
         "description": "Grilled chicken, cheese, roasted vegetables, mixed greens, and BBQ sauce",
-        "price": "CLP $8,900"
+        "price": "CLP $9,100"
       },
       {
         "name": "Hojas de parra // Grape Leaves",
