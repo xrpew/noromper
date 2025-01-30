@@ -613,6 +613,11 @@
         "price": "CLP $10,000"
       },
       {
+        "name": "Bowl prosciutto",
+        "description": "Bowl fresco de mix verde aderezado, aceitunas moradas, prosciutto, tomates deshidratados, hebras de queso de cabra y toques de albahaca.",
+        "price": "$11.300"
+      },
+      {
         "name": "Bowl vegan // Vegan Bowl",
         "description": "Mixed greens, sautéed mushrooms, hummus, cherry tomatoes, babaganoush, cucumber, avocado",
         "price": "CLP $9,300"
@@ -647,6 +652,7 @@
       { "name": "T-shitrs", "description": "", "price": "$15.000" },
       { "name": "Totes", "description": "", "price": "$15.000" },
       { "name": "Jockey", "description": "", "price": "$16.000" },
+      { "name": "Bucket hat", "description": "", "price": "$17.000" },
       {
         "name": "Ground / Whole Bean Coffee",
         "description": "250 gr",
