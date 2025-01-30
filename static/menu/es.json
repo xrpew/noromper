@@ -532,11 +532,6 @@
         "price": "$6.600"
       },
       {
-        "name": "Bowl prosciutto",
-        "description": "Bowl fresco de mix verde aderezado, aceitunas moradas, prosciutto, tomates deshidratados, hebras de queso de cabra y toques de albahaca.",
-        "price": "$11.300"
-      },
-      {
         "name": "Bowl porridge invernal",
         "description": "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas  y miel",
         "price": "$6.600"
@@ -610,6 +605,11 @@
         "price": "$9.300"
       },
       {
+        "name": "Bowl prosciutto",
+        "description": "Bowl fresco de mix verde aderezado, aceitunas moradas, prosciutto, tomates deshidratados, hebras de queso de cabra y toques de albahaca.",
+        "price": "$11.300"
+      },
+      {
         "name": "Panzottis espinaca o zapallo",
         "description": "Pasta rellena acompañada de salsa pomodoro, rose, pesto o bechamel",
         "price": "$8.900"
@@ -639,6 +639,7 @@
       { "name": "Poleras", "description": "", "price": "$15.000" },
       { "name": "Totes", "description": "", "price": "$15.000" },
       { "name": "Jockey", "description": "", "price": "$16.000" },
+      { "name": "Bucket hat", "description": "", "price": "$17.000" },
       {
         "name": "Café en grano / molido",
         "description": "250 gr",
