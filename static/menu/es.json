@@ -595,11 +595,6 @@
         "price": "$10.500"
       },
       {
-        "name": "Bowl serrano",
-        "description": "Rúcula y mix de hojas verdes, jámon serrano, gajos de naranja a vivo, nueces garrapiñadas, dressing de aceto balsámico y miel",
-        "price": "$10.000"
-      },
-      {
         "name": "Bowl vegan",
         "description": "Mix verde, champiñones salteados, hummus, cherrys, babaganoush, pepino, palta",
         "price": "$9.300"
@@ -607,7 +602,7 @@
       {
         "name": "Bowl mediterráneo",
         "description": "Bowl fresco de mix verde aderezado, aceitunas moradas, prosciutto, tomates deshidratados, hebras de queso de cabra y toques de albahaca.",
-        "price": "$11.300"
+        "price": "$10.700"
       },
       {
         "name": "Panzottis espinaca o zapallo",
