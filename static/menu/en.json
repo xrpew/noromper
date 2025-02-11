@@ -191,12 +191,12 @@
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
-      { "name": "Caturra [tostaduría Renacuajo]", "description": "Origen: antioquia, colombia. <br> Notas: cacao, peach, passion fruit, liqueur-like. <br> Puntaje SCA: 87 <br> proceso: natural", "price": ""},
+      { "name": "Caturra [tostaduría Renacuajo]", "description": "origin: antioquia, colombia. <br> Notes: cacao, peach, passionfruit, liquorice. <br> Puntaje SCA: 87 <br> proceso: natural", "price": ""},
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
         "name": "Colombia maceración carbónica [tostaduría Renacuajo]",
-        "description": "Origin: Colombia - Bolívar. <br> Notes: Cereza, chocolate de leche, licoroso <br> SCA Score: 87.5 <br> proceso: Natural, maceración carbónica",
+        "description": "Origin: Colombia - Bolívar. <br> Notes: cherry, chocolate milk, liquorice  <br> SCA Score: 87.5 <br> process: natural/ carbonic maceration",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.900" },
@@ -338,12 +338,12 @@
       },
       {
         "name": "Roll pesto",
-        "description": "roll de masa hojaldre relleno de pasta de ajo asado, pesto, muzarella y toques de oliva",
+        "description": "Puff pastry roll filled with roasted garlic paste, pesto, mozzarella, and a touch of olive oil.",
         "price": "CLP $4,600"
       },
       {
         "name": "Roll prosciutto ",
-        "description": "roll de masa hojaldre relleno de pomodoro, cebolla morada y prosciutto",
+        "description": "Puff pastry roll filled with pomodoro, red onion, and prosciutto.",
         "price": "CLP $5,200"
       },
       {
@@ -609,7 +609,7 @@
       },
       {
         "name": "Bowl mediterráneo",
-        "description": "Bowl fresco de mix verde aderezado, aceitunas moradas, prosciutto, tomates deshidratados, hebras de queso de cabra y toques de albahaca.",
+        "description": "Fresh bowl with a mix of greens, seasoned dressing, purple olives, prosciutto, sun-dried tomatoes, goat cheese shavings, and hints of basil.",
         "price": "CLP $10,700"
       },
       {
