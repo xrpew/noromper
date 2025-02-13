@@ -605,9 +605,14 @@
         "price": "$10.700"
       },
       {
-        "name": "Panzottis espinaca o zapallo",
+        "name": "Panzotti espinaca o zapallo",
         "description": "Pasta rellena acompañada de salsa pomodoro, rose, pesto o bechamel",
         "price": "$8.900"
+      },
+      {
+        "name": "Panzotti de salmón",
+        "description": "Pasta rellena de salmón acompañada de salsa pomodoro, rose, pesto o bechamel",
+        "price": "$9.800"
       },
       {
         "name": "Ñoquis",

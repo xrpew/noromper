@@ -618,9 +618,14 @@
         "price": "CLP $9,300"
       },
       {
-        "name": "Panzottis espinaca o zapallo // Spinach or Squash Panzottis",
+        "name": "Panzotti espinaca o zapallo // Spinach or Squash Panzottis",
         "description": "Stuffed pasta with pomodoro, rose, pesto, or béchamel sauce",
         "price": "CLP $8,900"
+      },
+      {
+        "name": "Panzotti salmón",
+        "description": "pasta rellena de salmón acompañada de salsa pomodoro, rose, pesto o bechamel",
+        "price": "CLP $9,800"
       },
       {
         "name": "Gnocchi",
