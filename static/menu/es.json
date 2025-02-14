@@ -199,8 +199,8 @@
     ],
     "filtrados": [
       {
-        "name": "La Colombia [tostaduría Renacuajo]",
-        "description": "Origen: Antioquia, Colombia. <br> Notas: Maracuyá, durazno, chocolate, licoroso. <br> Puntaje SCA: 87 <br> proceso: natural",
+        "name": "La Secreta [tostaduría Renacuajo]",
+        "description": "Región: Bolívar - Antioquia, Colombia. <br> Notas:  Litchi, Panela, Chocolate, Frambuesa. <br> Puntaje SCA: 86.5 <br> proceso: honey 120 hrs",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
@@ -227,8 +227,8 @@
       { "name": "240ml", "description": "", "price": "$5.900" },
       { "name": "400ml", "description": "", "price": "$9.900" },
       {
-        "name": "La Fátima [tostaduría Renacuajo]",
-        "description": "Origen: Coatepec, Veracruz, México. <br> Notas: Ciruela morada, arándanos, nibs de cacao. <br> Puntaje SCA: 87 <br> proceso: Natural",
+        "name": "Pink Bourbon [tostaduría Renacuajo]",
+        "description": "Origen: Huila, Colombia. <br> Notas: Frutas amarillas, florarl, caramelo, cítrico. <br> Puntaje SCA: 85.5 <br> proceso: Lavado",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
