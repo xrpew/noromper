@@ -178,20 +178,20 @@
     ],
     "filtrados": [
       {
-        "name": "La Colombia [tostaduría Renacuajo]",
-        "description": "Origin: Antioquia, Colombia. <br> Notes: Passion fruit, peach, chocolate, liquorice <br> SCA Score: 87 <br> proceso: natural",
+        "name": "La Secreta [tostaduría Renacuajo]",
+        "description": "Región: Bolívar - Antioquia, Colombia. <br> Notas:  Litchi, Panela, Chocolate, Frambuesa. <br> SCA Score: 86.5 <br> process: honey 120 hrs",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
         "name": "Chiroso Honey [tostaduría Renacuajo]",
-        "description": "Origin: Colombia Antioquia. <br> Notes: Cherry, tangerine, caramel <br> SCA Score: 87,5 <br> proceso: honey",
+        "description": "Origin: Colombia Antioquia. <br> Notes: Cherry, tangerine, caramel <br> SCA Score: 87,5 <br> process: honey",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
-      { "name": "Caturra [tostaduría Renacuajo]", "description": "origin: antioquia, colombia. <br> Notes: cacao, peach, passionfruit, liquorice. <br> Puntaje SCA: 87 <br> proceso: natural", "price": ""},
+      { "name": "Caturra [tostaduría Renacuajo]", "description": "origin: antioquia, colombia. <br> Notes: cacao, peach, passionfruit, liquorice. <br> SCA Score: 87 <br> process: natural", "price": ""},
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
@@ -202,15 +202,15 @@
       { "name": "240ml", "description": "", "price": "$5.900" },
       { "name": "400ml", "description": "", "price": "$9.900" },
       {
-        "name": "La Fátima [tostaduría Renacuajo]",
-        "description": "Origin: Coatepec, Veracruz, México. <br> Notes: Plum, blueberries, cocoa nibs <br> SCA Score: 87 <br> proceso: Natural",
+        "name": "Pink Bourbon [tostaduría Renacuajo]",
+        "description": "Origen: Huila, Colombia. <br> Notas: Yellow fruits, floral, caramel, citrus. <br> SCA Score: 85.5 <br> process: Lavado",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
         "name": "Brasil Santa Lucía [tostaduría Sorbo]",
-        "description": "Origin: brasil santa lucía. <br> Notes: Rosehip, pineapple, cocoa nibs, and pepper<br> SCA Score: 87 <br> proceso: Natural",
+        "description": "Origin: brasil santa lucía. <br> Notes: Rosehip, pineapple, cocoa nibs, and pepper<br> SCA Score: 87 <br> process: Natural",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
