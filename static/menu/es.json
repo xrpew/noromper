@@ -120,6 +120,11 @@
         "price": "$4.400"
       },
       {
+        "name": "Chocolate caliente con marshmallow",
+        "description": "",
+        "price": "$4.900"
+      },
+      {
         "name": "Capuccino nutella",
         "description": "60ml espresso, leche, espuma de leche, terminado con borde de Nutella y almendras trozadas",
         "price": "$4.900"
@@ -200,7 +205,7 @@
     "filtrados": [
       {
         "name": "La Secreta [tostaduría Renacuajo]",
-        "description": "Región: Bolívar - Antioquia, Colombia. <br> Notas:  Litchi, Panela, Chocolate, Frambuesa. <br> Puntaje SCA: 86.5 <br> proceso: honey 120 hrs",
+        "description": "Origen: Bolívar - Antioquia, Colombia. <br> Notas:  Litchi, Panela, Chocolate, Frambuesa. <br> Puntaje SCA: 86.5 <br> proceso: honey 120 hrs",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
@@ -228,7 +233,7 @@
       { "name": "400ml", "description": "", "price": "$9.900" },
       {
         "name": "Pink Bourbon [tostaduría Renacuajo]",
-        "description": "Origen: Huila, Colombia. <br> Notas: Frutas amarillas, florarl, caramelo, cítrico. <br> Puntaje SCA: 85.5 <br> proceso: Lavado",
+        "description": "Origen: Huila, Colombia. <br> Notas: Frutas amarillas, floral, caramelo, cítrico. <br> Puntaje SCA: 85.5 <br> proceso: Lavado",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
@@ -460,11 +465,6 @@
         "price": "$2.900"
       },
       {
-        "name": "Queque frambuesa vegano sin azucar",
-        "description": "",
-        "price": "$3.200"
-      },
-      {
         "name": "Cookie",
         "description": "(consultar disponibilidad)",
         "price": "$2.800"
@@ -478,11 +478,6 @@
         "name": "Florentinas",
         "description": "galleta a base de chocolate con almendras, sin gluten (3 unidades por porción)",
         "price": "$2.500"
-      },
-      {
-        "name": "Galletón jengibre vegano sin azucar",
-        "description": "",
-        "price": "$2.300"
       },
       { "name": "Rollo de canela", "description": "", "price": "$3.500" },
       {

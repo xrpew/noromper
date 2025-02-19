@@ -119,6 +119,12 @@
         "price": "CLP $4,400"
       },
       {
+        "name": "Chocolate caliente con marshmallow // Hot Chocolate with marshmallow",
+        "description": "",
+        "price": "CLP $4,900"
+      },
+
+      {
         "name": "Capuccino nutella // Nutella Cappuccino",
         "description": "60ml espresso, milk, milk foam, finished with Nutella border and chopped almonds",
         "price": "CLP $4,900"
@@ -179,7 +185,7 @@
     "filtrados": [
       {
         "name": "La Secreta [tostaduría Renacuajo]",
-        "description": "Región: Bolívar - Antioquia, Colombia. <br> Notas:  Litchi, Panela, Chocolate, Frambuesa. <br> SCA Score: 86.5 <br> process: honey 120 hrs",
+        "description": "Origin: Bolívar - Antioquia, Colombia. <br> Notas:  Litchi, Panela, Chocolate, Frambuesa. <br> SCA Score: 86.5 <br> process: honey 120 hrs",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
@@ -443,11 +449,6 @@
         "price": "$2,900"
       },
       {
-        "name": "Queque frambuesa vegano sin azucar // Vegan Sugar-Free Raspberry Cake",
-        "description": "",
-        "price": "$3,200"
-      },
-      {
         "name": "Cookie",
         "description": "(Check availability)",
         "price": "$2,800"
@@ -461,11 +462,6 @@
         "name": "Florentinas",
         "description": "Almond-based chocolate cookies, gluten-free (3 units per portion)",
         "price": "$2,500"
-      },
-      {
-        "name": "Galletón jengibre vegano sin azucar // Vegan Sugar-Free Ginger Cookie",
-        "description": "",
-        "price": "$2,300"
       },
       { "name": "Brownie", "description": "", "price": "$3,200" },
       { "name": "Banoffee", "description": "", "price": "$4,900" },
