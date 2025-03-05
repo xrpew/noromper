@@ -642,6 +642,11 @@
         "name": "Hojas de parra // Grape Leaves",
         "description": "Filled with meat or soy, jasmine rice, Lebanese spices on a bed of hummus and babaganoush, marinated cherry tomatoes with mint",
         "price": "CLP $12,900"
+      },
+      {
+        "name": "Check out our daily menu",
+        "description": "From Monday to Friday until stock runs out",
+        "price": "$9.800"
       }
     ],
     "store": [

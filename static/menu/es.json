@@ -628,7 +628,13 @@
         "name": "Hojas de parra",
         "description": "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre una base de hummus y babaganoush, tomates cherris marinados en menta",
         "price": "$12.900"
+      },
+      {
+        "name": "Consulta nuestro menú del día",
+        "description": "De lunes a vieres hasta agotar stock",
+        "price": "$9.800"
       }
+
     ],
     "store": [
       { "name": "Poleras", "description": "", "price": "$15.000" },
