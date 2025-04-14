@@ -60,6 +60,20 @@ h6,
     z-index: 1;
 }
 
+.customMain {
+    background-color: white;
+    color: #000;
+}
+.customMain:hover {
+    background-color: #515151;
+    color: white;
+}
+
+/* hr {
+    border: 3px solid #000;
+    width: 80%;
+    background-color: #000;
+} */
 .border-inner::before {
     position: absolute;
     content: "";
