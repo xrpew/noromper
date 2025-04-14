@@ -174,15 +174,16 @@
             document.getElementById("tabsMenu").innerHTML = "";
             const { fullTitle, allData, nameOfData, mapeo, descriptionData } =
               data;
-            console.log(allData, nameOfData, mapeo);
+            // console.log(allData, nameOfData, mapeo);
 
             // Agregar opción "Ver todo" como la pestaña inicial
-            document.getElementById("tabsMenu").innerHTML += `
-              <li class="nav-item">
-                <a class="nav-link tabsMenucss text-white" data-bs-toggle="pill" href="#tab-all" id="allMenu">${fullTitle}</a>
-              </li>`;
+            // document.getElementById("tabsMenu").innerHTML += `
+              // <li class="nav-item">
+                // <a class="nav-link tabsMenucss text-white" data-bs-toggle="pill" href="#tab-all" id="allMenu">${fullTitle}</a>
+              // </li>`;
 
             // Crear el contenido de "Ver todo" con separación por categorías
+
             let allContent = `<div id="tab-all" class="tab-pane fade show p-0">`;
             allData.forEach((a) => {
               allContent += `
@@ -243,7 +244,7 @@
             // Llenar las pestañas individuales y la de "Ver todo"
             allData.map((a) => {
               const ss = mapeo[a];
-              console.log(a, ss);
+              // console.log(a, ss);
               const label = document.getElementById(`${a}HTML`);
               const allLabel = document.getElementById(`all-${a}`); // Contenedor para "Ver todo" por categoría
 
