@@ -109,13 +109,13 @@
       <div class="container">
         <div class="text-center mx-auto pb-3" style="max-width: 600px">
           <h1 id="knowYour" class="display-4 text-uppercase">
-            conoce nuestra carta
+            carta
           </h1>
 
-          <span id="exploreIt"
+          <!-- <span id="exploreIt"
             >Explora todas las secciones que hemos preparado detalladamente para
-            ti</span
-          >
+            ti</span -->
+          <!-- > -->
         </div>
         <div class="tab-class text-center">
           <ul
@@ -174,15 +174,16 @@
             document.getElementById("tabsMenu").innerHTML = "";
             const { fullTitle, allData, nameOfData, mapeo, descriptionData } =
               data;
-            console.log(allData, nameOfData, mapeo);
+            // console.log(allData, nameOfData, mapeo);
 
             // Agregar opción "Ver todo" como la pestaña inicial
-            document.getElementById("tabsMenu").innerHTML += `
-              <li class="nav-item">
-                <a class="nav-link tabsMenucss text-white" data-bs-toggle="pill" href="#tab-all" id="allMenu">${fullTitle}</a>
-              </li>`;
+            // document.getElementById("tabsMenu").innerHTML += `
+              // <li class="nav-item">
+                // <a class="nav-link tabsMenucss text-white" data-bs-toggle="pill" href="#tab-all" id="allMenu">${fullTitle}</a>
+              // </li>`;
 
             // Crear el contenido de "Ver todo" con separación por categorías
+
             let allContent = `<div id="tab-all" class="tab-pane fade show p-0">`;
             allData.forEach((a) => {
               allContent += `
@@ -203,11 +204,7 @@
               a == "lunch" && hour >= 16
                 ? (nameClase = "nav-link tabsMenucss text-white")
                 : "";
-
               a == "breakfast" && hour < 12
-                ? (nameClase = "nav-link tabsMenucss text-white active")
-                : "";
-              a == "tapita" && hour >= 16
                 ? (nameClase = "nav-link tabsMenucss text-white active")
                 : "";
               document.getElementById("tabsMenu").innerHTML += `
@@ -247,7 +244,7 @@
             // Llenar las pestañas individuales y la de "Ver todo"
             allData.map((a) => {
               const ss = mapeo[a];
-              console.log(a, ss);
+              // console.log(a, ss);
               const label = document.getElementById(`${a}HTML`);
               const allLabel = document.getElementById(`all-${a}`); // Contenedor para "Ver todo" por categoría
 

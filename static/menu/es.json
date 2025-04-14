@@ -4,28 +4,20 @@
   "allData": [
     "coffe",
     "filtrados",
-    "croissant",
-    "wafles",
-    "toast",
-    "sandwiches",
-    "omelette",
-    "pasteleria",
     "juice",
-    "breakfast",
     "brunch",
+    "salad",
+    "sweet",
+    "breakfast",
     "lunch",
     "store"
   ],
   "nameOfData": {
     "coffe": "CAFETERÍA",
     "filtrados": "FILTRADOS",
-    "croissant": "CROISSANT",
-    "wafles": "WAFFLES",
-    "toast": "TOSTADAS",
-    "sandwiches": "SÁNDWICH",
-    "omelette": "PAILAS Y OMELLETTE",
-    "pasteleria": "PASTELERÍA Y BOWLS",
-    "juice": "JUGOS Y BEBIDAS",
+    "salad": "SALADOS",
+    "sweet": "DULCES",
+    "juice": "JUGOS",
     "breakfast": "DESAYUNOS",
     "brunch": "BRUNCH",
     "lunch": "ALMUERZOS",
@@ -34,16 +26,12 @@
   "descriptionData": {
     "coffe": "",
     "filtrados": "CHEMEX / V60 / ORIGAMI",
-    "croissant": "",
-    "wafles": "",
-    "toast": "de 9 a 13 / de 16 a 21.30",
-    "sandwiches": "",
-    "omelette": "de 9 a 13 / de 16 a 21.30",
-    "pasteleria": "",
+    "salad": "",
+    "sweet": "",
     "juice": "",
-    "breakfast": "(disponibles de lunes a viernes hasta las 11.30hs)",
+    "breakfast": "LUNES A VIERNES HASTA LAS 11:30",
     "brunch": "",
-    "lunch": "de 13 a 16 hrs",
+    "lunch": "HASTA LAS 16:00 hrs",
     "store": ""
   },
 
@@ -136,11 +124,6 @@
       },
       { "name": "CAFÉ FRÍOS", "description": "<hr>", "price": "<br>" },
       {
-        "name": "Ice flat honey",
-        "description": "Espresso doble, leche, 20ml de miel, espuma de leche y hielo",
-        "price": "$4.200"
-      },
-      {
         "name": "Iced latte",
         "description": "espresso, leche y hielo",
         "price": "$3.600"
@@ -179,11 +162,6 @@
         "name": "Cold brew",
         "description": "extracción en frío de café que se realiza durante un periodo de tiempo entre 12 y 24 horas",
         "price": "$3.600"
-      },
-      {
-        "name": "Cold brew sour",
-        "description": "90ml cold brew, 30ml limón y hielo",
-        "price": "$4.200"
       },
       { "name": "EXTRAS", "description": "<hr>", "price": "<br>" },
       {
@@ -246,302 +224,33 @@
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" }
     ],
-    "croissant": [
-      {
-        "name": "Croissant split",
-        "description": "Relleno con dulce de leche, plátano o frutilla",
-        "price": "$6.900"
-      },
-      {
-        "name": "Croissant nutella",
-        "description": "Relleno con nutella, plátano o frutilla",
-        "price": "$7.800"
-      },
-      {
-        "name": "Croissant de campo",
-        "description": "Relleno con huevos revueltos, palta, jamón y queso",
-        "price": "$8.500"
-      },
-      {
-        "name": "Croissant jamón y queso",
-        "description": "Relleno con jámon y queso",
-        "price": "$6.700"
-      },
-      {
-        "name": "Croissant serrano",
-        "description": "Relleno con jamón serrano, rúcula, tomate, queso crema",
-        "price": "$9.200"
-      },
-      {
-        "name": "Croissant de mar",
-        "description": "Relleno con salmón ahumado, rúcula, palta, queso crema de ciboulette y alcaparras",
-        "price": "$10.500"
-      },
-      {
-        "name": "Croissant pera queso azul",
-        "description": "peras caramelizadas, queso azul, nueces trozadas y rúcula",
-        "price": "$8.500"
-      },
-      { "name": "*Opción pan sin gluten", "description": "", "price": "$2.000" }
-    ],
-    "wafles": [
-      {
-        "name": "Waffle split",
-        "description": "Con dulce de leche, plátano o frutilla y crema batida",
-        "price": "$7.000"
-      },
-      {
-        "name": "Waffle nutella",
-        "description": "Con nutella, plátano o frutilla y crema batida",
-        "price": "$7.600"
-      },
-      {
-        "name": "Waffle cacao",
-        "description": "waffle de cacao acompañado de helado de vainilla, frutos rojos,  plátano bruleado y salsa toffee",
-        "price": "$8.000"
-      }
-    ],
-    "toast": [
-      {
-        "name": "Tostadas clásicas",
-        "description": "Tostadas masa madre, con mermelada o dulce de leche y mantequilla o queso crema",
-        "price": "$4.900"
-      },
-      {
-        "name": "Tostadas con palta",
-        "description": "tostadas masa madre con palta laminada, terminadas con semillas",
-        "price": "$6.500"
-      },
-      {
-        "name": "Tostada setas",
-        "description": "tostada masa madre con queso muzzarella, paté de champiñones, tomates deshidratados y mostaza antigua, terminada con romero",
-        "price": "$7.900"
-      },
-      {
-        "name": "Tostada palta encurtidos",
-        "description": "tostada de masa madre con palta pisada y topping de encurtidos",
-        "price": "$6.100"
-      },
-      {
-        "name": "Tostadas francesas",
-        "description": "Pan brioche remojado en batido de la casa, sellado en mantequilla y terminado con crema batida, frutos rojos y espejo de miel de palma.",
-        "price": "$8.400"
-      },
-      {
-        "name": "Tostadas francesas nutella",
-        "description": "Pan molde brioche, Nutella, frutos rojos, plátano o ambos",
-        "price": "$8.900"
-      },
-      {
-        "name": "Tostón avocado",
-        "description": "Pan hogaza masa madre, palta y huevos revueltos (opcional con salsa holandesa)",
-        "price": "$7.900"
-      },
-      {
-        "name": "Tostón hummus",
-        "description": "Pan hogaza masa madre, hummus, palta, tomates frescos y pesto",
-        "price": "$7.500"
-      },
-      {
-        "name": "Tostón salmón",
-        "description": "Pan hogaza masa madre, queso crema, palta y salmón ahumado",
-        "price": "$9.900"
-      },
-      {
-        "name": "Tostón ricota durazno",
-        "description": "Pan hogaza masa madre, ricota, duraznos asados con miel, toques de albahaca y nueces garrapiñadas",
-        "price": "$7.300"
-      },
-      {
-        "name": "Tostada proteica",
-        "description": "Tostada de masa madre, mantequilla de maní, frutos rojos, plátano o ambos y mix de semillas",
-        "price": "$6.800"
-      },
-      {
-        "name": "Tostadas babaganoush",
-        "description": "Pure de berenjenas asadas acompañado de tomates cherry y tostadas masamadre",
-        "price": "$6.000"
-      },
-      {
-        "name": "Roll pesto",
-        "description": "roll de masa hojaldre relleno de pasta de ajo asado, pesto, muzarella y toques de oliva",
-        "price": "$4.600"
-      },
-      {
-        "name": "Roll prosciutto ",
-        "description": "roll de masa hojaldre relleno de pomodoro, cebolla morada y prosciutto",
-        "price": "$5.200"
-      },
-      {
-        "name": "",
-        "description": "** Opción pan sin gluten $2.000",
-        "price": ""
-      }
-    ],
-    "sandwiches": [
-      {
-        "name": "Prensado",
-        "description": "Pan ciabatta de masa madre con mantequilla especiada, jamon y queso.",
-        "price": "$6.900"
-      },
-      {
-        "name": "Especial champi",
-        "description": "pan brioche tostado caliente, queso fundido, cebolla caramelizada y champiñones salteados.",
-        "price": "$7.600"
-      },
-      {
-        "name": "Ave palta",
-        "description": "Pan ciabatta de masa madre, pechuga de pollo, mayonesa, palta",
-        "price": "$8.900"
-      },
-      {
-        "name": "Pastrami",
-        "description": "Tostada masa madre, pastrami, dressing de mostaza miel, encurtidos y rúcula",
-        "price": "$9.900"
-      },
-      {
-        "name": "Sandwich bacon",
-        "description": "huevo revuelto, tocino ahúmado y queso fundido, en pan brioche",
-        "price": "$9.500"
-      },
-      {
-        "name": "Croque madame",
-        "description": "pan molde masa madre tostado, jamón, queso, bechamel, muzzarella gratinada, terminado con huevo frito.",
-        "price": "$9.900"
-      },
-      {
-        "name": "Veggie sandwich",
-        "description": "Pan ciabatta de masa madre, queso fundido, tomate asado y pesto",
-        "price": "$7.900"
-      },
-      {
-        "name": "Vegan sandwich",
-        "description": "Pan ciabatta de masa madre, hummus, tomate asado, champiñones y mix verde",
-        "price": "$7.900"
-      },
-      {
-        "name": "**Opción pan sin gluten",
-        "description": "",
-        "price": "$2.000"
-      }
-    ],
-    "omelette": [
-      {
-        "name": "Paila de huevos revueltos",
-        "description": "",
-        "price": "$6.500"
-      },
-      {
-        "name": "Paila de huevos revueltos más agregado a elección",
-        "description": "Con tomate / Jamón / Tocino / Queso / Champiñones",
-        "price": "$6.800"
-      },
-      {
-        "name": "Omelette de jamón y queso con ensalada",
-        "description": "",
-        "price": "$6.900"
-      },
-      {
-        "name": "*Todas las pailas vienen con tostadas masa madre",
-        "description": "",
-        "price": ""
-      },
-      {
-        "name": "**Opción pan sin gluten",
-        "description": "",
-        "price": "$2.000"
-      }
-    ],
-    "pasteleria": [
-      { "name": "Medialuna argentina", "description": "", "price": "$2.000" },
-      {
-        "name": "Medialuna rellena",
-        "description": "Con pastelera o dulce de leche",
-        "price": "$2.400"
-      },
-      {
-        "name": "Porción queque",
-        "description": "(consultar disponibilidad)",
-        "price": "$2.900"
-      },
-      {
-        "name": "Cookie",
-        "description": "(consultar disponibilidad)",
-        "price": "$2.800"
-      },
-      {
-        "name": "Cookie sin azucar",
-        "description": "(consultar disponibilidad)",
-        "price": "$2.300"
-      },
-      {
-        "name": "Florentinas",
-        "description": "galleta a base de chocolate con almendras, sin gluten (3 unidades por porción)",
-        "price": "$2.500"
-      },
-      { "name": "Rollo de canela", "description": "", "price": "$3.500" },
-      {
-        "name": "Alfajor brownie",
-        "description": "bases de brownie rellenas con dulce de leche",
-        "price": "$3.900"
-      },
-      {
-        "name": "Alfacookie",
-        "description": "base de cookie rellenas con dulce de leche",
-        "price": "$3.900"
-      },
-      { "name": "Brownie", "description": "", "price": "$3.200" },
-      { "name": "Brownie con helado", "description": "", "price": "$4.900" },
-      { "name": "Banoffee", "description": "", "price": "$4.900" },
-      { "name": "Cheesecake horneado de frambuesa", "description": "", "price": "$5.200" },
-      { "name": "Carrot cake", "description": "", "price": "$5.400" },
-      { "name": "Lemon pie", "description": "", "price": "$4.900" },
-      {
-        "name": "Tarta vasca",
-        "description": "tarta de queso quemada con ligero sabor a caramelo",
-        "price": "$5.200"
-      },
-      {
-        "name": "Torta húmeda de chocolate",
-        "description": "bizcocho de cacao húmedo relleno con dulce de leche, bañanado en ganache bitter",
-        "price": "$5.900"
-      },
-      {
-        "name": "Porción de frutas de estación",
-        "description": " con dip de miel",
-        "price": "$4.300"
-      },
-      {
-        "name": "Vegancito",
-        "description": "lingote de bizcocho de vainilla cubierto de chocolate bitter, relleno de gel de frambuesa decorado con chantilly (todos los componentes de origen vegetal)",
-        "price": "$3.600"
-      },
-      {
-        "name": "Bowl ipanema",
-        "description": "acai, fruta de la estación, coco, granola y mantequilla de maní",
-        "price": "$7.900"
-      },
-      {
-        "name": "Bowl natural",
-        "description": "Yogurt natural, granola, frutas de estación, coco y miel",
-        "price": "$6.600"
-      },
-      {
-        "name": "Bowl porridge invernal",
-        "description": "Avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas  y miel",
-        "price": "$6.600"
-      },
-      {
-        "name": "Rawnie clásico o naranja",
-        "description": "Caramelo de naranja crunchy a base de mantequilla de maní sobre bizcocho de dátiles y cacao cubierto de chocolate bitter",
-        "price": "$2.900"
-      },
-      {
-        "name": "Caluga",
-        "description": "Suave nougat de nuez y dátiles con toques de vainilla, café y coco, cubierto con chocolate bitter y topping de nuez crocante",
-        "price": "$2.900"
-      }
-    ],
+    "salad":[{"name":"Tostadas clásicas" ,"price":"$4.900","description":"Tostada de masa madre, con mermelada o dulce de leche y mantequilla o queso crema"},
+    {"name":"Tostadas con palta" ,"price":"$6.500","description":"Tostada de masa madre, con semillas y palta "},
+    {"name":"Tostada palta encurtidos" ,"price":"$6.100","description":"Tostada de masa madre con palta pisada y topping de encurtidos"},
+    {"name":"Tostada setas" ,"price":"$7.900","description":"Tostada masa madre con queso muzzarella, pate de champiñones, tomates deshidratados y mostaza antigua, terminada con romero"},
+    {"name":"Tostón avocado" ,"price":"$7.900","description":"pan hogaza masa madre, palta laminada y huevos revueltos (opcional con salsa holandesa)"},
+    {"name":"Tostón hummus" ,"price":"$7.500","description":"Pan hogaza de masa madre, hummus, palta, tomates frescos y pesto"},
+    {"name":"Tostón salmón" ,"price":"$8.900","description":"Pan hogaza de masa madre, queso crema, palta laminada y salmón ahumado"},
+    {"name":"Tostón ricota durazno" ,"price":"$7.300","description":"Pan hogaza masa madre, ricota, duraznos asados con miel, toques de albahaca y nueces garrapiñadas"},
+    {"name":"Tostada babaganoush" ,"price":"$6.000","description":"Puré de berenjenas asadas acompañado de tomates cherry y tostadas masamadre"},
+    {"name":"Prensado" ,"price":"$6.900","description":"Pan ciabatta de masa madre con mantequilla especiada, jamon y queso"},
+    {"name":"Especial champi" ,"price":"$7.600","description":"pan brioche tostado caliente, queso fundido, cebolla caramelizada y champiñones salteados"},
+    {"name":"Ave palta" ,"price":"$8.900","description":"Pan ciabatta de masa madre, pechuga de pollo, mayonesa, palta"},
+    {"name":"Pastrami" ,"price":"$9.900","description":"Tostada masa madre, pastrami, dressing de mostaza miel, encurtidos y rúcula"},
+    {"name":"Sandwich bacon" ,"price":"$9.500","description":"huevo revuelto, tocino ahúmado y queso fundido, en pan brioche"},
+    {"name":"Croque madame" ,"price":"$9.900","description":"Pan molde masa madre tostado, jamón artesanal, queso, bechamel, muzzarella gratinada, terminado con huevo frito."},
+    {"name":"Veggie sandwich" ,"price":"$7.900","description":"Pan ciabatta de masa madre, queso fundido, tomate asado y pesto"},
+    {"name":"Vegan sandwich" ,"price":"$7.900","description":"Pan ciabatta de masa madre, hummus, tomate asado, champiñones y mix verde"},
+    {"name":"Croissant de campo" ,"price":"$8.500","description":"Relleno con huevos revueltos, palta, jamón artesanal y queso "},
+    {"name":"Croissant jamón y queso" ,"price":"$6.700","description":"Relleno con jamón artesanal y queso "},
+    {"name":"Croissant serrano" ,"price":"$9.200","description":"Relleno con jamón serrano, rúcula, tomate, queso crema"},
+    {"name":"Croissant de mar" ,"price":"$10.500","description":"Relleno con salmón ahumado, rúcula, palta, queso crema de ciboulette y alcaparras"},
+    {"name":"Croissant pera queso azul" ,"price":"$8.500","description":"Relleno peras caramelizadas, queso azul, nueces trozadas y rúcula"},
+    {"name":"Paila de huevos revueltos ","description":"","price":"$6.500"},
+    {"name":"Paila de huevos revueltos más agregado a elección ","description":"Con tomate / jamón artesanal / tocino / queso / champiñones","price":"$6.800"},
+    {"name":"Omelette de jamón y queso con ensalada ","description":"","price":"$6.900"},
+    {"name":"*Todas las pailas vienen con tostadas masa madre", "description" :"","price":""},
+    {"name":"**Opción pan sin gluten ","description":"","price":"$2.000"}],
     "juice": [
       { "name": "Vitamina naranja", "description": "", "price": "$4.500" },
       { "name": "Jugo natural", "description": "consultar", "price": "$4.500" },
@@ -553,6 +262,38 @@
       { "name": "Bebida", "description": "", "price": "$2.300" },
       { "name": "Kombucha", "description": "", "price": "$4.000" }
     ],
+    "sweet": [{"name":"Medialuna argentina","price":"$2.000","description":""},
+    {"name":"Medialuna rellena","price":"$2.400","description":"Con pastelera o dulce de leche"},
+    {"name":"Porción queque","price":"$2.900","description":"Consultar disponibilidad"},
+    {"name":"Cookie","price":"$2.800","description":"Consultar disponibilidad"},
+    {"name":"Cookie sin azúcar","price":"$2.300","description":"Consultar disponibilidad"},
+    {"name":"Florentinas","price":"$2.500","description":"Galleta a base de chocolate con almendras, sin gluten (3 unidades por porción)"},
+    {"name":"Alfajor brownie","price":"$3.900","description":"Bases de brownie rellenas con dulce de leche"},
+    {"name":"Alfacookie","price":"$3.900","description":"bases de cookie rellenas con dulce de leche"},
+    {"name":"Brownie","price":"$3.200","description":""},
+    {"name":"Brownie con helado","price":"$4.900","description":""},
+    {"name":"Banoffee","price":"$4.900","description":""},
+    {"name":"Rollo de canela","price":"$3.500","description":""},
+    {"name":"Cheesecake horneado de frambuesa","price":"$5.200","description":""},
+    {"name":"Carrot cake","price":"$5.400","description":""},
+    {"name":"Lemon pie","price":"$4.900","description":""},
+    {"name":"Tarta vasca","price":"$5.200","description":"Tarta de queso quemada con ligero sabor a caramelo"},
+    {"name":"Torta húmeda de chocolate","price":"$5.900","description":"Bizcocho de cacao húmedo relleno con dulce de leche, bañado en ganache bitter"},
+    {"name":"Porción de frutas de estación","price":"$4.300","description":"Con dip de miel"},
+    {"name":"Vegancito","price":"$3.600","description":"Lingote de bizcocho de vainilla cubierto de chocolate bitter, relleno de gel de frambuesa decorado con chantilly (todos los componentes de origen vegetal)"},
+    {"name":"Bowl Ipanema","price":"$7.900","description":" Acai, fruta de la estación, granola, mantequilla de maní y coco"},
+    {"name":"Bowl natural","price":"$6.600","description":" Yogurt natural, granola, frutas de estación, miel y coco"},
+    {"name":"Bowl porridge invernal","price":"$6.600","description":" avena integral cocida en leche vegetal con manzana, canela y nueces, con topping de frutas y miel"},
+    {"name":"Rawnie clásico o naranja","price":"$2.900","description":" Caramelo de naranja crunchy a base de mantequilla de maní sobre bizcocho de dátiles y cacao cubierto de chocolate bitter"},
+    {"name":"Caluga","price":"$2.900","description":" Suave nougat de nuez y dátiles con toques de vainilla, café y coco, cubierto con chocolate bitter y topping de nuez crocante"},
+    {"name":"Croissant split","price":"$6.900","description":" Relleno con dulce de leche, plátano o frutilla"},
+    {"name":"Croissant Nutella","price":"$7.800","description":" Relleno con Nutella, plátano o frutilla"},
+    {"name":"Tostada proteica" ,"price":"$6.800","description":"Tostada de masa madre, mantequilla de maní, frutos rojos, plátano o ambos y mix de semillas"},
+    {"name":"Tostadas francesas","price":"$8.400","description":"Pan brioche remojado en batido de la casa, sellado en mantequilla y terminado con crema batida, frutos rojos y espejo de miel de palma"},
+    {"name":"Tostadas francesas Nutella","price":"$8.900","description":" Tostadas pan molde brioche, Nutella, frutos rojos, plátano o ambos"},
+    {"name":"Waffle split","price":"$7.000","description":" Con dulce de leche, plátano o frutilla y crema batida"},
+    {"name":"Waffle Nutella","price":"$7.600","description":" Con Nutella, plátano o frutilla y crema batida"},
+    {"name":"Waffle cacao","price":"$8.000","description":" Waffle de cacao acompañado de helado de vainilla, frutos rojos, plátano bruleado y salted caramel"}],
     "breakfast": [
       {
         "name": "Clásico",
@@ -574,7 +315,7 @@
     "brunch": [
       {
         "name": "Brunch",
-        "description": "Dos café simple o té orgánico, dos jugos del día, huevos revueltos, tomates cherry, jamón, queso y palta, dip de hummus, tostadas pan masa madre, torta del día y frutas de estación",
+        "description": "Dos café simple o té orgánico, dos jugos del día, huevos revueltos, tomates cherry, jamón artesanal, queso y palta, dip de hummus, tostadas pan masa madre, torta del día y frutas de estación",
         "price": "$28.000"
       },
       {
