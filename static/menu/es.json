@@ -189,8 +189,8 @@
       { "name": "240ml", "description": "", "price": "$5.700" },
       { "name": "400ml", "description": "", "price": "$9.800" },
       {
-        "name": "Chiroso Honey [tostaduría Renacuajo]",
-        "description": "Origen: Colombia Antioquia. <br> Notas: cereza, mandarina, caramelo. <br> Puntaje SCA: 87,5 <br> proceso: honey",
+        "name": "Kenia Mchana [tostaduría Renacuajo]",
+        "description": "Origen: Kenia. <br> Notas: chocolate, pomelo y ciruela madura. <br> Puntaje SCA: 87 <br> proceso: natural",
         "price": ""
       },
       { "name": "240ml", "description": "", "price": "$5.700" },
@@ -246,9 +246,10 @@
     {"name":"Croissant serrano" ,"price":"$9.800","description":"Relleno con jamón serrano, rúcula, tomate, queso crema"},
     {"name":"Croissant de mar" ,"price":"$10.500","description":"Relleno con salmón ahumado, rúcula, palta, queso crema de ciboulette y alcaparras"},
     {"name":"Croissant pera queso azul" ,"price":"$8.500","description":"Relleno peras caramelizadas, queso azul, nueces trozadas y rúcula"},
+    { "name": "PAILAS", "description": "<hr>", "price": "<br>" },
     {"name":"Paila de huevos revueltos ","description":"","price":"$6.500"},
     {"name":"Paila de huevos revueltos más agregado a elección ","description":"Con tomate / jamón artesanal / tocino / queso / champiñones","price":"$6.800"},
-    {"name":"Omelette de jamón y queso con ensalada ","description":"","price":"$6.900"},
+    {"name":"Omelette de jamón y queso con ensalada ","description":"","price":"$7.300"},
     {"name":"*Todas las pailas vienen con tostadas masa madre", "description" :"","price":""},
     {"name":"**Opción pan sin gluten ","description":"","price":"$2.000"}],
     "juice": [
@@ -372,32 +373,6 @@
         "name": "Hojas de parra",
         "description": "Rellenas con carne animal o de soya, arroz jazmín, especias libanesas sobre una base de hummus y babaganoush, tomates cherris marinados en menta",
         "price": "$12.900"
-      },
-      { "name": "PAILAS", "description": "<hr>", "price": "<br>" },
-      {
-        "name": "Paila de huevos revueltos",
-        "description": "",
-        "price": "$6.500"
-      },
-      {
-        "name": "Paila de huevos revueltos más agregado a elección",
-        "description": "Con tomate / jamón artesanal / tocino / queso / champiñones",
-        "price": "$6.800"
-      },
-      {
-        "name": "Omelette de jamón y queso con ensalada",
-        "description": "",
-        "price": "$6.900"
-      },
-      {
-        "name": "*Todas las pailas vienen con tostadas masa madre",
-        "description": "",
-        "price": ""
-      },
-      {
-        "name": "**Opción pan sin gluten",
-        "description": "",
-        "price": "$2.000"
       },
       {
         "name": "Consulta nuestro menú del día",
