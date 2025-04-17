@@ -246,7 +246,7 @@
     {"name":"Croissant serrano" ,"price":"$9.800","description":"Relleno con jamón serrano, rúcula, tomate, queso crema"},
     {"name":"Croissant de mar" ,"price":"$10.500","description":"Relleno con salmón ahumado, rúcula, palta, queso crema de ciboulette y alcaparras"},
     {"name":"Croissant pera queso azul" ,"price":"$8.500","description":"Relleno peras caramelizadas, queso azul, nueces trozadas y rúcula"},
-    { "name": "PAILAS", "description": "<hr>", "price": "<br>" },
+    { "name": "PAILAS", "description": "de 9:00 a 13:00 hrs/ 16:00 a 21:30 hrs", "price": "<br>" },
     {"name":"Paila de huevos revueltos ","description":"","price":"$6.500"},
     {"name":"Paila de huevos revueltos más agregado a elección ","description":"Con tomate / jamón artesanal / tocino / queso / champiñones","price":"$6.800"},
     {"name":"Omelette de jamón y queso con ensalada ","description":"","price":"$7.300"},
